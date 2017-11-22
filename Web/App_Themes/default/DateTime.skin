@@ -1,0 +1,47 @@
+﻿<rad:RadDatePicker SkinID="Common" runat="server" Skin="WebBlue">
+    <DatePopupButton ToolTip="打开日期选择器" />
+    <Calendar FastNavigationStep="12" runat="server">
+        <FastNavigationSettings CancelButtonCaption="取消" DateIsOutOfRangeMessage="日期超出范围"
+            OkButtonCaption="确定" TodayButtonCaption="今天" />
+    </Calendar>
+</rad:RadDatePicker>
+
+<rad:RadTimePicker SkinID="Common" runat="server"  Skin="WebBlue">
+    <TimeView runat="server" HeaderText="选择时间">
+    </TimeView>
+    <TimePopupButton ToolTip="打开时间选择器" />
+</rad:RadTimePicker>
+
+<rad:RadDateTimePicker SkinID="Common" runat="server"  Skin="WebBlue">
+    <DatePopupButton ToolTip="打开日期选择器" />
+    <Calendar FastNavigationStep="12" runat="server">
+        <FastNavigationSettings CancelButtonCaption="取消" DateIsOutOfRangeMessage="日期超出范围" OkButtonCaption="确定" TodayButtonCaption="今天" />
+    </Calendar>
+    <TimeView runat="server" HeaderText="选择时间">
+    </TimeView>
+    <TimePopupButton ToolTip="打开时间选择器" />
+</rad:RadDateTimePicker>
+
+<rad:RadDatePicker  runat="server" Skin="WebBlue">
+    <DatePopupButton ToolTip="打开日期选择器" />
+    <Calendar FastNavigationStep="12" runat="server">
+        <FastNavigationSettings CancelButtonCaption="取消" DateIsOutOfRangeMessage="日期超出范围"
+            OkButtonCaption="确定" TodayButtonCaption="今天" />
+    </Calendar>
+</rad:RadDatePicker>
+
+<rad:RadTimePicker  runat="server"  Skin="WebBlue">
+    <TimeView runat="server" HeaderText="选择时间">
+    </TimeView>
+    <TimePopupButton ToolTip="打开时间选择器" />
+</rad:RadTimePicker>
+
+<rad:RadDateTimePicker runat="server"  Skin="WebBlue">
+    <DatePopupButton ToolTip="打开日期选择器" />
+    <Calendar FastNavigationStep="12" runat="server">
+        <FastNavigationSettings CancelButtonCaption="取消" DateIsOutOfRangeMessage="日期超出范围" OkButtonCaption="确定" TodayButtonCaption="今天" />
+    </Calendar>
+    <TimeView runat="server" HeaderText="选择时间">
+    </TimeView>
+    <TimePopupButton ToolTip="打开时间选择器" />
+</rad:RadDateTimePicker>

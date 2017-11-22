@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>1.1.1</version>
+        <authors>ERP</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>去除作废订单方法CancelOrder中的systemCancel参数(2017-04-11)</description>
+    </metadata>
+</package>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>3.1.2</version>
+        <title>海淘版</title>
+        <authors>kede</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+2017/10/30 ERP 海淘、双十一优化综合版
+        </description>
+        <tags>ERP 海淘、双十一优化综合版</tags>
+        <dependencies>
+            <dependency id="Framework" version="2.0.9.4" />
+        </dependencies>
+    </metadata>
+</package>

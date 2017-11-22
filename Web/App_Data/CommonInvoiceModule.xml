@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gb2312"?>
+<TYFP Ver="1">
+  <Head>
+    <NSRSBH>310227695808144</NSRSBH>
+    <NSRMC>上海可得光学科技有限公司</NSRMC>
+    <SCSJ>{SCSJ}</SCSJ>
+    <SCFS>2</SCFS>
+  </Head>
+  <FPSY>
+    <KSSJ>{KSSJ}</KSSJ>
+    <JSSJ>{JSSJ}</JSSJ>
+    <JLS>{JLS}</JLS>
+    <ZPFS>{ZPFS}</ZPFS>
+    <ZPJE>{ZPJE}</ZPJE>
+    <FPFS>{FPFS}</FPFS>
+    <TPFS>{TPFS}</TPFS>
+    <TPJE>{TPJE}</TPJE>
+    <YSFS>{YSFS}</YSFS>
+    <JXFS>0</JXFS>
+  </FPSY>
+  <KP RecNum="1">
+    <KPZL KPZLDM="21201" RecNum="{KPZL_RecNum}">
+      {KPZL_Content}
+    </KPZL>
+  </KP>
+  {YSFP_Content}
+</TYFP>

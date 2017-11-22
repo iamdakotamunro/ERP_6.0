@@ -1,0 +1,2750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/ERP.Model" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/ERP.Model.Goods" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd12" namespace="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/ERP.Enum" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd13" namespace="http://schemas.datacontract.org/2004/07/Framework" />
+  <xs:element name="UpdateRefundApplyGoodsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="applyDetailInfo" nillable="true" type="q1:ShopExchangedApplyInfo" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="detailInfos" nillable="true" type="q2:ArrayOfShopApplyDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRefundApplyGoodsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRefundApplyGoodsListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangeApplyState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q3:guid" />
+        <xs:element minOccurs="0" name="exchangeState" type="xs:int" />
+        <xs:element minOccurs="0" name="remark" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangeApplyStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateExchangeApplyStateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectOneMonthReturnedApplyList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="shopId" type="q4:guid" />
+        <xs:element minOccurs="0" name="dateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectOneMonthReturnedApplyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SelectOneMonthReturnedApplyListResult" nillable="true" type="q5:ArrayOfKeyValueOfstringdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangedApplyList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isBarter" type="xs:boolean" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="shopId" type="q6:guid" />
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="applyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="state" type="xs:int" />
+        <xs:element minOccurs="0" name="goodsNameOrGoodsCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="pageIndex" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangedApplyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" minOccurs="0" name="GetExchangedApplyListResult" nillable="true" type="q7:PageItemsOfShopExchangedApplyInfof_PUt8IV5" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBarterGoodsListByApplyId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q8:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBarterGoodsListByApplyIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="GetBarterGoodsListByApplyIdResult" nillable="true" type="q9:ArrayOfShopExchangedApplyDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefundGoodsListByApplyId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q10:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefundGoodsListByApplyIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="GetRefundGoodsListByApplyIdResult" nillable="true" type="q11:ArrayOfShopApplyDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAllowPurchase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="shopId" type="q12:guid" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="goodsId" type="q13:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAllowPurchaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsAllowPurchaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNoAuditedGoodsQuantity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="shopId" type="q14:guid" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="goodsId" type="q15:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNoAuditedGoodsQuantityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetNoAuditedGoodsQuantityResult" nillable="true" type="q16:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddApplyStock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="applyStock" nillable="true" type="q17:ApplyStockInfo" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="list" nillable="true" type="q18:ArrayOfApplyStockDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddApplyStockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddApplyStockResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsSuccessCreateCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q19:guid" />
+        <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="warehouseId" type="q20:guid" />
+        <xs:element minOccurs="0" name="expressNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="expressName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsSuccessCreateCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsSuccessCreateCheckResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsByShopId">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsByShopIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="GetBankAccountsByShopIdResult" nillable="true" type="q21:ArrayOfShopBankAccountsInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCompanyFundReceipt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="fundReceiptInfo" nillable="true" type="q22:CompanyFundReceiptInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCompanyFundReceiptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCompanyFundReceiptResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetBankAccountsListResult" nillable="true" type="q23:ArrayOfBankAccountInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFilialeIdGoodsIdAvgSettlePrice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFilialeIdGoodsIdAvgSettlePriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetFilialeIdGoodsIdAvgSettlePriceResult" nillable="true" type="q24:ArrayOfKeyValueOfguidArrayOfKeyValueOfguiddecimalox8ieOcg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceByOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="orderId" type="q25:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceByOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetInvoiceByOrderIdResult" nillable="true" type="q26:InvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderScoreListToPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="memeberId" type="q27:guid" />
+        <xs:element minOccurs="0" name="year" type="xs:int" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="pageIndex" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderScoreListToPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" minOccurs="0" name="GetOrderScoreListToPageResult" nillable="true" type="q28:PageItemsOfOrderScoreInfof_PUt8IV5" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseSetInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="goodsId" type="q29:guid" />
+        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="warehouseId" type="q30:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseSetInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetPurchaseSetInfoResult" nillable="true" type="q31:PurchaseSetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseSetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="goodsIdList" nillable="true" type="q32:ArrayOfguid" />
+        <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="warehouseId" type="q33:guid" />
+        <xs:element minOccurs="0" name="isDelete" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseSetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetPurchaseSetListResult" nillable="true" type="q34:ArrayOfPurchaseSetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseSetListByWarehouseIdAndCompanyId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="warehouseId" type="q35:guid" />
+        <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q36:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPurchaseSetListByWarehouseIdAndCompanyIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetPurchaseSetListByWarehouseIdAndCompanyIdResult" nillable="true" type="q37:ArrayOfPurchaseSetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyBindFilialeIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q38:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyBindFilialeIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCompanyBindFilialeIdsResult" nillable="true" type="q39:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyDic">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyDicResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCompanyDicResult" nillable="true" type="q40:ArrayOfKeyValueOfguidstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefuseInGoodsBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="no" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefuseInGoodsBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RefuseInGoodsBillResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefuseOutGoodsBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="no" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefuseOutGoodsBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RefuseOutGoodsBillResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRealGoodsSaleNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRealGoodsSaleNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetAllRealGoodsSaleNumberResult" nillable="true" type="q41:ArrayOfGoodsSalesInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvgRealGoodsSaleNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvgRealGoodsSaleNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetAvgRealGoodsSaleNumberResult" nillable="true" type="q42:ArrayOfGoodsAvgDaySalesInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRealGoodsSaleNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+        <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="realGoodsId" type="q43:guid" />
+        <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="salePlatformId" type="q44:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRealGoodsSaleNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRealGoodsSaleNumberResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceState" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="isFinished" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isCommit" type="xs:boolean" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetInvoiceListResult" nillable="true" type="q45:ArrayOfSimpleInvoiceDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceByInvoiceId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q46:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceByInvoiceIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetInvoiceByInvoiceIdResult" nillable="true" type="q47:SimpleInvoiceDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceByInvoiceNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="invoiceNo" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceByInvoiceNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetInvoiceByInvoiceNoResult" nillable="true" type="q48:SimpleInvoiceDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderBasic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderBasicResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetOrderBasicResult" nillable="true" type="q49:SimpleGoodsOrderInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceItem">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetInvoiceItemResult" nillable="true" type="q50:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInvoiceStateWithInvoiceNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceState" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="invoiceno" type="xs:long" />
+        <xs:element minOccurs="0" name="invoicecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInvoiceStateWithInvoiceNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateInvoiceStateWithInvoiceNoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceCodeAndCurInvoiceNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="invoiceStartNo" type="xs:long" />
+        <xs:element minOccurs="0" name="invoiceEndNo" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceCodeAndCurInvoiceNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetInvoiceCodeAndCurInvoiceNoResult" nillable="true" type="q51:InvoiceRollInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoicePrintData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q52:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoicePrintDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetInvoicePrintDataResult" nillable="true" type="q53:SimpleInvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderCodRealTotalPrice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderCodRealTotalPriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetOrderCodRealTotalPriceResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="realtotalPrice" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q54:ArrayOfstring" />
+        <xs:element minOccurs="0" name="isPrintInvoice" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetOrderResult" nillable="true" type="q55:ArrayOfGoodsOrderInvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q56:guid" />
+        <xs:element minOccurs="0" name="invoiceChCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceChNo" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="ChInvoiceResult" nillable="true" type="q57:SimpleInvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="invoiceAdd" nillable="true" type="q58:AddInvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="AddInvoiceResult" nillable="true" type="q59:SimpleInvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgainInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="invoiceAdd" nillable="true" type="q60:AgainInvoiceInfo" />
+        <xs:element minOccurs="0" name="isCancelOriginalInvoice" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgainInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="AgainInvoiceResult" nillable="true" type="q61:SimpleInvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInvoiceRollStateInvocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="rollId" type="q62:guid" />
+        <xs:element minOccurs="0" name="startNo" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInvoiceRollStateInvocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateInvoiceRollStateInvocationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinishStorageRecordIn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inTradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="stockQuantitys" nillable="true" type="q63:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinishStorageRecordInResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FinishStorageRecordInResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinishStorageRecordOut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="outTradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operatorName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="stockQuantitys" nillable="true" type="q64:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinishStorageRecordOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FinishStorageRecordOutResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateNonceWarehouseGoodsStock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inTradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="stockQuantitys" nillable="true" type="q65:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateNonceWarehouseGoodsStockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateNonceWarehouseGoodsStockResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReckoningForLostBack">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payToKede" type="xs:decimal" />
+        <xs:element minOccurs="0" name="badMoney" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReckoningForLostBackResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertReckoningForLostBackResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceListByOrderNos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orders" nillable="true" type="q66:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceListByOrderNosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetInvoiceListByOrderNosResult" nillable="true" type="q67:ArrayOfSimpleInvoiceDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAbeyanced">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAbeyancedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsAbeyancedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBySellReturnIn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" minOccurs="0" name="request" nillable="true" type="q68:WMSReturnGoodsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBySellReturnInResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" minOccurs="0" name="AddBySellReturnInResult" nillable="true" type="q69:WMSResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelStorageRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelStorageRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" minOccurs="0" name="CancelStorageRecordResult" nillable="true" type="q70:WMSResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddByLostBackReturnIn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" minOccurs="0" name="request" nillable="true" type="q71:WMSLostBackReturnDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddByLostBackReturnInResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" minOccurs="0" name="AddByLostBackReturnInResult" nillable="true" type="q72:WMSResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasPurchseSetGoodsIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="goodsIds" nillable="true" type="q73:ArrayOfguid" />
+        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="warehouseIds" nillable="true" type="q74:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasPurchseSetGoodsIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="HasPurchseSetGoodsIdsResult" nillable="true" type="q75:ArrayOfKeyValuePairOfguidguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateByCombineSplit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isSplit" type="xs:boolean" />
+        <xs:element minOccurs="0" name="billNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="hostingFilialeId" type="q76:guid" />
+        <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="combineSplitGoodsId" type="q77:guid" />
+        <xs:element minOccurs="0" name="combineSplitGoodsQuantity" type="xs:int" />
+        <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="combineSplitDetailGoodsIds" nillable="true" type="q78:ArrayOfKeyValueOfguidint" />
+        <xs:element minOccurs="0" name="occerTime" type="xs:dateTime" />
+        <xs:element xmlns:q79="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="stockQuantitys" nillable="true" type="q79:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateByCombineSplitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" minOccurs="0" name="CreateByCombineSplitResult" nillable="true" type="q80:WMSResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFrameProcessCertificateInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="processNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFrameProcessCertificateInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetFrameProcessCertificateInfoResult" nillable="true" type="q81:FrameProcessCertificateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutStockGoodsBarcode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tracodeNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutStockGoodsBarcodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/ERP.Model.Goods" minOccurs="0" name="GetOutStockGoodsBarcodeResult" nillable="true" type="q82:ArrayOfGoodsBarcodeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrderAndInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q83:guid" />
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="orderInfo" nillable="true" type="q84:GoodsOrderInfo" />
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="orderDetailList" nillable="true" type="q85:ArrayOfGoodsOrderDetailInfo" />
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="invoiceInfo" nillable="true" type="q86:InvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrderAndInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="AddOrderAndInvoiceResult" nillable="true" type="q87:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="salePlatformId" type="q88:guid" />
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consignee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="expressNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mobile" nillable="true" type="xs:string" />
+        <xs:element xmlns:q89="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="memberId" type="q89:guid" />
+        <xs:element minOccurs="0" name="startPage" type="xs:int" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="GetGoodsOrderResult" nillable="true" type="q90:DataListInfoOfGoodsOrderInfoI24ZYJXj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGoodsOrderInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q91:guid" />
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="invoice" nillable="true" type="q92:InvoiceInfo" />
+        <xs:element xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderIds" nillable="true" type="q93:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGoodsOrderInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="InsertGoodsOrderInvoiceResult" nillable="true" type="q94:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToRedeploy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q95:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToRedeployResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGoodsOrderToRedeployResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToPurchase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q96:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToPurchaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGoodsOrderToPurchaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderStateToWaitOutbound">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q97:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderStateToWaitOutboundResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGoodsOrderStateToWaitOutboundResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderExpressNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q98:ArrayOfstring" />
+        <xs:element minOccurs="0" name="expressNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderExpressNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGoodsOrderExpressNoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToConsignmented">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="operatorId" type="q99:guid" />
+        <xs:element minOccurs="0" name="operatorName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q100="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q100:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToConsignmentedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGoodsOrderToConsignmentedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToCancellation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="operatorId" type="q101:guid" />
+        <xs:element minOccurs="0" name="operatorName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q102="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderNos" nillable="true" type="q102:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderToCancellationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGoodsOrderToCancellationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsIdsIsStockUp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="warehouseId" type="q103:guid" />
+        <xs:element xmlns:q104="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="goodsIds" nillable="true" type="q104:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsIdsIsStockUpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetGoodsIdsIsStockUpResult" nillable="true" type="q105:ArrayOfKeyValueOfguidstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryGoodsOrderByMemberIdAndOrderTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="memberId" type="q106:guid" />
+        <xs:element minOccurs="0" name="orderTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryGoodsOrderByMemberIdAndOrderTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetHistoryGoodsOrderByMemberIdAndOrderTimeResult" nillable="true" type="q107:ArrayOfGoodsOrderInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryOrderInfoByOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="orderId" type="q108:guid" />
+        <xs:element minOccurs="0" name="orderTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryOrderInfoByOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetHistoryOrderInfoByOrderIdResult" nillable="true" type="q109:GoodsOrderInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryOrderInfoByOrderNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="orderTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryOrderInfoByOrderNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetHistoryOrderInfoByOrderNoResult" nillable="true" type="q110:GoodsOrderInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryGoodsOrderDetailListByOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="orderId" type="q111:guid" />
+        <xs:element minOccurs="0" name="orderTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryGoodsOrderDetailListByOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetHistoryGoodsOrderDetailListByOrderIdResult" nillable="true" type="q112:ArrayOfGoodsOrderDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInvoiceStateToWasteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q113:guid" />
+        <xs:element minOccurs="0" name="cancelPersonel" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInvoiceStateToWasteRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetInvoiceStateToWasteRequestResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInvoiceStateToCancel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q114:guid" />
+        <xs:element minOccurs="0" name="cancelPersonel" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInvoiceStateToCancelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetInvoiceStateToCancelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInvoiceNameAndInvoiceContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q115:guid" />
+        <xs:element minOccurs="0" name="invoiceName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceContent" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInvoiceNameAndInvoiceContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetInvoiceNameAndInvoiceContentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceNoAndIsCommitByOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="orderId" type="q116:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceNoAndIsCommitByOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="GetInvoiceNoAndIsCommitByOrderIdResult" type="q117:KeyValuePairOflongboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayNoticeInsert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q118:guid" />
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="pnInfo" nillable="true" type="q119:PaymentNoticeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayNoticeInsertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="PayNoticeInsertResult" nillable="true" type="q120:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistByOrderNoAndPaystate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistByOrderNoAndPaystateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsExistByOrderNoAndPaystateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayNoticeInfoListByOrderNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayNoticeInfoListByOrderNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetPayNoticeInfoListByOrderNoResult" nillable="true" type="q121:ArrayOfPaymentNoticeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePayNoticeInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q122:guid" />
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="pninfo" nillable="true" type="q123:PaymentNoticeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePayNoticeInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdatePayNoticeInfoResult" nillable="true" type="q124:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePayNoticeByPayId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="payid" type="q125:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePayNoticeByPayIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="DeletePayNoticeByPayIdResult" nillable="true" type="q126:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWastebookForB2C">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q127:guid" />
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="wasteBookInfo" nillable="true" type="q128:WasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWastebookForB2CResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertWastebookForB2CResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="personnelId" type="q129:guid" />
+        <xs:element xmlns:q130="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q130:guid" />
+        <xs:element xmlns:q131="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="goodsList" nillable="true" type="q131:ArrayOfguid" />
+        <xs:element minOccurs="0" name="state" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="SetGoodsStateResult" nillable="true" type="q132:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsIsScarcityState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q133:guid" />
+        <xs:element xmlns:q134="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="realGoodsList" nillable="true" type="q134:ArrayOfguid" />
+        <xs:element minOccurs="0" name="state" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsIsScarcityStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="SetGoodsIsScarcityStateResult" nillable="true" type="q135:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="goodsid" type="q136:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetGoodsStateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsSales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsSalesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="GetGoodsSalesResult" nillable="true" type="q137:ArrayOfKeyValuePairOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddShopFrontApplyStock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="applyStockContent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="applyStockDetailContent" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddShopFrontApplyStockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddShopFrontApplyStockResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGoodsISScarcity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q138:guid" />
+        <xs:element xmlns:q139="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="goodsId" type="q139:guid" />
+        <xs:element minOccurs="0" name="isScarcity" type="xs:int" />
+        <xs:element minOccurs="0" name="state" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGoodsISScarcityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateGoodsISScarcityResult" nillable="true" type="q140:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRealGoodsISScarcity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q141:guid" />
+        <xs:element xmlns:q142="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="realGoodsId" type="q142:guid" />
+        <xs:element minOccurs="0" name="isScarcity" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRealGoodsISScarcityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateRealGoodsISScarcityResult" nillable="true" type="q143:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplyStockState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q144:guid" />
+        <xs:element minOccurs="0" name="state" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplyStockStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateApplyStockStateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddReckoningInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reckoningContent" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddReckoningInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddReckoningInfoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReckoningInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q145:guid" />
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="info" nillable="true" type="q146:ReckoningInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReckoningInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="InsertReckoningInfoResult" nillable="true" type="q147:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCheckState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q148:guid" />
+        <xs:element minOccurs="0" name="linkTradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="linkTradeType" type="xs:int" />
+        <xs:element minOccurs="0" name="reckoningType" type="xs:int" />
+        <xs:element minOccurs="0" name="reckoningCheckType" type="xs:int" />
+        <xs:element minOccurs="0" name="isChecked" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCheckStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCheckStateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyCussentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyCussentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCompanyCussentListResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q149:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetBankAccountListResult" nillable="true" type="q150:ArrayOfBankAccountInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Checking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="lstModify" nillable="true" type="q151:ArrayOfReckoningInfo" />
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="lstAdd" nillable="true" type="q152:ArrayOfReckoningInfo" />
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="wastBookinfo" nillable="true" type="q153:WasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReckoningInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q154:guid" />
+        <xs:element minOccurs="0" name="originalTradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="checkType" type="q155:CheckType" />
+        <xs:element minOccurs="0" name="reckoningCheckType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReckoningInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetReckoningInfoResult" nillable="true" type="q156:ReckoningInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidateDataPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyClass" type="q157:guid" />
+        <xs:element xmlns:q158="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q158:guid" />
+        <xs:element xmlns:q159="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q159:guid" />
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="cType" type="q160:CheckType" />
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="auditingState" type="q161:AuditingState" />
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="receiptType" type="q162:ReceiptType" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q163="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="warehouseId" type="q163:guid" />
+        <xs:element minOccurs="0" name="keepyear" type="xs:int" />
+        <xs:element minOccurs="0" name="start" type="xs:long" />
+        <xs:element minOccurs="0" name="limit" type="xs:int" />
+        <xs:element xmlns:q164="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="money" nillable="true" type="q164:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidateDataPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q165="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="GetValidateDataPageResult" nillable="true" type="q165:DataListInfoOfReckoningInfoI24ZYJXj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsListByFBP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q166:guid" />
+        <xs:element xmlns:q167="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="branchId" type="q167:guid" />
+        <xs:element xmlns:q168="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="positionId" type="q168:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsListByFBPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetBankAccountsListByFBPResult" nillable="true" type="q169:ArrayOfBankAccountInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCompanyBankAccountsList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCompanyBankAccountsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetAllCompanyBankAccountsListResult" nillable="true" type="q170:ArrayOfCompanyBankAccountsInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsNonce">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="bankAccountsId" type="q171:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsNonceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBankAccountsNonceResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsListFromERP">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankAccountsListFromERPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetBankAccountsListFromERPResult" nillable="true" type="q172:ArrayOfBankAccountInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="bankAccountsId" type="q173:guid" />
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element xmlns:q174="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="receiptType" type="q174:ReceiptType" />
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="auditingState" type="q175:AuditingState" />
+        <xs:element minOccurs="0" name="minIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="maxIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q176="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q176:guid" />
+        <xs:element xmlns:q177="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="branchId" type="q177:guid" />
+        <xs:element xmlns:q178="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="positionId" type="q178:guid" />
+        <xs:element minOccurs="0" name="keepyear" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetWasteBookListResult" nillable="true" type="q179:ArrayOfWasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookListToPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="bankAccountsId" type="q180:guid" />
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="receiptType" type="q181:ReceiptType" />
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="auditingState" type="q182:AuditingState" />
+        <xs:element minOccurs="0" name="minIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="maxIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q183="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q183:guid" />
+        <xs:element xmlns:q184="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="branchId" type="q184:guid" />
+        <xs:element xmlns:q185="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="positionId" type="q185:guid" />
+        <xs:element minOccurs="0" name="keepyear" type="xs:int" />
+        <xs:element minOccurs="0" name="startPage" type="xs:int" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookListToPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q186="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetWasteBookListToPageResult" nillable="true" type="q186:ArrayOfKeyValueOfintArrayOfWasteBookInfoWiLTeSOi" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookListBySaleFilialeIdToPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="saleFilialeId" type="q187:guid" />
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="receiptType" type="q188:ReceiptType" />
+        <xs:element xmlns:q189="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="auditingState" type="q189:AuditingState" />
+        <xs:element minOccurs="0" name="minIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="maxIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q190="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q190:guid" />
+        <xs:element xmlns:q191="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="branchId" type="q191:guid" />
+        <xs:element xmlns:q192="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="positionId" type="q192:guid" />
+        <xs:element minOccurs="0" name="keepyear" type="xs:int" />
+        <xs:element minOccurs="0" name="isCheck" type="xs:int" />
+        <xs:element minOccurs="0" name="startPage" type="xs:int" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookListBySaleFilialeIdToPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetWasteBookListBySaleFilialeIdToPageResult" nillable="true" type="q193:ArrayOfKeyValueOfintArrayOfWasteBookInfoWiLTeSOi" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradeCodeNum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradeCodeNumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTradeCodeNumResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPoundageForReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPoundageForReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPoundageForReckoningResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetWasteBookIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookIdForUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookIdForUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetWasteBookIdForUpdateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookIdForReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookIdForReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetWasteBookIdForReckoningResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q194="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="wasteBookId" type="q194:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetWasteBookCheckResult" nillable="true" type="q195:WasteBookCheckInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="wasteBookId" type="q196:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetWasteBookResult" nillable="true" type="q197:WasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookByLinkTradeCodeAndWasteSource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="linkTradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="wasteSource" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookByLinkTradeCodeAndWasteSourceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetWasteBookByLinkTradeCodeAndWasteSourceResult" nillable="true" type="q198:WasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWasteBookInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetWasteBookInfoResult" nillable="true" type="q199:WasteTypeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChildCompanyClassList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q200="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyClassId" type="q200:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChildCompanyClassListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q201="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetChildCompanyClassListResult" nillable="true" type="q201:ArrayOfCompanyClassInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyCussentListByClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyClassId" type="q202:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyCussentListByClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q203="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetCompanyCussentListByClassResult" nillable="true" type="q203:ArrayOfCompanyCussentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCompanyCussentList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCompanyCussentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetAllCompanyCussentListResult" nillable="true" type="q204:ArrayOfCompanyCussentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyCussent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q205="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q205:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyCussentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q206="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetCompanyCussentResult" nillable="true" type="q206:CompanyCussentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonceReckoningTotalled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q207:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonceReckoningTotalledResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetNonceReckoningTotalledResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonceReckoningTotalledDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q208="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q208:guid" />
+        <xs:element xmlns:q209="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q209:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonceReckoningTotalledDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetNonceReckoningTotalledDetailResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q210="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="reckoningId" type="q210:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q211="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetReckoningResult" nillable="true" type="q211:ReckoningInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReckoningType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q212="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="reckoningId" type="q212:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReckoningTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReckoningTypeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q213="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q213:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalledResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTotalledResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPoundage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPoundageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPoundageResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPoundage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sum" type="xs:decimal" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPoundageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckPoundageResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q214="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q214:guid" />
+        <xs:element xmlns:q215="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="reckoningInfo" nillable="true" type="q215:ReckoningInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateReckoningResult" nillable="true" type="q216:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookDescription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q217="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q217:guid" />
+        <xs:element xmlns:q218="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="wasteBookId" type="q218:guid" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookDescriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q219="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateWasteBookDescriptionResult" nillable="true" type="q219:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDescriptionForAuditing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q220="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q220:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDescriptionForAuditingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q221="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateDescriptionForAuditingResult" nillable="true" type="q221:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReckoningDescription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q222="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q222:guid" />
+        <xs:element xmlns:q223="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="reckongId" type="q223:guid" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReckoningDescriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q224="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateReckoningDescriptionResult" nillable="true" type="q224:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuditingReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q225="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q225:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuditingReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="AuditingReckoningResult" nillable="true" type="q226:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q227="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q227:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q228="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="DeleteReckoningResult" nillable="true" type="q228:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q229="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="codeType" type="q229:CodeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q230:guid" />
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="wasteBookInfo" nillable="true" type="q231:WasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q232="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateWasteBookResult" nillable="true" type="q232:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookWithBank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q233="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q233:guid" />
+        <xs:element xmlns:q234="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="wasteBookInfo" nillable="true" type="q234:WasteBookInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookWithBankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q235="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateWasteBookWithBankResult" nillable="true" type="q235:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q236="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q236:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q237="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateWasteBookDateTimeResult" nillable="true" type="q237:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePoundageForReckoning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q238="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q238:guid" />
+        <xs:element xmlns:q239="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="wastebookId" type="q239:guid" />
+        <xs:element minOccurs="0" name="dateCreated" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePoundageForReckoningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q240="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdatePoundageForReckoningResult" nillable="true" type="q240:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWasteBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q241="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q241:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWasteBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q242="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="DeleteWasteBookResult" nillable="true" type="q242:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWasteBookPoundage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q243="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q243:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWasteBookPoundageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="DeleteWasteBookPoundageResult" nillable="true" type="q244:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookDescriptionForAuditing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q245="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q245:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookDescriptionForAuditingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q246="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateWasteBookDescriptionForAuditingResult" nillable="true" type="q246:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuditingWasteBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q247="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q247:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuditingWasteBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q248="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="AuditingWasteBookResult" nillable="true" type="q248:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q249:guid" />
+        <xs:element xmlns:q250="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="checkInfo" nillable="true" type="q250:WasteBookCheckInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWasteBookCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateWasteBookCheckResult" nillable="true" type="q251:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWasteBookCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q252="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q252:guid" />
+        <xs:element xmlns:q253="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="checkInfo" nillable="true" type="q253:WasteBookCheckInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWasteBookCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q254="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="InsertWasteBookCheckResult" nillable="true" type="q254:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q255="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q255:guid" />
+        <xs:element xmlns:q256="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="outWasteBookId" type="q256:guid" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="income" type="xs:decimal" />
+        <xs:element minOccurs="0" name="tradecode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+        <xs:element xmlns:q257="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="bankAccountsId" type="q257:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q258="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateBllResult" nillable="true" type="q258:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBankAccountsId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q259="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q259:guid" />
+        <xs:element xmlns:q260="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="wasteBookId" type="q260:guid" />
+        <xs:element xmlns:q261="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="bankAccountsId" type="q261:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBankAccountsIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q262="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateBankAccountsIdResult" nillable="true" type="q262:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPoundage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q263="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q263:guid" />
+        <xs:element xmlns:q264="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="outBankAccountsId" type="q264:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+        <xs:element xmlns:q265="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q265:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPoundageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q266="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="InsertPoundageResult" nillable="true" type="q266:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePoundage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q267="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q267:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePoundageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q268="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdatePoundageResult" nillable="true" type="q268:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Virement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q269="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q269:guid" />
+        <xs:element xmlns:q270="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="inBankAccountsId" type="q270:guid" />
+        <xs:element xmlns:q271="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="outBankAccountsId" type="q271:guid" />
+        <xs:element minOccurs="0" name="sum" type="xs:decimal" />
+        <xs:element minOccurs="0" name="poundage" type="xs:decimal" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q272="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q272:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VirementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q273="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="VirementResult" nillable="true" type="q273:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuditingWaste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q274="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q274:guid" />
+        <xs:element minOccurs="0" name="tradeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuditingWasteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q275="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="AuditingWasteResult" nillable="true" type="q275:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsPredictArrivalTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q276="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="realGoodsId" type="q276:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsPredictArrivalTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetGoodsPredictArrivalTimeResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsBarcodeInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="goodsCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsBarcodeInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q277="http://schemas.datacontract.org/2004/07/ERP.Model.Goods" minOccurs="0" name="GetGoodsBarcodeInfoResult" nillable="true" type="q277:GoodsBarcodeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberIdListByRealGoodsIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+        <xs:element xmlns:q278="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="realGoodsIds" nillable="true" type="q278:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberIdListByRealGoodsIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q279="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetMemberIdListByRealGoodsIdsResult" nillable="true" type="q279:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGoodsDaySalesStatistics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q280="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q280:guid" />
+        <xs:element xmlns:q281="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="orderId" type="q281:guid" />
+        <xs:element xmlns:q282="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="afterSaleDetailList" nillable="true" type="q282:ArrayOfAfterSaleDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateGoodsDaySalesStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q283="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="UpdateGoodsDaySalesStatisticsResult" nillable="true" type="q283:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCompanyFundReceiptForShop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q284="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="companyFundReceiptInfo" nillable="true" type="q284:CompanyFundReceiptInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCompanyFundReceiptForShopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q285="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="InsertCompanyFundReceiptForShopResult" nillable="true" type="q285:CompanyFundReceiptInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyFundReceiptForShop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q286="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" nillable="true" type="q286:guid" />
+        <xs:element xmlns:q287="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="filialeId" type="q287:guid" />
+        <xs:element minOccurs="0" name="receiptType" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="searchKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyFundReceiptForShopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q288="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetCompanyFundReceiptForShopResult" nillable="true" type="q288:ArrayOfCompanyFundReceiptInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCompanyFundReceiptStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q289="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q289:guid" />
+        <xs:element xmlns:q290="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="receiptId" type="q290:guid" />
+        <xs:element minOccurs="0" name="status" type="xs:int" />
+        <xs:element minOccurs="0" name="remark" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCompanyFundReceiptStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCompanyFundReceiptStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyFundReceiptStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q291="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="receiptId" type="q291:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyFundReceiptStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCompanyFundReceiptStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenewalWasteBookByIsOut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q292="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orderIds" nillable="true" type="q292:ArrayOfguid" />
+        <xs:element xmlns:q293="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="paidNo" nillable="true" type="q293:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenewalWasteBookByIsOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RenewalWasteBookByIsOutResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsEnterFaxAudit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isEnable" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsEnterFaxAuditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q294="http://schemas.datacontract.org/2004/07/Framework" minOccurs="0" name="IsEnterFaxAuditResult" nillable="true" type="q294:ReturnResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEnterFaxAuditState">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEnterFaxAuditStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q295="http://schemas.datacontract.org/2004/07/Framework" minOccurs="0" name="GetEnterFaxAuditStateResult" nillable="true" type="q295:ReturnResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreloanWarningsCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q296="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="personnelId" type="q296:guid" />
+        <xs:element xmlns:q297="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="systemBranchId" type="q297:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreloanWarningsCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPreloanWarningsCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderInfoByNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="orderTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderInfoByNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q298="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetOrderInfoByNoResult" nillable="true" type="q298:GoodsOrderInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsOrderDetailList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsOrderDetailListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q299="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="GetGoodsOrderDetailListResult" nillable="true" type="q299:ArrayOfGoodsOrderDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q300="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q300:guid" />
+        <xs:element xmlns:q301="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="invoiceInfo" nillable="true" type="q301:InvoiceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q302="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="SetGoodsOrderInvoiceResult" nillable="true" type="q302:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeTaxrateProportionInfos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q303="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="goodsTypes" nillable="true" type="q303:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeTaxrateProportionInfosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q304="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GeTaxrateProportionInfosResult" nillable="true" type="q304:ArrayOfTaxrateProportionInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderInvoiceState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q305="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q305:guid" />
+        <xs:element xmlns:q306="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="invoiceId" type="q306:guid" />
+        <xs:element xmlns:q307="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="invoiceState" type="q307:InvoiceState" />
+        <xs:element minOccurs="0" name="clew" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGoodsOrderInvoiceStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q308="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="SetGoodsOrderInvoiceStateResult" nillable="true" type="q308:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BatchSetInvoiceState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q309="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pushDataId" type="q309:guid" />
+        <xs:element xmlns:q310="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="invoiceIdList" nillable="true" type="q310:ArrayOfguid" />
+        <xs:element xmlns:q311="http://schemas.datacontract.org/2004/07/ERP.Enum" minOccurs="0" name="invoiceState" type="q311:InvoiceState" />
+        <xs:element minOccurs="0" name="cancelPersonel" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BatchSetInvoiceStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q312="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" minOccurs="0" name="BatchSetInvoiceStateResult" nillable="true" type="q312:WCFReturnInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThirdPartyOrderComplete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q313="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="expressId" type="q313:guid" />
+        <xs:element minOccurs="0" name="expressNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q314="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q314:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThirdPartyOrderCompleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ThirdPartyOrderCompleteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsSaleBySaleFilialeId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+        <xs:element xmlns:q315="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="saleFilialeId" type="q315:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsSaleBySaleFilialeIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q316="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetGoodsSaleBySaleFilialeIdResult" nillable="true" type="q316:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsSaleBySalePlatformIdList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+        <xs:element xmlns:q317="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="salePlatformIdList" nillable="true" type="q317:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGoodsSaleBySalePlatformIdListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q318="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetGoodsSaleBySalePlatformIdListResult" nillable="true" type="q318:ArrayOfKeyValueOfguidint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVocabularyListByState">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVocabularyListByStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q319="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="GetVocabularyListByStateResult" nillable="true" type="q319:ArrayOfVocabularyInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectActivityNoticeInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q320="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q320:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectActivityNoticeInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q321="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="SelectActivityNoticeInfoResult" nillable="true" type="q321:ShopActivityNoticeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectShopActivityImageInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="shopActivityImageType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectShopActivityImageInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q322="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="SelectShopActivityImageInfoResult" nillable="true" type="q322:ShopActivityImageInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllShopActivityNoticeList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllShopActivityNoticeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q323="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="GetAllShopActivityNoticeListResult" nillable="true" type="q323:ArrayOfShopActivityNoticeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectNoticeListByPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="isShow" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isNotice" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectNoticeListByPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q324="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" minOccurs="0" name="SelectNoticeListByPageResult" nillable="true" type="q324:PageItemsOfShopActivityNoticeInfo3WWLtIrK" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateShopApplyStockState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q325="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q325:guid" />
+        <xs:element minOccurs="0" name="stockState" type="xs:int" />
+        <xs:element minOccurs="0" name="remark" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateShopApplyStockStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateShopApplyStockStateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShopConfirmPurchaseOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q326="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q326:guid" />
+        <xs:element xmlns:q327="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="storageRecord" nillable="true" type="q327:StorageRecordInfo" />
+        <xs:element xmlns:q328="http://schemas.datacontract.org/2004/07/ERP.Model" minOccurs="0" name="storageRecordDetail" nillable="true" type="q328:ArrayOfStorageRecordDetailInfo" />
+        <xs:element xmlns:q329="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="applyStock" nillable="true" type="q329:ApplyStockInfo" />
+        <xs:element xmlns:q330="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" minOccurs="0" name="stockDetailInfos" nillable="true" type="q330:ArrayOfApplyStockDetailInfo" />
+        <xs:element xmlns:q331="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="list" nillable="true" type="q331:ArrayOfReckoningInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShopConfirmPurchaseOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShopConfirmPurchaseOrderResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangeState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q332="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="applyId" type="q332:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangeStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetExchangeStateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistNoAuditMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q333="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="shopId" type="q333:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistNoAuditMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsExistNoAuditMessageResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefundMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q334="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="messageInfo" nillable="true" type="q334:ShopRefundMessageInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefundMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRefundMessageResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBarterApplyGoodsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q335="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="applyDetailInfo" nillable="true" type="q335:ShopExchangedApplyInfo" />
+        <xs:element xmlns:q336="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="detailInfos" nillable="true" type="q336:ArrayOfShopExchangedApplyDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBarterApplyGoodsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddBarterApplyGoodsListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBarterApplyGoodsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q337="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="applyDetailInfo" nillable="true" type="q337:ShopExchangedApplyInfo" />
+        <xs:element xmlns:q338="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="detailInfos" nillable="true" type="q338:ArrayOfShopExchangedApplyDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBarterApplyGoodsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateBarterApplyGoodsListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCheckRefundList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q339="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="checkRefundInfo" nillable="true" type="q339:CheckRefundInfo" />
+        <xs:element xmlns:q340="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" minOccurs="0" name="checkRefundDetailInfos" nillable="true" type="q340:ArrayOfCheckRefundDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCheckRefundListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCheckRefundListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefundApplyGoodsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q341="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="applyDetailInfo" nillable="true" type="q341:ShopExchangedApplyInfo" />
+        <xs:element xmlns:q342="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" minOccurs="0" name="detailInfos" nillable="true" type="q342:ArrayOfShopApplyDetailInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefundApplyGoodsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRefundApplyGoodsListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>1.2.0-alpha1</version>
+        <authors>ERP</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>仓储二期版本(2017-05-03)</description>
+    </metadata>
+</package>

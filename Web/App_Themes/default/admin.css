@@ -1,0 +1,356 @@
+﻿A
+{
+	text-decoration: none;
+	font-size: 12px;
+}
+A:active
+{
+	text-decoration: none;
+	color: #333;
+}
+A:link
+{
+	text-decoration: none;
+	color: #333;
+}
+A:visited
+{
+	text-decoration: none;
+	color: #333;
+}
+A:hover
+{
+	color: #000;
+	text-decoration: underline;
+	text-decoration: none;
+}
+body 
+{
+    margin:0px;
+    padding: 0px;
+    font-size:12px;
+}
+td
+{
+    font-size:12px;
+}
+.Button {
+	border:1px solid #D5D5D5;
+	border-bottom: 1px solid #C2C2C2;
+	border-right: 1px solid #C2C2C2;
+	font-size:11px;
+	color:#666666;
+	background-image:url(./images/buttonBg.gif);
+	background-position:top;
+	background-color:white;
+	height:20px;
+	vertical-align: middle;
+}
+
+legend
+{
+ color:#333;
+ font-size:12px;
+}
+
+.AutoInput
+{
+    width:95%;
+    height: 18px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+
+.AutoTextarea
+{
+    width:95%;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+.StandardDropDownList
+{
+    width: 150px;
+    height: 22px;
+    font-size: 12px;
+    border: solid 1px #eaeaea;
+}
+.ShortDropDownList
+{
+    width: 75px;
+    height: 22px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+.LongDropDownList
+{
+    width: 254px;
+    height: 22px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+.GridRadioList
+{
+    padding: 0px;
+    margin: 0px;
+    border-collapse:collapse; 
+    border-spacing:0; 
+    border:0px;
+}
+.GridRadioList td
+{
+    padding: 0px !important;
+    margin: 0px;
+    border-collapse:collapse; 
+    border-spacing:0; 
+    border:0px !important;
+}
+.LongTextarea
+{
+    width: 250px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+.LongInput
+{
+    width: 250px;
+    height: 18px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+.StandardInput
+{
+    width: 150px;
+    height: 18px;
+    font-size: 12px;
+    border: solid 1px #eaeaea;
+}
+.ShortInput
+{
+    width: 60px;
+    height: 18px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+.MinisizeInput
+{
+    width: 30px;
+    height: 18px;
+    font-size:12px;
+    border: solid 1px #eaeaea;
+}
+table.LoginTable
+{
+    width:587px;
+    height:491px;
+    background-image:url(images/logintable.jpg);
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:100px;
+}
+
+table.MainHead
+{
+    width: 100%;
+    height: 64px;
+    border: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 0px;
+}
+
+td.HeadLeft
+{
+    width: 188px;
+    height:57px;
+    background-image: url(images/headleftback.gif);
+}
+
+td.HeadCenter
+{
+    width:auto;
+    height:57px;
+    background-image:url(images/headcenterback.gif);
+}
+
+td.HeadRight
+{
+    width:37px;
+    height:57px;
+    background-image: url(images/headrightback.gif);
+}
+
+img.Logo
+{
+    position: relative;left:10px;top:6px;
+}
+
+td.HeadBottom
+{
+    height:7px;
+    background-image: url(images/headbottom.gif);
+}
+
+span.PersonnelInfo
+{
+    position: relative;
+}
+
+table.Stage
+{
+    width: 98%;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 10px auto;
+    border: 0px;
+}
+td.StageTopLeft
+{
+    width:3px;
+    height:5px;
+    background-image: url(images/matterframe_r1_c1.gif);
+}
+td.StageTopCenter
+{
+    width:auto;
+    height:5px;
+    background-image: url(images/matterframe_r1_c2.gif);
+}
+td.StageTopRight
+{
+    width:3px;
+    height:5px;
+    background-image: url(images/matterframe_r1_c3.gif);
+}
+td.StageCenterLeft
+{
+    width:3px;
+    background-image: url(images/matterframe_r2_c1.gif);
+}
+td.StageCenterCenter
+{
+    padding:10px;
+}
+td.StageCenterRight
+{
+    width:3px;
+    background-image: url(images/matterframe_r2_c3.gif);
+}
+td.StageBottomLeft
+{
+    width:3px;
+    height:5px;
+    background-image: url(images/matterframe_r3_c1.gif);
+}
+td.StageBottomCenter
+{
+    height:5px;
+    background-image: url(images/matterframe_r3_c2.gif);
+}
+td.StageBottomRight
+{
+    width:3px;
+    height:5px;
+    background-image: url(images/matterframe_r3_c3.gif);
+}
+
+div.Copyrights
+{
+    text-align: center;
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+div.SiteMapPath
+{
+    height:30px;
+}
+div.Explain
+{
+    margin-top: 10px;
+}
+#MessagesLayer
+{
+    position:absolute;
+    font-size: 12px;
+    padding: 10px;
+    z-index: 250;
+    width: 120px;
+    height:60px;
+    top:40%;
+    left:45%;
+    visibility: visible;
+    background: #ffffff;
+    border: 5px solid #f0f0f0;
+    text-align: center;
+}
+#ErrorMessages
+{
+    position:absolute;
+    font-size: 12px;
+    padding: 10px;
+    z-index: 250;
+    width: 320px;
+    height:100px;
+    top:35%;
+    left:32%;
+    visibility: visible;
+    background: #ffffff;
+    border: 5px solid #f0f0f0;
+    text-align: center;
+}
+.CursorPointer
+{
+    cursor:pointer;
+}
+.UseState
+{
+    text-decoration: line-through;
+}
+
+.ImageBtn
+{
+    display:inline;padding:0 10px;
+}
+.ImageBtnIcon
+{
+    cursor:pointer;
+    vertical-align:middle;   
+}
+.ImageBtnLabel
+{
+    cursor:pointer;   
+}
+
+.RightHeader
+{
+ height:26px; text-align:right; background:url(/App_Themes/default/Images/WebResource.gif)  #495a70 repeat-x 0px -2099px;   
+}
+
+.RightHeader .ImageBtnLabel
+{
+    color:White;   
+}
+.RightFooter
+{
+ height:26px; text-align:right; background:url(/App_Themes/default/Images/WebResource.gif)  #495a70 repeat-x 0px -2099px;   
+}
+
+.RightFooter .ImageBtnLabel
+{
+    color:White;   
+}
+.RightMiddle
+{
+    height:508px;
+    overflow:auto;
+}
+.LeftFrame
+{
+    width:380px; float:left;    
+}
+.RightFrame
+{
+    padding-left:380px;
+}

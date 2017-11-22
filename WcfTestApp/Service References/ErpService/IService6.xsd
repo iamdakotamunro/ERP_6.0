@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ShopExchangedApplyInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ApplyID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ApplyNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ApplyTime_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ExchangedState_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_IsBarter_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_MsgContent_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_MsgID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ShopID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ShopName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SubPrice_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_SubQuantity_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShopExchangedApplyInfo" nillable="true" type="tns:ShopExchangedApplyInfo" />
+  <xs:complexType name="ArrayOfShopApplyDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShopApplyDetailInfo" nillable="true" type="tns:ShopApplyDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShopApplyDetailInfo" nillable="true" type="tns:ArrayOfShopApplyDetailInfo" />
+  <xs:complexType name="ShopApplyDetailInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ApplyID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_BatchNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EffectiveDate_x003E_k__BackingField" nillable="true" type="xs:dateTime" />
+      <xs:element name="_x003C_GoodsCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_GoodsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Price_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_Quantity_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_RealGoodsID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Specification_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Units_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShopApplyDetailInfo" nillable="true" type="tns:ShopApplyDetailInfo" />
+  <xs:complexType name="ArrayOfShopExchangedApplyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShopExchangedApplyInfo" nillable="true" type="tns:ShopExchangedApplyInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShopExchangedApplyInfo" nillable="true" type="tns:ArrayOfShopExchangedApplyInfo" />
+  <xs:complexType name="ArrayOfShopExchangedApplyDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShopExchangedApplyDetailInfo" nillable="true" type="tns:ShopExchangedApplyDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShopExchangedApplyDetailInfo" nillable="true" type="tns:ArrayOfShopExchangedApplyDetailInfo" />
+  <xs:complexType name="ShopExchangedApplyDetailInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ShopApplyDetailInfo">
+        <xs:sequence>
+          <xs:element name="_x003C_BarterGoodsCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_BarterGoodsID_x003E_k__BackingField" type="ser:guid" />
+          <xs:element name="_x003C_BarterGoodsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_BarterRealGoodsID_x003E_k__BackingField" type="ser:guid" />
+          <xs:element name="_x003C_BarterSpecification_x003E_k__BackingField" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShopExchangedApplyDetailInfo" nillable="true" type="tns:ShopExchangedApplyDetailInfo" />
+  <xs:complexType name="ArrayOfShopBankAccountsInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShopBankAccountsInfo" nillable="true" type="tns:ShopBankAccountsInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShopBankAccountsInfo" nillable="true" type="tns:ArrayOfShopBankAccountsInfo" />
+  <xs:complexType name="ShopBankAccountsInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_BankAccountsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_BankName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_NonceBalance_x003E_k__BackingField" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShopBankAccountsInfo" nillable="true" type="tns:ShopBankAccountsInfo" />
+  <xs:complexType name="ArrayOfOrderScoreInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderScoreInfo" nillable="true" type="tns:OrderScoreInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderScoreInfo" nillable="true" type="tns:ArrayOfOrderScoreInfo" />
+  <xs:complexType name="OrderScoreInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_OrderNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OrderScore_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_OrderTime_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_TotalPrice_x003E_k__BackingField" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderScoreInfo" nillable="true" type="tns:OrderScoreInfo" />
+  <xs:complexType name="ShopRefundMessageInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ApplyContent_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ApplyState_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_CreateTime_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_MsgID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ShopID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ShopName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShopRefundMessageInfo" nillable="true" type="tns:ShopRefundMessageInfo" />
+</xs:schema>

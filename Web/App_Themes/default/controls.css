@@ -1,0 +1,163 @@
+﻿div.StagePanel
+{
+    background: #f7f7f7;
+    border: solid 1px #e5e5e5;
+    border-right: solid 2px #e5e5e5;
+    border-top: 0px;
+    font: 12px 宋体, 新宋体, 仿宋_GB2312;
+    cursor: default;
+   
+}
+.StagePanelHead
+{
+    background-color: #e5e5e5;
+	width: 100%;
+	border-collapse: collapse;
+	border: solid 1px #c6c6c6;
+	border-bottom: 1px solid #aeaeae;
+}
+td.WinTitle
+{
+    padding-top:3px;
+    height:30;
+    text-align:center;
+}
+Span.WinTitle
+{
+    font-weight: bold;
+    font-size: 13px;
+}
+td.ControlTools
+{
+    height:26px;
+    padding-left:1px;
+    padding-right:1px;
+    text-align: right;
+}
+.ShowRemind
+{
+    color:Red;
+}
+.ShowReturned
+{
+    height: 30px;
+    line-height: 16px;
+    padding-bottom:10px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.ShowInfo
+{
+    height: 24px;
+    line-height: 16px;
+    padding-left:5px;
+    padding-right:5px;
+}
+table.StagePanel
+{
+    width: 100%;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border:1px;
+}
+table.PanelArea
+{
+    width: 100%;
+    padding: 1px;
+    margin-bottom:8px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background-color: #f7f7f7;
+    border: solid 1px #cccccc;
+    background: #fff url(./images/moduleBg.gif) repeat-x;
+}
+
+td.AreaRowTitle
+{
+    width: 15%;
+    height: 24px;
+    text-align: right;
+}
+td.AreaRowInfo
+{
+    width:35%;
+    height:24px;
+    padding-left:2px;
+}
+td.AreaQuaRowTitle
+{
+    width: 13%;
+    height: 24px;
+    text-align: right;
+}
+td.AreaQuaRowInfo
+{
+    width:12%;
+    height:24px;
+    padding-left:2px;
+}
+td.AreaEditFromTitle
+{
+    width: 160px;
+    height: 24px;
+    text-align: right;
+}
+
+td.AreaEditFromRowInfo
+{
+    height:24px;
+    padding-left:2px;
+}
+
+td.PromptFromRowTitle
+{
+    width: 100px;
+    height: 24px;
+    text-align: right;
+}
+td.ShortFromRowTitle
+{
+    width: 80px;
+    height: 24px;
+    text-align: right;
+}
+td.Footer
+{
+    height:26px;
+    padding-left:5px;
+    padding-right:5px;
+}
+span.Explain  
+{ 
+   color: gray; 
+}
+.ShortArea
+{
+    width:80px;
+}
+.StandardArea
+{
+    width:100px;
+}
+.BigFont
+{
+	font-size:24px;
+	height:40px !important;
+}
+.MiddleFont {
+    font-size:18px;
+	height:40px !important;
+}
+
+.BigFont td
+{
+	font-size:24px;
+	height:40px !important;
+}
+
+.MiddleFont td
+{
+	font-size:18px;
+	height:40px !important;
+}

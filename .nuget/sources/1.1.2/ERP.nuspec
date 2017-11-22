@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>1.1.2</version>
+        <authors>ERP</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>增加方法：根据销售公司获取其所有商品的销量(2017-05-08)</description>
+    </metadata>
+</package>

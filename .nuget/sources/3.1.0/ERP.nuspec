@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>3.1.0</version>
+        <title>海淘版</title>
+        <authors>kede</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+2017/10/28 海淘版本（含双十一读写分离），对应业务nuget版本1.4.1-beta3
+1）海淘版本
+2）小版本优化
+        </description>
+        <tags>海淘版本 小版本优化</tags>
+        <dependencies>
+            <dependency id="Framework" version="2.0.9.4" />
+        </dependencies>
+    </metadata>
+</package>

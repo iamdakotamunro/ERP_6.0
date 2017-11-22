@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" />
+  <xs:complexType name="PageItemsOfShopExchangedApplyInfof_PUt8IV5">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PageItemsOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ShopExchangedApplyInfo" Namespace="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" name="_x003C_Items_x003E_k__BackingField" nillable="true" type="q1:ArrayOfShopExchangedApplyInfo" />
+      <xs:element name="_x003C_PageCount_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PageIndex_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PageSize_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_RecordCount_x003E_k__BackingField" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PageItemsOfShopExchangedApplyInfof_PUt8IV5" nillable="true" type="tns:PageItemsOfShopExchangedApplyInfof_PUt8IV5" />
+  <xs:complexType name="PageItemsOfOrderScoreInfof_PUt8IV5">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PageItemsOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OrderScoreInfo" Namespace="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ERP.Model.ShopFront" name="_x003C_Items_x003E_k__BackingField" nillable="true" type="q2:ArrayOfOrderScoreInfo" />
+      <xs:element name="_x003C_PageCount_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PageIndex_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PageSize_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_RecordCount_x003E_k__BackingField" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PageItemsOfOrderScoreInfof_PUt8IV5" nillable="true" type="tns:PageItemsOfOrderScoreInfof_PUt8IV5" />
+  <xs:complexType name="PageItemsOfShopActivityNoticeInfo3WWLtIrK">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PageItemsOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Keede.DAL.Helper" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ShopActivityNoticeInfo" Namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" name="_x003C_Items_x003E_k__BackingField" nillable="true" type="q3:ArrayOfShopActivityNoticeInfo" />
+      <xs:element name="_x003C_PageCount_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PageIndex_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PageSize_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_RecordCount_x003E_k__BackingField" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PageItemsOfShopActivityNoticeInfo3WWLtIrK" nillable="true" type="tns:PageItemsOfShopActivityNoticeInfo3WWLtIrK" />
+</xs:schema>

@@ -1,0 +1,23 @@
+﻿      <KPJL>
+        <FPDM>{FPDM}</FPDM>
+        <FPHM>{FPHM}</FPHM>
+        <KPLX>{KPLX}</KPLX>
+        <KPRQ>{KPRQ}</KPRQ>
+        <HYFLDM>{HYFLDM}</HYFLDM>
+        <JE>{JE}</JE>
+        <SKRMC>上海百秀医药科技有限公司</SKRMC>
+        <SKRSH>310227596494506</SKRSH>
+        <FKRMC>{FKRMC}</FKRMC>
+        <FKRSH>{FKRSH}</FKRSH>
+        <GHFQYLX>{GHFQYLX}</GHFQYLX>
+        <KPFDZJDH>上海市松江区文翔东路218号2号楼2楼 021-57726998</KPFDZJDH>
+        <KPFYHJZH>上海农村商业银行中山支行 32732628010769912</KPFYHJZH>
+        <SPFDZJDH>{SPFDZJDH}</SPFDZJDH>
+        <SPFYHJZH>{SPFYHJZH}</SPFYHJZH>
+        <KPRXM>朱美萍</KPRXM>
+        <FHRXM>朱美萍</FHRXM>
+        {YFPDM_TPLX_Content}
+        <FPMX  RowNum="{FPMX_RowNum}"  HJJE="{HJJE}">
+          {FPMX_Row}
+        </FPMX>
+      </KPJL>

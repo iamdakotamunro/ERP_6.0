@@ -1,0 +1,4593 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Enum</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Enum.AccountType">
+            <summary>
+            银行账号类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AccountType.NoSet">
+            <summary>
+            未设置
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AccountType.PayPlatform">
+            <summary>
+            支付平台
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AccountType.BankPay">
+            <summary>
+            银行支付
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AccountType.CreditCardPay">
+            <summary>
+            信用卡支付
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ActivityFilingState">
+            <summary>
+            活动报备状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ActivityFilingState.OperateFiling">
+            <summary>
+            运营申报
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ActivityFilingState.PurchaseFiling">
+            <summary>
+            采购申报
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ActivityFilingState.FilingPass">
+            <summary>
+            申报通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ActivityFilingState.FilingFail">
+            <summary>
+            申报失败
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ActivityFilingState.FilingDelete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.AloneFont">
+            <summary>
+            独立前台枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AloneFont.Keede">
+            <summary>
+            可得前台
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AloneFont.Eyesee">
+            <summary>
+            艾视前台
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AloneFont.BaiShop">
+            <summary>
+            百秀前台
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ASYN.ASYNReckoningFromType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ASYN.ASYNReckoningFromType.CompleteOrder">
+            <summary>
+            完成订单
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.AuditingState">
+            <summary>
+            单据审核状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AuditingState.No">
+            <summary>
+            未审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AuditingState.Yes">
+            <summary>
+            已审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.AuditingState.Hide">
+            <summary>
+            隐藏
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.BuyType">
+            <summary>
+            购买类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.Normal">
+            <summary>
+            普通购买
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.Group">
+            <summary>
+            组合购买
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.CompFrame">
+            <summary>
+            配镜购买
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.Frame">
+            <summary>
+            框架购买
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.Give">
+            <summary>
+            赠换购买
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.Score">
+            <summary>
+            积分购买
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.ThirdPlatformPromotionGift">
+            <summary>第三方平台促销赠品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.BuyType.ErpGift">
+            <summary>
+            配件
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CancelPosition">
+            <summary>
+            作废位置枚举-dyy at 2010 Jan 7th
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.GoodsOrder">
+            <summary>
+            订单受理
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.GoodsOrderSee">
+            <summary>
+            订单查询
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.AffirmPayment">
+            <summary>
+            待付款确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.LetterOfAdvice">
+            <summary>
+            打印订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.MatchingExpress">
+            <summary>
+            匹配快递单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.Redeploy">
+            <summary>
+            需调拨订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.Accomplish">
+            <summary>
+            完成订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CancelPosition.OrderPick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ChargingType">
+            <summary>
+            快递计费方式
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ChargingType.Default">
+            <summary>
+            默认，续重(1Kg)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ChargingType.Transfer">
+            <summary>
+            中转
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ChargingType.AddWeight">
+            <summary>
+            续重(0.5Kg)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ChargingType.AddWeight3kg">
+            <summary>续重(3Kg)
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CheckDataState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Loaded">
+            <summary>
+            上传完毕
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Entered">
+            <summary>
+            已录入
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Contrasted">
+            <summary>
+            已对比
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Confirmed">
+            <summary>
+            已确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Inhanding">
+            <summary>
+            处理中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.UpdateInsert">
+            <summary>
+            更新插入
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Transfer">
+            <summary>
+            批量转移
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Finished">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Checked">
+            <summary>
+            已对账
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckDataState.Deleted">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CheckState">
+            <summary>
+            售后退回检查状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckState.ALL">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckState.Checking">
+            <summary>
+            待检查
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckState.Pass">
+            <summary>
+            检查通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckState.Refuse">
+            <summary>
+            退回
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckState.Cancellation">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CheckStockState">
+            <summary>
+            创建人：刘彩军
+            创建时间：2011-June-28th
+            文件描述：库存盘点计划状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckStockState.WaitAuditing">
+            <summary>
+             0 待批准
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckStockState.WaitFirstCount">
+            <summary>
+            1 待初盘
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckStockState.WaitSecondCount">
+            <summary>
+            2 待复盘
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckStockState.WaitSecondCheck">
+            <summary>
+            3 待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckStockState.WaitToCorrect">
+            <summary>
+            4 待纠正
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckStockState.Finish">
+            <summary>
+            5 完成
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CheckType">
+            <summary>
+            Func：对账类型
+            Code：dyy
+            Date：2009-7-17
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckType.NotCheck">
+            <summary>
+             0  未对账
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckType.AllCheck">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckType.IsChecked">
+            <summary>
+            1 已经对账
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CheckType.QueChecked">
+            <summary>
+            2 异常对账
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompanyFundReceiptInvoiceState">
+            <summary>
+            往来单位单据 发票状态 zal 2016-02-17
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceState.UnSubmit">
+            <summary>
+            未提交
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceState.Submit">
+            <summary>
+            已提交
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceState.Receive">
+            <summary>
+            已接收
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceState.Authenticate">
+            <summary>
+            待认证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceState.Verification">
+            <summary>
+            认证完成
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompleteOrderTaskState">
+            <summary>
+            完成订单任务执行状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompleteOrderTaskState.Wait">
+            <summary>
+            待处理
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompleteOrderTaskState.Processing">
+            <summary>
+            处理中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompleteOrderTaskState.Processed">
+            <summary>
+            已处理
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportBillState">
+            <summary>
+            费用申报票据状态 zal 2016-08-04
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportBillState.UnSubmit">
+            <summary>
+            未提交
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportBillState.Submit">
+            <summary>
+            未接收
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportBillState.Receive">
+            <summary>
+            未认证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportBillState.Finish">
+            <summary>
+            未完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportBillState.Verification">
+            <summary>
+            票据完成
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostsVarieties">
+            <summary>
+            费用种类(0:广告费;1:购买物品;2:纯费用;)
+            zal 2015-11-04
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostsVarieties.AdvertisingFee">
+            <summary>
+            广告费
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostsVarieties.BuyArticle">
+            <summary>
+            购买物品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostsVarieties.PureCost">
+            <summary>
+            纯费用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentRedState.WaitAudit">
+            <summary>待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentRedState.Refuse">
+            <summary>核退
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentRedState.WaitRed">
+            <summary>待红冲
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentRedState.Finished">
+            <summary>完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentRedState.Red">
+            <summary>红冲状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentType.NewInDocument">
+            <summary>
+            新入库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentType.NewOutDocument">
+            <summary>
+            新出库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DocumentType.RedDocument">
+            <summary>
+            红冲单
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.EntityPurchaseType">
+            <summary>
+            门店公司采购类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EntityPurchaseType.Direct">
+            <summary>
+            直营
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EntityPurchaseType.Join">
+            <summary>
+            加盟
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EntityPurchaseType.Alliance">
+            <summary>
+            联盟
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.ProductionUnit">
+            <summary>
+            生产厂家(必须)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.ProductionPermitNo">
+            <summary>
+            生产许可证号(必须)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.MedicalDeviceRegistrationNumber">
+            <summary>
+            注册证号/批准文号(必须)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.MedicalDeviceRegistrationForm">
+            <summary>
+            医疗器械注册登记表(必须)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.InspectionReport">
+            <summary>
+            检验报告(必须)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.ProductStandard">
+            <summary>
+            产品标准
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsQualificationType.ImportCustomsDeclaration">
+            <summary>
+            进口报关单（进口医疗器械）
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.GoodsAuditState">
+            <summary>
+            商品状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsAuditState.NoPass">
+            <summary>
+            审核未通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsAuditState.PurchasingWaitAudit">
+            <summary>
+            采购经理审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsAuditState.QualityWaitAudit">
+            <summary>
+            质管部审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsAuditState.CaptainWaitAudit">
+            <summary>
+            负责人终审
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsAuditState.Pass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MedicineDosageFormType">
+            <summary>
+            剂型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.HealthyFood">
+            <summary>
+            保健食品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.NasalSpray">
+            <summary>
+            鼻喷剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Liniment">
+            <summary>
+            擦剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Ginseng">
+            <summary>
+            参茸
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Tea">
+            <summary>
+            茶剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineLiniment">
+            <summary>
+            搽剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.NasalDrops">
+            <summary>
+            滴鼻剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.EarDrops">
+            <summary>
+            滴耳剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Drops">
+            <summary>
+            滴剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.EyeDrops">
+            <summary>
+            滴眼剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Tincture">
+            <summary>
+            酊剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Pastille">
+            <summary>
+            锭剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.FreezeDriedPowder">
+            <summary>
+            冻干粉针剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Powder">
+            <summary>
+            粉剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.NeedlePowder">
+            <summary>
+            粉针剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Ointment">
+            <summary>
+            膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Mixture">
+            <summary>
+            合剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Cataplasm">
+            <summary>
+            糊剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Suspensions">
+            <summary>
+            混悬剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Glue">
+            <summary>
+            胶剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Capsule">
+            <summary>
+            胶囊
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineCapsule">
+            <summary>
+            胶囊剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.LiquorAgents">
+            <summary>
+            酒剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.ChewableTablets">
+            <summary>
+            咀嚼片
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Granules">
+            <summary>
+            颗粒剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.OralPowder">
+            <summary>
+            口服粉剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Oral">
+            <summary>
+            口服液
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Agent">
+            <summary>
+            膜剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.DrugLiniment">
+            <summary>
+            抹剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.OralAgent">
+            <summary>
+            内服水剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Gels">
+            <summary>
+            凝胶剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Sprays">
+            <summary>
+            喷物剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineSprays">
+            <summary>
+            喷雾剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Tablet">
+            <summary>
+            片剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Aerosol">
+            <summary>
+            气雾剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Solutions">
+            <summary>
+            溶液剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Creams">
+            <summary>
+            乳膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineCream">
+            <summary>
+            乳剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Ointments">
+            <summary>
+            软膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.SoftCapsule">
+            <summary>
+            软胶囊
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicinePowder">
+            <summary>
+            散剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Assortment">
+            <summary>
+            商品组合
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.WetAgent">
+            <summary>
+            湿敷剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Mouthwash">
+            <summary>
+            漱口水
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Suppository">
+            <summary>
+            栓剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineAgent">
+            <summary>
+            水剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Shuiwan">
+            <summary>
+            水丸
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Syrups">
+            <summary>
+            糖浆剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Patch">
+            <summary>
+            贴剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.TransdermalPlasters">
+            <summary>
+            透皮膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineTransdermalPlasters">
+            <summary>
+            透皮膏贴
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.TransdermalPlastersOintment">
+            <summary>
+            透皮贴膏
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.MedicineTransdermalPatchesOintment">
+            <summary>
+            透皮贴膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Balm">
+            <summary>
+            涂膜剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.TopicalSolution">
+            <summary>
+            外用水剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Pill">
+            <summary>
+            丸剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Inhalants">
+            <summary>
+            吸入剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Lotion">
+            <summary>
+            洗剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.AdhesivePlasters">
+            <summary>
+            橡胶膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.EyeOintment">
+            <summary>
+            眼膏剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.OphthalmicDrugs">
+            <summary>
+            眼科用药
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Pieces">
+            <summary>
+            饮片
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.OriginalGoods">
+            <summary>
+            原货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.OriginalDrug">
+            <summary>
+            原药
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Implant">
+            <summary>
+            植入剂
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineDosageFormType.Injection">
+            <summary>
+            注射剂
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MedicineQualityType">
+            <summary>
+            质检分类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Quality">
+            <summary>
+            药品质量检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Ingredient">
+            <summary>
+            药品成分检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.HeavyMetal">
+            <summary>
+            药品重金属检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.AdverseReactions">
+            <summary>
+            药品不良反应检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Tightness">
+            <summary>
+            药品密封性检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Biopharmaceuticals">
+            <summary>
+            生物药品检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Appearance">
+            <summary>
+            药品外观检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Conventional">
+            <summary>
+            药品常规检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.PhysicsAndChemistry">
+            <summary>
+            药品理化检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Safety">
+            <summary>
+            药品安全检测
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineQualityType.Defect">
+            <summary>
+            药品缺陷检测
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MedicineSaleKindType">
+            <summary>
+            销售品种
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.SingleRegulation">
+            <summary>
+            单规制
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.TrackSystem">
+            <summary>
+            双规制
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.GroupA">
+            <summary>
+            甲类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.GroupB">
+            <summary>
+            乙类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.OneType">
+            <summary>
+            一类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.TwoType">
+            <summary>
+            二类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.ThreeType">
+            <summary>
+            三类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.Food">
+            <summary>
+            食品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.HealthyFood">
+            <summary>
+            保健食品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.RecipePieces">
+            <summary>
+            配方饮片
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.RefinedPieces">
+            <summary>
+            精制饮片
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.Ginseng">
+            <summary>
+            参茸
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.MadeCountry">
+            <summary>
+            国产
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineSaleKindType.Import">
+            <summary>
+            进口
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MedicineStorageConditionType">
+            <summary>
+            储存条件
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.十到三十摄氏度">
+            <summary>
+            10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温三十摄氏度以下">
+            <summary>
+            常温,30℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温密闭遮光十到三十摄氏度">
+            <summary>
+            常温,密闭,遮光,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光常温密封十到三十摄氏度">
+            <summary>
+            避光,常温,密封,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.在阴凉不超过二十摄氏度干燥处保存防蛀">
+            <summary>
+            在阴凉（不超过20℃）干燥处保存,防蛀
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封避光密封干燥处保存">
+            <summary>
+            密封,避光,密封，干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光常温密闭十到三十摄氏度">
+            <summary>
+            避光,常温,密闭,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.遮光密封保存">
+            <summary>
+            遮光,密封保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭在阴凉不超过二十摄氏度干燥处保存防蛀">
+            <summary>
+            密闭,在阴凉（不超过20℃）干燥处保存,防蛀
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光密闭在凉暗干燥处保存">
+            <summary>
+            避光,密闭，在凉暗干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.阴凉在阴凉处保存不超过二十摄氏度">
+            <summary>
+            阴凉,在阴凉处保存（不超过20℃）
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥密封1十五摄氏度到二十五摄氏度">
+            <summary>
+            干燥,密封,15℃～25℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭遮光">
+            <summary>
+            密闭,遮光
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭凉暗处避光并不超过二十摄氏度保存">
+            <summary>
+            密闭,凉暗处（避光并不超过20℃)保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光密闭防潮十到三十摄氏度">
+            <summary>
+            避光,密闭,防潮,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.特殊温度十五摄氏度到三十摄氏度">
+            <summary>
+            特殊温度15℃-30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温密封三十摄氏度以下">
+            <summary>
+            常温,密封,30℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.在阴凉处保存不超过二十摄氏度通风干燥">
+            <summary>
+            在阴凉处保存（不超过20℃）,通风、干燥
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.通风干燥">
+            <summary>
+            通风、干燥
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.阴凉时到三十摄氏度">
+            <summary>
+            阴凉,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封">
+            <summary>
+            密封
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.二摄氏度到八摄氏度保存">
+            <summary>
+            2℃-8℃保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.凉暗不超过二十摄氏度">
+            <summary>
+            凉暗,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.二十五摄氏度以下">
+            <summary>
+            25℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封干燥">
+            <summary>
+            密封,干燥
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.十五摄氏度到二十五摄氏度">
+            <summary>
+            15℃～25℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.二到十摄氏度">
+            <summary>
+            2～10℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温十摄氏度到三十摄氏度">
+            <summary>
+            常温(10℃-30℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光常温十摄氏度到三十摄氏度">
+            <summary>
+            避光,常温(10℃-30℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭遮光在阴凉处保存不超过二十摄氏度">
+            <summary>
+            密闭,遮光,在阴凉处保存（不超过20℃）
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.阴凉密封不超过二十摄氏度">
+            <summary>
+            阴凉,密封,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭遮光在三十摄氏度以下保存">
+            <summary>
+            密闭,遮光,在30℃以下保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温在三十摄氏度以下保存">
+            <summary>
+            常温,在30℃以下保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封三十摄氏度以下">
+            <summary>
+            密封,30℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭在阴凉不超过二十摄氏度干燥处保存">
+            <summary>
+            密闭,在阴凉（不超过20℃）干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温">
+            <summary>
+            常温
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温十到三十摄氏度">
+            <summary>
+            常温,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光阴凉不超过二十摄氏度">
+            <summary>
+            避光,阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭阴凉不超过二十摄氏度">
+            <summary>
+            密闭,阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥二十五摄氏度以下">
+            <summary>
+            干燥,25℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥避光阴凉密封不超过二十摄氏度">
+            <summary>
+            干燥,避光,阴凉,密封,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥">
+            <summary>
+            干燥
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥密闭阴凉遮光不超过二十摄氏度">
+            <summary>
+            干燥,密闭,阴凉,遮光,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭">
+            <summary>
+            密闭
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥避光密闭三十摄氏度以下">
+            <summary>
+            干燥,避光,密闭,30℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭常温">
+            <summary>
+            密闭,常温
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥密闭阴凉不超过二十摄氏度">
+            <summary>
+            干燥,密闭,阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭密封干燥处保存">
+            <summary>
+            密闭,密封，干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥阴凉密封不超过二十摄氏度">
+            <summary>
+            干燥,阴凉,密封,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.阴凉">
+            <summary>
+            阴凉
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温遮光密封防潮十到三十摄氏度">
+            <summary>
+            常温,遮光,密封,防潮,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光密闭阴凉不超过二十摄氏度">
+            <summary>
+            避光,密闭,阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封常温十摄氏度到三十摄氏度">
+            <summary>
+            密封,常温(10℃-30℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温遮光密封十到三十摄氏度">
+            <summary>
+            常温,遮光,密封,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥常温密封十到三十摄氏度">
+            <summary>
+            干燥,常温,密封,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.不超过二十摄氏度">
+            <summary>
+            (不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭阴凉遮光不超过二十摄氏度">
+            <summary>
+            密闭,阴凉,遮光,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥阴凉不超过二十摄氏度">
+            <summary>
+            干燥,阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭在凉暗处保存不超过二十摄氏度">
+            <summary>
+            密闭，在凉暗处保存(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光二到八摄氏度">
+            <summary>
+            避光,2～8℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温不超过二十摄氏度">
+            <summary>
+            常温,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温密闭三十摄氏度以下">
+            <summary>
+            常温,密闭,30℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光是到二十五摄氏度">
+            <summary>
+            避光,10-25℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.阴凉不超过二十摄氏度">
+            <summary>
+            阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭遮光在阴凉不超过二十摄氏度干燥处保存">
+            <summary>
+            密闭,遮光,在阴凉（不超过20℃）干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封遮光在阴凉不超过二十摄氏度干燥处保存">
+            <summary>
+            密封,遮光,在阴凉（不超过20℃）干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.阴凉二十五摄氏度以下">
+            <summary>
+            阴凉,25℃以下
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温密闭十到三十摄氏度">
+            <summary>
+            常温,密闭,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封避光">
+            <summary>
+            密封,避光
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密闭常温十摄氏度到三十摄氏度">
+            <summary>
+            密闭,常温(10℃-30℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥避光阴凉不超过二十摄氏度">
+            <summary>
+            干燥,避光,阴凉,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封保存">
+            <summary>
+            密封保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.冷冻">
+            <summary>
+            冷冻
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥常温遮光密封十到三十摄氏度">
+            <summary>
+            干燥,常温,遮光,密封,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.凉暗密封不超过二十摄氏度">
+            <summary>
+            凉暗,密封,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.常温密封十到三十摄氏度">
+            <summary>
+            常温,密封,10～30℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封在阴凉处保存不超过二十摄氏度">
+            <summary>
+            密封,在阴凉处保存（不超过20℃）
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.避光阴凉密封不超过二十摄氏度">
+            <summary>
+            避光,阴凉,密封,(不超过20℃)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.密封在阴凉不超过二十摄氏度干燥处保存">
+            <summary>
+            密封,在阴凉（不超过20℃）干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.在阴凉处保存不超过二十摄氏度">
+            <summary>
+            在阴凉处保存（不超过20℃）
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.二到八摄氏度">
+            <summary>
+            2～8℃
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.在阴凉不超过二十摄氏度干燥处保存">
+            <summary>
+            在阴凉（不超过20℃）干燥处保存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥防潮通风">
+            <summary>
+            干燥,防潮,通风
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStorageConditionType.干燥常温密闭阴凉十到三十摄氏度">
+            <summary>
+            干燥,常温,密闭,阴凉,10～30℃
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MedicineStorageModeType">
+            <summary>
+            储存方式
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MedicineStoreCounterType">
+            <summary>
+            门店柜台
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.AntimicrobialClass">
+            <summary>
+            001-抗微生物类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.CardiovascularCategory">
+            <summary>
+            002-心脑血管类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.DigestiveSystem">
+            <summary>
+            003-消化系统类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.RespiratorySystemClass">
+            <summary>
+            004-呼吸系统类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.NervousSystem">
+            <summary>
+            005-神经系统类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.UrinarySystemClass">
+            <summary>
+            006-泌尿系统类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.HormonesAndEndocrine">
+            <summary>
+            007-激素及内分泌类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.ImmuneSystemClass">
+            <summary>
+            008-免疫系统类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.Gynecological">
+            <summary>
+            009-妇科类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.EntClass">
+            <summary>
+            010-五官科类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.AntipyreticAnalgesics">
+            <summary>
+            011-解热镇痛类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.Qingrejiedu">
+            <summary>
+            012-清热解毒类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.VitaminsTraceElementsMinerals">
+            <summary>
+            013-维生素、微量元素与矿物质
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.Tonic">
+            <summary>
+            014-补益类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.OrthopedicsCategory">
+            <summary>
+            015-伤骨科类
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.ExternalUse">
+            <summary>
+            016-外用药
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.Allergy">
+            <summary>
+            017-综合类-1-抗过敏药物
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MedicineStoreCounterType.CompoundPreparationsContainingEphedrine">
+            <summary>
+            018-含麻黄碱类复方制剂类
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MemberBalanceChangeStateEnum">
+            <summary>会员余额管理操作状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeStateEnum.WaitAuditing">
+            <summary>待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeStateEnum.WaitAffirm">
+            <summary>待确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeStateEnum.NoPass">
+            <summary>不通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeStateEnum.Complete">
+            <summary>完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeStateEnum.Cancel">
+            <summary>取消
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MemberBalanceChangeTypeEnum">
+            <summary>会员余额管理操作类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeTypeEnum.BalanceSubtract">
+            <summary>余额扣除
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeTypeEnum.BalancePresent">
+            <summary>余额赠送
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberBalanceChangeTypeEnum.BalanceRecharge">
+            <summary>余额充值
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MemoType">
+            <summary>
+            往来帐说明类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemoType.NoSet">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemoType.Discount">
+            <summary>
+            折扣说明
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemoType.Subject">
+            <summary>
+            差额说明
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MatchType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MatchType.TextMatch">
+            <summary>
+            文字匹配
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MatchType.NumberMatch">
+            <summary>
+            数值匹配
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MatchType.UnMatch">
+            <summary>
+            不匹配
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MatchType.PriceMatch">
+            <summary>
+            价格匹配
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MatchType.SizeMatch">
+            <summary>
+            尺寸匹配
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MatchType.TypeMatch">
+            <summary>
+            类型匹配
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.OldCustomerType">
+            <summary>
+            新老会员类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OldCustomerType.NewCustomer">
+            <summary>
+            新用户,生成地址记录
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OldCustomerType.OldCustomer">
+            <summary>
+            老用户,没有任何修改
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OldCustomerType.NonRegCustomer">
+            <summary> 非注册购买用户
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReckoningLinkTradeType">
+            <summary>▄︻┻┳═一 产生往来帐单据对应枚举  ADD  陈重文  2014-12-25
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.StockIn">
+            <summary>入库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.StockOut">
+            <summary>出库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.GoodsOrder">
+            <summary> 订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.Express">
+            <summary> 快递
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.CompanyFundReceipt">
+            <summary> 往来单位收付款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.Other">
+            <summary> 其他
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.PurchasingNo">
+            <summary> 采购单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningLinkTradeType.Recharge">
+            <summary> 门店充值
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.RedType.ModifyPriceInRed">
+            <summary>
+            调价入库红冲
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.RedType.ModifyPriceOutRed">
+            <summary>
+            调价出库红冲
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SaleStockState">
+            <summary>
+            卖库存状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockState.NoSet">
+            <summary>
+            未设置
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockState.Apply">
+            <summary>
+            申请中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockState.Approve">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockState.ApplyNotPass">
+            <summary>
+            申请不通过
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CodeType">
+            <summary>
+            财务单编码类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.RT">
+            <summary>
+            网上购买，订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.RF">
+            <summary>
+            会员帐号冲值
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.AV">
+            <summary>
+            会员帐号退款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.AJ">
+            <summary>
+            往来单位，会员帐号调账，增减费用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.GI">
+            <summary>
+            资金账户增加资金
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.RD">
+            <summary>
+            资金账户减少资金
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.VI">
+            <summary>
+            资金账户转帐
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.PY">
+            <summary>
+            单位往来账付款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.GT">
+            <summary>
+            单位往来账收款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.RK">
+            <summary>
+            购买入库支出
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.SL">
+            <summary>
+            销售出库
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.LR">
+            <summary>
+            --暂未用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.SO">
+            <summary>
+            进货退货单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.SI">
+            <summary>
+            销售退货单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.BS">
+            <summary>
+            商品盘赢单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.LS">
+            <summary>
+            商品盘亏单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.TSI">
+            <summary>
+            调拨入库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.TSO">
+            <summary>
+            调拨出库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.RE">
+            <summary>
+            费用申报单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.PH">
+            <summary>
+            采购单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.IV">
+            <summary>
+            盘点计划单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.MM">
+            <summary>
+            会员提现单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.SR">
+            <summary>
+            积分流水编号
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.TH">
+            <summary>
+            退货单号
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.TR">
+            <summary>
+            调拨拒收入库单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.DB">
+            <summary>
+            余额原路退回（订单作废）,艾视SDB
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.LP">
+            <summary>
+            加工单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.MS">
+            <summary>
+            商品组合拆分
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.BI">
+            <summary>
+            借入单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.BO">
+            <summary>
+            借入返还单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.LO">
+            <summary>
+            借出单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.LI">
+            <summary>
+            借出返还单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.JT">
+            <summary>
+            镜拓天猫订单号
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.CI">
+            <summary>入库红冲
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.CO">
+            <summary>出库红冲
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.HD">
+            <summary>汉代天猫店订单号
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CodeType.HH">
+            <summary>
+            换货单号
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompanyFundReceiptInvoiceType">
+            <summary>
+            往来单位收付款发票类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceType.OpenInvoice">
+            <summary>
+            开具发票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptInvoiceType.CollectInvoice">
+            <summary>
+            索取发票
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompanyFundReceiptPowerBindType">
+            <summary>
+            往来单位收付款权限绑定方式枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptPowerBindType.DirectBind">
+            <summary>
+            直接绑定
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptPowerBindType.ExpandBind">
+            <summary>
+            扩展绑定
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompanyFundReceiptState">
+            <summary>
+            往来单位收付款状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.NoHandle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.Handle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.NoAuditing">
+            <summary>
+            未通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.NoAuditingPass">
+            <summary>
+            审核未通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.WaitAuditing">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.WaitInvoice">
+            <summary>
+            待开发票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.Audited">
+            <summary>
+            已审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.Executed">
+            <summary>
+            已执行
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.GettingInvoice">
+            <summary>
+            发票待索取
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.HasInvoice">
+            <summary>
+            发票已索取
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.InvoiceVerification">
+            <summary>
+            发票核销
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.Cancel">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.Finish">
+            <summary>
+            完成打款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.PayBack">
+            <summary>
+            打款退回
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.WaitAttestation">
+            <summary>发票待认证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptState.FinishAttestation">
+            <summary>发票已认证
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompanyFundReceiptType">
+            <summary>
+            往来单位收付款单据类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptType.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptType.Receive">
+            <summary>
+            收款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyFundReceiptType.Payment">
+            <summary>
+            付款
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompanyType">
+            <summary>
+            公司类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyType.Suppliers">
+            <summary>
+            供应商
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyType.Vendors">
+            <summary>
+            销售商
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyType.Express">
+            <summary>
+            物流公司
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompanyType.MemberGeneralLedger">
+            <summary>
+            会员总帐
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CompareType">
+            <summary>
+            Func : 比较类型枚举
+            Code : dyy
+            Date : 2009 Nov 26th
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompareType.Less">
+            <summary>
+            小于
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompareType.LessEqual">
+            <summary>
+            小于等于
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompareType.Equal">
+            <summary>
+            等于
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompareType.Greater">
+            <summary>
+            大于
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompareType.GreaterEqual">
+            <summary>
+            大于等于
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CompareType.NotEqual">
+            <summary>
+            不等于
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ContructType">
+            <summary>
+            数据操作方式枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ContructType.Insert">
+            <summary>
+            插入
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ContructType.Update">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ContructType.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ContructType.Select">
+            <summary>
+            选择
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ContructType.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportAuditingType">
+            <summary>
+            权限类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportAuditingType.Auditing">
+            <summary>
+            审核权限
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportAuditingType.Invoice">
+            <summary>
+            票据受理权限
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportExecuteMoneyType">
+            <summary>
+            费用申报打款类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportExecuteMoneyType.Cash">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportExecuteMoneyType.Transfer">
+            <summary>
+            转账
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportInvoiceState">
+            <summary>
+            费用申报发票审核状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceState.NoAuditing">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceState.Pass">
+            <summary>
+            合格
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceState.NoPass">
+            <summary>
+            不合格
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceState.Complete">
+            <summary>
+            完成核销
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportInvoiceType">
+            <summary>
+            费用申报票据类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceType.Invoice">
+            <summary>
+            普通发票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceType.Voucher">
+            <summary>
+            收据
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceType.NoVoucher">
+            <summary>
+            网页凭证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceType.WaitCheck">
+            <summary>
+            费用收入
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportInvoiceType.VatInvoice">
+            <summary>
+            增值税专用发票
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportKind">
+            <summary>
+            费用申报类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportKind.Before">
+            <summary>
+            预借款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportKind.Later">
+            <summary>
+            凭证报销
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportKind.Paying">
+            <summary>
+            已扣款核销
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportKind.FeeIncome">
+            <summary>
+            费用收入
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CostReportState">
+            <summary>
+            费用申报审批状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.NoAuditing">
+            <summary>
+            票据待受理
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.InvoiceNoPass">
+            <summary>
+            票据不合格
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.Auditing">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.AuditingNoPass">
+            <summary>
+            审核不通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.AlreadyAuditing">
+            <summary>
+            待付款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.ExecuteNoPass">
+            <summary>
+            待打款不通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.Execute">
+            <summary>
+            票据待核销
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.Complete">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.WaitReturn">
+            <summary>
+            待退款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.WaitVerify">
+            <summary>
+            待收款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.WaitCheck">
+            <summary>
+            票据待选
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.Pay">
+            <summary>
+            待完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.PayBack">
+            <summary>
+            完成打款退回
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.Cancel">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.AuditingBeforePay">
+            <summary>
+            打款前审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.AuditingBeforePayNoPass">
+            <summary>
+            打款前审核不通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CostReportState.CompletedMayApply">
+            <summary>
+            完成可申请
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.CurrencyType">
+            <summary>
+            币种类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CurrencyType.Money">
+            <summary>
+            货币
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.CurrencyType.Score">
+            <summary>
+            积分
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.DataState">
+            <summary>
+            对账明细记录状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DataState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DataState.Entered">
+            <summary>
+            已录入
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DataState.Contrasted">
+            <summary>
+            已对比
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DataState.Confirmed">
+            <summary>
+            已确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DataState.Handed">
+            <summary>
+            已处理
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.DebitNoteState">
+            <summary>
+            借记单状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.All">
+            <summary>
+            所有状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.ToPurchase">
+            <summary>
+            待采购
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.Purchasing">
+            <summary>
+            采购中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.PartComplete">
+            <summary>
+            部分完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.AllComplete">
+            <summary>
+            已完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.Logout">
+            <summary>
+            已注销
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.DebitNoteState.WaitChargeOff">
+            <summary>待核销（手动新建的赠品借记单为采购中，点击完成则变为待核销，核销后完成）
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.EmailSmsStatusType">
+            <summary>
+            邮件和短信状态类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EmailSmsStatusType.SingleSenderEmailSms">
+            <summary>
+            单发邮件短信-3
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EmailSmsStatusType.SingleSenderSms">
+            <summary>
+            单发短信-2
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EmailSmsStatusType.SingleSenderEmail">
+            <summary>
+            单发邮件-1
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EmailSmsStatusType.GroupSenderEmail">
+            <summary>
+            邮件群发1
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EmailSmsStatusType.GroupSenderSms">
+            <summary>
+            短信群发2
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.EmailSmsStatusType.GroupSenderEmailSms">
+            <summary>
+            邮件短信群发3
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.Attribute.EnumAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ERP.Enum.Attribute.EnumAttribute.#ctor(System.String)">
+            <summary>
+            Enum项的文字描述信息
+            </summary>
+            <param name="name">关键字名称</param>
+        </member>
+        <member name="M:ERP.Enum.Attribute.EnumAttribute.#ctor(System.Int32,System.String)">
+            <summary>
+            Enum项的文字描述信息
+            </summary>
+            <param name="index"></param>
+            <param name="name">关键字名称</param>
+        </member>
+        <member name="P:ERP.Enum.Attribute.EnumAttribute.Index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ERP.Enum.Attribute.EnumAttribute.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ERP.Enum.Attribute.EnumAttribute.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ERP.Enum.Attribute.EnumAttribute.GetDict``1">
+            <summary>
+            得到枚举的所有值/描述对列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Enum.Attribute.EnumAttribute.GetDict``1(System.Int32[])">
+            <summary>
+            得到枚举的所有值/描述对列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Enum.Attribute.EnumAttribute.GetKeyName``1(``0)">
+            <summary>
+            
+            </summary>
+            <param name="enumKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Enum.Attribute.EnumAttribute.GetKeyName``1(``0,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="enumKey"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ERP.Enum.FilingType">
+            <summary>
+            归类类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.FilingType.All">
+            <summary>
+            所有采购分类 不包括入库申请的
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.FilingType.Stock">
+            <summary>
+            分类进货申报
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.FilingType.Class">
+            <summary>
+            分类报备
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.FilingType.Storage">
+            <summary>
+            核对入库
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.GoodsKindType">
+            <summary>
+            商品打包类型枚举,数据查询返回信息过滤用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.NoSet">
+            <summary>
+            不设置,全部返回
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.ContactLenses">
+            <summary>
+            隐形眼镜
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.ColorContactLenses">
+            <summary>
+            彩色隐形眼镜
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.LensSolution">
+            <summary>
+            护理液
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.Frames">
+            <summary>
+            框架眼镜
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.Glasse">
+            <summary>
+            镜片
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.SunFrame">
+            <summary>
+            太阳眼镜
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.SportFrame">
+            <summary>
+            运动眼镜
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.FunctionFrame">
+            <summary>
+            功能眼镜
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.CareProducts">
+            <summary>
+            护理用品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.PrescriptionMedicine">
+            <summary>
+            处方药
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.Medicinal">
+            <summary>
+            非处方药
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.HealthProducts">
+            <summary>
+            保健食品/食品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.CosmeticSkinCare">
+            <summary>
+            化妆护肤品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.FamilyPlanningProuducts">
+            <summary>
+            计生用品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.MedicalEquipment">
+            <summary>
+            医疗器械
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.ChineseMedicineYinPian">
+            <summary>
+            中药饮片/参茸
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsKindType.DisinfectionTypeGoods">
+            <summary>
+            消杀类商品
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.GoodsOrderPayState">
+            <summary>
+            商品订单支付状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsOrderPayState.Disabled">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsOrderPayState.Enabled">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.GoodsPurchaseType">
+            <summary>
+            商品采购类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsPurchaseType.Normal">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsPurchaseType.NotPriced">
+            <summary>
+            未定价
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsPurchaseType.Gifts">
+            <summary>
+            赠品
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.GoodsServicePosition">
+            <summary>
+            商品扩展描述展示位置枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsServicePosition.NoSet">
+            <summary>
+            未设定
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsServicePosition.BeforDescription">
+            <summary>
+            商品描述之前
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsServicePosition.AfterDescription">
+            <summary>
+            商品描述之后
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.GoodsServicePosition.AfterAttribute">
+            <summary>
+            商品属性下方
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.InformationType">
+            <summary>
+            资料类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InformationType.Goods">
+            <summary>
+            商品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InformationType.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InformationType.CompanyCussent">
+            <summary>
+            往来单位
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.InvoiceNoteType">
+            <summary>
+            发票票据类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceNoteType.None">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceNoteType.Effective">
+            <summary>
+            正票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceNoteType.Abolish">
+            <summary>
+            废票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceNoteType.Retreat">
+            <summary>
+            退票
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.InvoicePurchaserType">
+            <summary>
+            发票购货方企业类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoicePurchaserType.None">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoicePurchaserType.Enterprise">
+            <summary>
+            企业
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoicePurchaserType.Government">
+            <summary>
+            政府机关单位
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoicePurchaserType.Individual">
+            <summary>
+            个人
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoicePurchaserType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.InvoiceRollState">
+            <summary>
+            发票卷状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceRollState.NoInvocation">
+            <summary>
+            未启用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceRollState.Distribute">
+            <summary>
+            分发
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceRollState.Invocation">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceRollState.Print">
+            <summary>
+            打印完
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceRollState.Lost">
+            <summary>
+            遗失
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.InvoiceState">
+            <summary>
+            发票状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.All">
+            <summary>
+            所有状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.NoRequest">
+            <summary>
+            未开
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.Request">
+            <summary>
+            申请发票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.Success">
+            <summary>
+            已开
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.WasteRequest">
+            <summary>
+            作废申请
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceState.Waste">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.InvoiceType">
+            <summary>
+            开票类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceType.CorrectInvoice">
+            <summary>
+            正票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceType.InvalidateInvoice">
+            <summary>
+            废票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.InvoiceType.BackInvoice">
+            <summary>
+            退票
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.IsNeedManualType">
+            <summary>
+            是否需要手动打印发票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.IsNeedManualType.No">
+            <summary>
+            不
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.IsNeedManualType.Yes">
+            <summary>
+            是
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.JoinType">
+            <summary>
+             加盟方式
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.JoinType.Self">
+            <summary>
+            直营
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.JoinType.Other">
+            <summary>
+            他营
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.LogType">
+            <summary>
+            记录日志类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.LogType.Both">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.LogType.NotePadLog">
+            <summary>
+            记录到日志文件中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.LogType.WindowsEvent">
+            <summary>
+            记录到窗体应用程序事件中
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MailType">
+            <summary>
+            系统邮件发送类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Register">
+            <summary>
+            注册
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Login">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.GetPassword">
+            <summary>
+            获取密码
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.RewriteMember">
+            <summary>
+            改写用户资料
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.ChangePassword">
+            <summary>
+            修改密码
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Recommend">
+            <summary>
+            推荐给朋友
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Quaere">
+            <summary>
+            询问
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Shopping">
+            <summary>
+            购物
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Approved">
+            <summary>
+            受理
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Reminder">
+            <summary>
+            催款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Pay">
+            <summary>
+            付款确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.WaitForConsignment">
+            <summary>
+            等待发货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Consignment">
+            <summary>
+            发货完成订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Refundment">
+            <summary>
+            退款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Shortage">
+            <summary>
+            缺货通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.NotifyAndPayment">
+            <summary>
+            催款并通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.RemarkRecommend">
+            <summary>
+            评论推荐
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.GroupPurchaseNotify">
+            <summary>
+            团购开始通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.ExchangeCoupon">
+            <summary>
+            兑换礼券
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.FriendPaid">
+            <summary>
+            好友代付
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.ValidEmail">
+            <summary>
+            留言回复
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.CancelPromotionEmail">
+            <summary>
+            邮件验证码
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.GoodsMail">
+            <summary>
+            商品到货邮件
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.ChangeMail">
+            <summary>
+            修改邮件
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.AppGroup">
+            <summary>
+            App群发
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.PrescriptionMedicine">
+            <summary>
+            处方药短信通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MailType.Optometry">
+            <summary>
+            验光预约
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MemberMentionState">
+            <summary>
+            会员提现状态枚举
+            Add by liucaijun at 2011-October-21th
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.Process">
+            <summary>
+            待打款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.Auditing">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.NoPass">
+            <summary>
+            提现失败,取消该状态，暂时不用了
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.SendBack">
+            <summary>
+            退回
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MemberMentionState.Invalid">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MergeSplitState">
+            <summary>
+            商品组合拆分状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MergeSplitState.WaitAuditing">
+            <summary>
+            未审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MergeSplitState.Pass">
+            <summary>
+            已通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MergeSplitState.Refuse">
+            <summary>
+            未通过
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.MergeSplitType">
+            <summary>
+            商品组合拆分类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MergeSplitType.NO">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MergeSplitType.MergeGoods">
+            <summary>
+            商品组合
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.MergeSplitType.SplitGoods">
+            <summary>
+            商品拆分
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.OrderState">
+            <summary>
+            订单状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.All">
+            <summary>
+            所有状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.UnVerify">
+            <summary>
+            未经审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.WaitNotarize">
+            <summary>
+            待确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.Approved">
+            <summary>
+            等待付款,已受理
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.WaitForPay">
+            <summary>
+            待付款确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.StockUp">
+            <summary>
+            配货中(受理后或待付款确认后)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.WaitOutbound">
+            <summary> 出货中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.Redeploy">
+            <summary>
+            需调拨
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.RequirePurchase">
+            <summary>
+            需采购
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.Consignmented">
+            <summary>
+            完成发货(完成订单后)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderState.Cancellation">
+            <summary>
+            作废订单
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.OrderOtherState">
+            <summary>
+            订单状态组枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderOtherState.Sorting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderOtherState.Pack">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.OrderOtherState.Matching">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PaymentType">
+            <summary>
+            支付类型枚举
+            modify by liangcanren at 2015-05-04
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PaymentType.NoSet">
+            <summary>
+            未设置
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PaymentType.OnLine">
+            <summary>
+            在线支付
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PaymentType.Tradition">
+            <summary>
+            传统帐号
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PaymentType.SwipeCard">
+            <summary>
+            刷卡帐号
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PayMode">
+            <summary>
+            支付方式枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayMode.NoSet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayMode.COD">
+            <summary>
+            货到付款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayMode.COG">
+            <summary>
+            款到发货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayMode.COM">
+             <summary>
+            货到付款手机支付 
+             </summary>
+        </member>
+        <member name="T:ERP.Enum.PayState">
+            <summary>
+            支付状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayState.NoSet">
+            <summary>
+            所有状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayState.NoPay">
+            <summary>
+            未支付
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayState.Paid">
+            <summary>
+            已支付
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayState.Wait">
+            <summary>
+            待确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PayState.PrePaid">
+            <summary>
+            预付款
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PickingState">
+            <summary>
+            订单分拣状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PickingState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PickingState.Waitting">
+            <summary>
+            待确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PickingState.Passing">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PickingState.Deleted">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PromotionKind">
+            <summary>
+            买几赠几/促销信息
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PromotionKind.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PromotionKind.BuyGive">
+            <summary>
+            买几赠几
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PromotionKind.PromotionInfo">
+            <summary>
+            促销信息
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PromotionKind.Both">
+            <summary>
+            买几赠几和促销信息
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PromotionType">
+            <summary>
+            促销类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PromotionType.ACTIVITY">
+            <summary>
+            活动
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PromotionType.COUPON">
+            <summary>
+            礼券
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PurchasePromotionType">
+            <summary>
+            采购促销类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasePromotionType.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasePromotionType.Back">
+            <summary>
+            现返
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasePromotionType.NoBack">
+            <summary>
+            非现返
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PurchaseSetLogStatue">
+            <summary>
+            商品采购设置变更值状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchaseSetLogStatue.NotAudit">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchaseSetLogStatue.Pass">
+            <summary>
+            通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchaseSetLogStatue.NotPass">
+            <summary>
+            不通过
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PurchaseSetLogType">
+            <summary>
+            商品采购设置变更值类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchaseSetLogType.PurchasePrice">
+            <summary>
+            采购价
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchaseSetLogType.StockingDays">
+            <summary>
+            报备天数
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PurchasingState">
+            <summary>
+            采购单状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.NoSubmit">
+            <summary>
+            未提交
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.Purchasing">
+            <summary>
+            采购中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.PartComplete">
+            <summary>
+            部分完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.StockIn">
+            <summary>
+            入库中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.AllComplete">
+            <summary>
+            已完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.NoComplete">
+            <summary>
+            未完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.WaitingAudit">
+            <summary>
+            调价待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingState.Refusing">
+            <summary>
+            调价拒绝
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PurchasingType">
+            <summary>
+            采购类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingType.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingType.StockDeclare">
+            <summary>
+            进货申报
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingType.AutoStock">
+            <summary>
+            自动报备
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingType.Custom">
+            <summary>
+            自定义
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReceiptPage">
+            <summary> 往来单位收付款页面枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.Else">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.CompanyFundReceipt">
+            <summary>
+            收付款单据
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.PayCheckList">
+            <summary>
+            付款审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.DoReceivePay">
+            <summary>
+            申请打款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.CompanyFundPayReceiptFinish">
+            <summary>
+            完成打款
+            </summary>、
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.DemandReceipt">
+            <summary>
+            索取发票
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptPage.DoFoudReceive">
+            <summary>
+            开具发票
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReceiptType">
+            <summary>
+            收据类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptType.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptType.Expenditure">
+            <summary>
+            支出
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReceiptType.Income">
+            <summary>
+            收入
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReckoningCheckType">
+            <summary>
+            往来账对账类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningCheckType.Carriage">
+            <summary> 运费对账
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningCheckType.Collection">
+            <summary>代收对账
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningCheckType.Supplier">
+            <summary>供应商对账
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningCheckType.Other">
+            <summary> 其他
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReckoningState">
+            <summary>
+            财务记帐单状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningState.Currently">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningState.Cancellation">
+            <summary>
+            红冲
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReckoningStateType">
+            <summary>
+            财务记帐单状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningStateType.Currently">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningStateType.Cancellation">
+            <summary>
+            红冲
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ReckoningType">
+            <summary> 财务记帐单类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningType.Income">
+            <summary>应收
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ReckoningType.Defray">
+            <summary>应付
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.RefundmentMode">
+            <summary>
+            退款模式枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.RefundmentMode.Accounts">
+            <summary>
+            存入帐号(后台)
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.RefundmentMode.Untread">
+            <summary>
+            原帐号退回(银行)
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SaleStockType">
+            <summary>
+            商品展示类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockType.NotSellStock">
+            <summary>
+            非卖库存
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockType.ShortStock">
+            <summary>
+            卖完缺货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SaleStockType.OutOfStock">
+            <summary>
+            卖完断货
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SearchTime">
+            <summary>
+            搜索时间枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SearchTime.OneMonth">
+            <summary>
+            一个月之内
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SearchTime.ThreeMonth">
+            <summary>
+            三个月之内
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SearchTime.HalfYear">
+            <summary>
+            半年内
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SearchTime.OneYear">
+            <summary>
+            一年内
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SearchTime.LocalAll">
+            <summary>
+            当前所有数据
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SearchTime.HistoryAll">
+            <summary>
+            历史所有数据
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SellType">
+            <summary>
+            商品出售类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SellType.Currency">
+            <summary>
+            货币
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SellType.Score">
+            <summary>
+            积分
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SellType.CurrencyAndScore">
+            <summary>
+            积分+货币
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ShopFront.ApplyStockState">
+            <summary>
+            门店采购申请状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Applying">
+            <summary>
+            申请中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.PartFinish">
+            <summary>
+            部分完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Cancel">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Obligation">
+            <summary>
+            待付款
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.PayConfirmed">
+            <summary>
+            付款确认
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Confirming">
+            <summary>
+            发货确认
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Delivering">
+            <summary>
+            等待发货
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Finishing">
+            <summary>
+            等待收货
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.CheckPending">
+            <summary>
+            异常待审核
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.PartFinished">
+            <summary>
+            部分完成
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Finished">
+            <summary>
+            交易完成
+            </summary>
+            
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ApplyStockState.Close">
+            <summary>
+            交易关闭
+            </summary>
+            
+        </member>
+        <member name="T:ERP.Enum.ShopFront.ExchangedState">
+            <summary>
+            联盟店退换货申请状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.CheckPending">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.Pass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.NoPass">
+            <summary>
+            审核不通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.Checking">
+            <summary>
+            待检查
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.Checked">
+            <summary>
+            检查通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.GoodsReturn">
+            <summary>
+            商品退回
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.Bartering">
+            <summary>
+            换货中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.BarterEnd">
+            <summary>
+            换货完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.Returning">
+            <summary>
+            退货中
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.ReturnEnd">
+            <summary>
+            退货完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ExchangedState.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ShopFront.PurchaseType">
+            <summary>
+            采购类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.PurchaseType.FromOrder">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.PurchaseType.FromPurchase">
+            <summary>
+            要货类型
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ShopFront.ReturnMsgState">
+            <summary>
+            联盟店退货留言申请状态
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ReturnMsgState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ReturnMsgState.CheckPending">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ReturnMsgState.Pass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ReturnMsgState.NoPass">
+            <summary>
+            不通过
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.ShopFront.ShopActivityImageType">
+            <summary>门店首页活动图片 2015-05-04 陈重文
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ShopActivityImageType.Web">
+            <summary>网站
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.ShopFront.ShopActivityImageType.Phone">
+            <summary>手机
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SMSType">
+            <summary>
+            系统短信发送类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Login">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.GetPassword">
+            <summary>
+            获取密码
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.RewriteMember">
+            <summary>
+            改写用户资料
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.ChangePassword">
+            <summary>
+            修改密码
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Recommend">
+            <summary>
+            推荐给朋友
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Quaere">
+            <summary>
+            询问
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.CancelOrder">
+            <summary>
+            取消订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Shopping">
+            <summary>
+            购物
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Approved">
+            <summary>
+            受理
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Reminder">
+            <summary>
+            催款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Pay">
+            <summary>
+            付款确认
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.WaitForConsignment">
+            <summary>
+            等待发货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Consignment">
+            <summary>
+            发货完成订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Refundment">
+            <summary>
+            退款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Shortage">
+            <summary>
+            暂时缺货物
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.NotifyAndPayment">
+            <summary>
+            催款并通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Processing">
+            <summary>
+            框架眼镜加工通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.ExchangeCoupon">
+            <summary>
+            兑换礼券
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.FriendPaid">
+            <summary>
+            好友代付
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.ValidMobile">
+            <summary>
+            留言回复
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Register">
+            <summary>
+            用户注册
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.ChangeMobile">
+            <summary>
+            修改手机
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.GoodsMail">
+            <summary>
+            商品到货邮件
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.ChangeMail">
+            <summary>
+            修改邮件
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.AppGroup">
+            <summary>
+            App群发
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.PrescriptionMedicine">
+            <summary>
+            处方药短信通知
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SMSType.Optometry">
+            <summary>
+            验光预约
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.State">
+            <summary>
+            信息状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.State.Disable">
+            <summary>
+            搁置
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.State.Enable">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageAuthType.Z">
+            <summary>
+            整件区。
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageAuthType.L">
+            <summary>
+            零配区
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageAuthType.S">
+            <summary>
+            售后区
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageAuthType.J">
+            <summary>
+            样品区
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageAuthType.H">
+            <summary>
+            坏件区
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.StorageRecordLinkTradeType">
+            <summary>▄︻┻┳═一 产生出入库单据对应枚举  ADD  陈重文  2014-12-25
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordLinkTradeType.Purchasing">
+            <summary>采购单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordLinkTradeType.GoodsOrder">
+            <summary>订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordLinkTradeType.AfterSaleGoodsOrder">
+            <summary> 售后单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordLinkTradeType.Allot">
+            <summary> 调拨单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordLinkTradeType.Cancellation">
+            <summary> 红冲
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordLinkTradeType.Other">
+            <summary> 其他
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.StorageRecordState">
+            <summary>出入库单据状态（新版对应WMS）
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordState.WaitAudit">
+            <summary>待审核
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordState.Refuse">
+            <summary>核退
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordState.Approved">
+            <summary>核准
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordState.Finished">
+            <summary>完成
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordState.Canceled">
+            <summary>作废
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.StorageRecordType">
+            <summary>出入库单据类型（新版对应WMS）
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.BuyStockIn">
+            <summary>
+            采购进货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.SellReturnIn">
+            <summary>
+            销售退货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.BorrowIn">
+            <summary>
+            借入申请
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.LendIn">
+            <summary>
+            借出返还
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.BuyStockOut">
+            <summary>
+            采购退货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.AfterSaleOut">
+            <summary>
+            售后退货
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.SellStockOut">
+            <summary>
+            销售出库
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.LendOut">
+            <summary>
+            借出申请
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.BorrowOut">
+            <summary>
+            借入返还
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.BeyondStockIn">
+            <summary>
+            商品盘盈
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.LossStockOut">
+            <summary>
+            商品盘亏
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.TransferStockIn">
+            <summary>
+            调拨入库
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.TransferStockOut">
+            <summary>
+            调拨出库
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.TransferRefuse">
+            <summary>
+            调拨拒收入库
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.CancellationIn">
+            <summary>
+            出库冲红
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.CancellationOut">
+            <summary>
+            入库冲红
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.SplitCombinationIn">
+            <summary>
+            拆分组合入库
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="F:ERP.Enum.StorageRecordType.SplitCombinationOut">
+            <summary>
+            拆分组合出库
+            </summary>
+            只用于历史数据查询
+        </member>
+        <member name="T:ERP.Enum.StorageTransferToType">
+            <summary>
+            库存调拨出库类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageTransferToType.TransferToShop">
+            <summary>
+            调拨给门店
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.StorageTransferToType.TransferToInnerWarehouse">
+            <summary>
+            调拨给内部仓库
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SupplierCompleteType">
+            <summary>
+            供应商资质完整类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierCompleteType.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierCompleteType.NoComplete">
+            <summary>
+            不完整
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierCompleteType.Complete">
+            <summary>
+            完整
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SupplierQualificationType">
+            <summary>
+            资质类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierQualificationType.BusinessLicense">
+            <summary>
+            营业执照
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierQualificationType.OrganizationCodeCertificate">
+            <summary>
+            组织机构代码证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierQualificationType.TaxRegistrationCertificate">
+            <summary>
+            税务登记证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierQualificationType.GoodsSalesAuthorization">
+            <summary>
+            商品销售授权书
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierQualificationType.MedicalDeviceBusinessLicense">
+            <summary>
+            医疗器械企业经营许可证
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierQualificationType.MedicalDeviceProductionLicense">
+            <summary>
+            医疗器械生产许可证
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.SupplierTimeLimitType">
+            <summary>
+            供应商资质有效期类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierTimeLimitType.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierTimeLimitType.Normal">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierTimeLimitType.Expire">
+            <summary>
+            快过期
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.SupplierTimeLimitType.Expired">
+            <summary>
+            已过期
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.TemplateType">
+            <summary>
+            模板类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.TemplateType.ServiceRemark">
+            <summary>
+            客服备注
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.TemplateType.ReturnGoods">
+            <summary>
+            退货短信
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WaitCheckGoodsState">
+            <summary>
+            创建人：刘彩军
+            创建时间：2011-June-29th
+            文件描述：待盘点商品状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WaitCheckGoodsState.WaitCheck">
+            <summary>
+             0 待盘点
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WaitCheckGoodsState.Checked">
+            <summary>
+            1 已盘点
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WarehouseState">
+            <summary>
+            仓库状态枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WarehouseState.Disable">
+            <summary>
+            搁置
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WarehouseState.Enable">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WarehouseType">
+            <summary>
+            仓库类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WarehouseType.MainStock">
+            <summary>
+            发货仓库
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WarehouseType.BadGoodsStock">
+            <summary>
+            坏件仓
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WarehouseType.OtherStock">
+            <summary>
+            其他仓
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WarehouseType.AfterSaleStock">
+            <summary>
+            售后仓库
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WasteBookLinkTradeType">
+            <summary>▄︻┻┳═一 产生资金流单据对应枚举 ADD  陈重文  2014-12-25
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookLinkTradeType.GoodsOrder">
+            <summary>订单
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookLinkTradeType.CostReport">
+            <summary>费用申报
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookLinkTradeType.CompanyFundReceipt">
+            <summary> 往来单位收付款
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookLinkTradeType.WithdrawDeposit">
+            <summary> 提现
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookLinkTradeType.Pay">
+            <summary> 充值
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookLinkTradeType.Other">
+            <summary> 其他
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WasteBookState">
+            <summary>▄︻┻┳═一 资金流单据状态  ADD  陈重文  2014-12-25
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookState.Currently">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookState.Cancellation">
+            <summary>
+            红冲
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WasteBookType">
+            <summary>
+            记账本类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookType.Increase">
+            <summary>收入
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteBookType.Decrease">
+            <summary>支出
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.WasteSource">
+            <summary>
+            资金流类型
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteSource.TradingCommissions">
+            <summary>
+            天猫、京东、第三方交易佣金
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteSource.PointsWithholding">
+            <summary>
+            积分代扣
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.WasteSource.OrderBusinessMoney">
+            <summary>
+            订单交易金额
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.YesOrNo">
+            <summary>
+            是否选择枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.YesOrNo.No">
+            <summary>
+            否
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.YesOrNo.Yes">
+            <summary>
+            是
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.YesOrNo.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="T:ERP.Enum.PurchasingGoodsType">
+            <summary>
+            采购单商品类型枚举
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingGoodsType.NoSet">
+            <summary>
+            未定价
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingGoodsType.NoGift">
+            <summary>
+            非赠品
+            </summary>
+        </member>
+        <member name="F:ERP.Enum.PurchasingGoodsType.Gift">
+            <summary>
+            赠品
+            </summary>
+        </member>
+    </members>
+</doc>

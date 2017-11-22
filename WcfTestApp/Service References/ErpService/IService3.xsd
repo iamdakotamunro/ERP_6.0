@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ERP.Model.WMS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="WMSReturnGoodsRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BillNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="tns:ArrayOfWMSReturnGoodsDetailRequest" />
+      <xs:element minOccurs="0" name="OperatorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutGoodsBillNo" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="StockQuantitys" nillable="true" type="q1:ArrayOfKeyValueOfguidint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSReturnGoodsRequest" nillable="true" type="tns:WMSReturnGoodsRequest" />
+  <xs:complexType name="ArrayOfWMSReturnGoodsDetailRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WMSReturnGoodsDetailRequest" nillable="true" type="tns:WMSReturnGoodsDetailRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWMSReturnGoodsDetailRequest" nillable="true" type="tns:ArrayOfWMSReturnGoodsDetailRequest" />
+  <xs:complexType name="WMSReturnGoodsDetailRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BatchNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpiryDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GoodsId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="RealGoodsId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ShelfType" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSReturnGoodsDetailRequest" nillable="true" type="tns:WMSReturnGoodsDetailRequest" />
+  <xs:complexType name="WMSResultInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_IsSuccess_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_Msg_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSResultInfo" nillable="true" type="tns:WMSResultInfo" />
+  <xs:complexType name="WMSLostBackReturnDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CancelReasons" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="tns:ArrayOfLostBackDTO" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="InvoiceIds" nillable="true" type="q2:ArrayOfguid" />
+      <xs:element minOccurs="0" name="OperatorName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderNos" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OutGoodsBillNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSLostBackReturnDTO" nillable="true" type="tns:WMSLostBackReturnDTO" />
+  <xs:complexType name="ArrayOfLostBackDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LostBackDTO" nillable="true" type="tns:LostBackDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLostBackDTO" nillable="true" type="tns:ArrayOfLostBackDTO" />
+  <xs:complexType name="LostBackDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BillNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="tns:ArrayOfWMSReturnGoodsDetailRequest" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="StockQuantitys" nillable="true" type="q4:ArrayOfKeyValueOfguidint" />
+      <xs:element minOccurs="0" name="StorageType" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LostBackDTO" nillable="true" type="tns:LostBackDTO" />
+</xs:schema>

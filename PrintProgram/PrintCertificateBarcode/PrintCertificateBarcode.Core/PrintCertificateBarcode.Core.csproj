@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5C0662F-027F-440D-8BF0-889F2CE4625C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrintCertificateBarcode.Core</RootNamespace>
+    <AssemblyName>PrintCertificateBarcode.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeX">
+      <HintPath>..\..\..\Reference\BarcodeX.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework">
+      <HintPath>..\..\..\Reference\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="KeedeGroup.GoodsManageSystem.Public">
+      <HintPath>..\..\..\Reference\KeedeGroup.GoodsManageSystem.Public.dll</HintPath>
+    </Reference>
+    <Reference Include="MIS.Model">
+      <HintPath>..\..\..\Reference\MIS.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="MIS.Service.Contract">
+      <HintPath>..\..\..\Reference\MIS.Service.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="OperationLog.Core">
+      <HintPath>..\..\..\Reference\OperationLog.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Reference\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSetting.cs" />
+    <Compile Include="Common\Code128.cs" />
+    <Compile Include="Draw\DrawCertificateLabel.cs" />
+    <Compile Include="Draw\DrawShopKDPriceLabel.cs" />
+    <Compile Include="Draw\DrawGoodsInfo.cs" />
+    <Compile Include="Draw\DrawShopKedePriceLabel.cs" />
+    <Compile Include="Draw\IDrawLabel.cs" />
+    <Compile Include="Model\DrawnItem.cs" />
+    <Compile Include="Common\DrawTools.cs" />
+    <Compile Include="FrameProcessManager.cs" />
+    <Compile Include="Model\GoodsInfo.cs" />
+    <Compile Include="Model\OrderLabelInfo.cs" />
+    <Compile Include="PersonnelManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Icon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SAL\GlassGoodsLabelPrintService.cs" />
+    <Compile Include="StockManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ERP.Model\ERP.Model.csproj">
+      <Project>{A6595739-E966-4F89-B771-6AB481AEDB5D}</Project>
+      <Name>ERP.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Service\WCF\CMS.WCF.Contract\ERP.Service.Contract.csproj">
+      <Project>{5A566B92-27B0-40E3-B88E-FB50A1886838}</Project>
+      <Name>ERP.Service.Contract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Icon.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ICON\Tag.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

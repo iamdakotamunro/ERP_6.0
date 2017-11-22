@@ -1,0 +1,2497 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Service.Contract</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Service.Contract.ClientFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ERP.Service.Contract.ClientFactory.EndPointName">
+            <summary>
+            终结点名称：Group.ERP
+            </summary>
+        </member>
+        <member name="T:ERP.Service.Contract.IService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetFrameProcessCertificateInfo(System.String)">
+            <summary>打印合格证获取加工单信息
+            </summary>
+            <param name="processNo">加工单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetOutStockGoodsBarcode(System.String)">
+            <summary> 获取出库商品条码信息(框架相关)
+            </summary>
+            <param name="tracodeNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddOrderAndInvoice(System.Guid,Keede.Ecsoft.Model.GoodsOrderInfo,System.Collections.Generic.IList{Keede.Ecsoft.Model.GoodsOrderDetailInfo},Keede.Ecsoft.Model.InvoiceInfo)">
+            <summary>订单导入
+            </summary>
+            <param name="pushDataId">推送数据ID</param>
+            <param name="orderInfo">订单信息</param>
+            <param name="orderDetailList">订单明细信息</param>
+            <param name="invoiceInfo">发票信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsOrder(System.Guid,System.DateTime,System.DateTime,System.String,System.String,System.String,System.String,System.Guid,System.Int32,System.Int32)">
+            <summary>根据年份和指定条件查询订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertGoodsOrderInvoice(System.Guid,Keede.Ecsoft.Model.InvoiceInfo,System.Guid[])">
+            <summary>插入发票数据
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="invoice">发票模型</param>
+            <param name="orderIds">订单详细</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderToRedeploy(System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为需调拨
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderToRedeployNew(System.Collections.Generic.List{System.String},System.Guid,System.Byte,System.Guid,System.Guid)">
+            <summary>
+            订单转移发货仓更新到需调拨
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderToPurchase(System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为需采购
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderStateToWaitOutbound(System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为出货中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderStateToWaitOutboundNew(System.Collections.Generic.List{System.String},System.Guid,System.Byte,System.Guid,System.Guid)">
+            <summary>
+            订单转移发货仓更新到出货中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderExpressNo(System.Collections.Generic.List{System.String},System.String)">
+            <summary>设置订单快递号
+            </summary>
+            <param name="orderNos"></param>
+            <param name="expressNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderToConsignmented(System.Guid,System.String,System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为完成
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderToCancellation(System.Guid,System.String,System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为作废
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsIdsIsStockUp(System.Guid,System.Collections.Generic.List{System.Guid})">
+            <summary>获取商品备货信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetHistoryGoodsOrderByMemberIdAndOrderTime(System.Guid,System.DateTime)">
+            <summary>获取会员历史订单记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetHistoryOrderInfoByOrderId(System.Guid,System.DateTime)">
+            <summary>获取历史订单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetHistoryOrderInfoByOrderNo(System.String,System.DateTime)">
+            <summary>获取历史订单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetHistoryGoodsOrderDetailListByOrderId(System.Guid,System.DateTime)">
+            <summary>获取历史订单明细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetInvoiceStateToWasteRequest(System.Guid,System.String)">
+            <summary>申请发票作废
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetInvoiceStateToCancel(System.Guid,System.String)">
+            <summary>取消发票
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetInvoiceNameAndInvoiceContent(System.Guid,System.String,System.String)">
+            <summary>更新发票抬头和发票内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoiceNoAndIsCommitByOrderId(System.Guid)">
+            <summary>通过订单ID获取发票号码和发票是否报税        (Key:发票号码，Value:是否报税)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.PayNoticeInsert(System.Guid,Keede.Ecsoft.Model.PaymentNoticeInfo)">
+            <summary> 插入一条到款通知
+            </summary>
+            <param name="pnInfo"></param>
+            <param name="pushDataId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.IsExistByOrderNoAndPaystate(System.String)">
+            <summary>是否存在待确认的到款通知
+            </summary>
+            <param name="orderNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPayNoticeInfoListByOrderNo(System.String)">
+            <summary>获取到款通知
+            </summary>
+            <param name="orderNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdatePayNoticeInfo(System.Guid,Keede.Ecsoft.Model.PaymentNoticeInfo)">
+            <summary>更新到款通知
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="pninfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.DeletePayNoticeByPayId(System.Guid)">
+            <summary>删除到款通知 
+            </summary>
+            <param name="payid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertWastebook(System.Guid,Keede.Ecsoft.Model.WasteBookInfo)">
+            <summary>
+            
+            </summary>
+            <param name="wasteBookInfo"></param>
+            <param name="pushDataId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertWastebookForB2C(System.Guid,Keede.Ecsoft.Model.WasteBookInfo)">
+            <summary>
+            插入一条资金流数据
+            </summary>
+            <param name="wasteBookInfo">资金流参数</param>
+            <param name="pushDataId"></param>
+            <returns></returns>
+            zal 2016-06-15
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsState(System.Guid,System.Guid,System.Collections.Generic.List{System.Guid},System.Int32)">
+            <summary>
+            设置商品上下架
+            Add by liucaijun at 2011-March-25th
+            </summary>
+            <param name="personnelId"> </param>
+            <param name="pushDataId">命令ID</param>
+            <param name="goodsList">商品列表</param>
+            <param name="state">上下架状态</param>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsIsScarcityState(System.Guid,System.Collections.Generic.List{System.Guid},System.Int32)">
+            <summary>
+            设置商品是否缺货
+            Add by liucaijun at 2011-March-25th
+            </summary>
+            <param name="pushDataId">命令ID</param>
+            <param name="realGoodsList">商品列表</param>
+            <param name="state">上下架状态</param>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsState(System.Guid)">
+            <summary>
+            根据商品唯一标识获取 商品上下架状态
+            </summary>
+            <param name="goodsid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsSales(System.DateTime,System.DateTime)">
+            <summary>
+            得到商品销量列表
+            zhangfan created at 2012-July-12th
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddShopFrontApplyStock(System.String,System.String)">
+            <summary>
+            新增门店采购申请单
+            </summary>
+            <param name="applyStockContent"></param>
+            <param name="applyStockDetailContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateGoodsISScarcity(System.Guid,System.Guid,System.Int32,System.Int32)">
+            <summary>
+            根据商品ID设置商品是否缺货
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="goodsId">商品ID</param>
+            <param name="isScarcity">是否缺货</param>
+            <param name="state"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateRealGoodsISScarcity(System.Guid,System.Guid,System.Int32)">
+            <summary>
+            设置子商品是否缺货
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="realGoodsId"></param>
+            <param name="isScarcity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateApplyStockState(System.Guid,System.Int32)">
+            <summary>
+            更新申请单状态
+            </summary>
+            <param name="applyId"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddReckoningInfo(System.String)">
+            <summary>添加往来账
+            </summary>
+            <param name="reckoningContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertReckoningInfo(System.Guid,Keede.Ecsoft.Model.ReckoningInfo)">
+            <summary> 添加帐务记录数据
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="info"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateCheckState(System.Guid,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            修改往来账对账类型
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="linkTradeCode">原始单据号</param>
+            <param name="linkTradeType">对应单据类型</param>
+            <param name="reckoningType">账单类型：0收入，1支出</param>
+            <param name="reckoningCheckType">往来账对账类型</param>
+            <param name="isChecked">对账类型 1 已对账 0 未对账 2 异常对账</param>
+            zal 2016-06-05
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyCussentList(System.Int32)">
+            <summary>
+            获取指定类型的往来单位信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBankAccountList(System.Guid)">
+            <summary>获取公司下银行账号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.Checking(System.Collections.Generic.IList{Keede.Ecsoft.Model.ReckoningInfo},System.Collections.Generic.IList{Keede.Ecsoft.Model.ReckoningInfo},Keede.Ecsoft.Model.WasteBookInfo)">
+            <summary>
+            对帐
+            </summary>
+            <param name="lstModify"></param>
+            <param name="lstAdd"></param>
+            <param name="wastBookinfo"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetReckoningInfo(System.Guid,System.String,ERP.Enum.CheckType,System.Int32)">
+            <summary>
+            指定快递单号获取往来单位帐
+            </summary>
+            <param name="companyId"></param>
+            <param name="originalTradeCode"></param>
+            <param name="checkType"></param>
+            <param name="reckoningCheckType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetValidateDataPage(System.Guid,System.Guid,System.Guid,System.DateTime,System.DateTime,ERP.Enum.CheckType,ERP.Enum.AuditingState,ERP.Enum.ReceiptType,System.String,System.Guid,System.Int32,System.Int64,System.Int32,System.Int32[])">
+            <summary>
+            按是否对账,日期,账单类型获取往来账（未对账）
+            用于列表显示
+            </summary>
+            <param name="companyClass">往来单位类型</param>
+            <param name="companyId">往来单位编号</param>
+            <param name="filialeId">公司ID </param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="cType"></param>
+            <param name="auditingState"></param>
+            <param name="receiptType"></param>
+            <param name="tradeCode"></param>
+            <param name="warehouseId"></param>
+            <param name="keepyear">保留几年数据</param>
+            <param name="money"></param>
+            <param name="start"> </param>
+            <param name="limit"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBankAccountsListByFBP(System.Guid,System.Guid,System.Guid)">
+            <summary>
+            获取资金帐号列表
+            </summary>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetAllCompanyBankAccountsList">
+            <summary>
+            获取资金帐号列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBankAccountsNonce(System.Guid)">
+            <summary>
+            取得某银行当前金额
+            </summary>
+            <param name="bankAccountsId">银行ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBankAccountsListFromERP">
+            <summary>
+            获取资金帐号列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookList(System.Guid,System.DateTime,System.DateTime,ERP.Enum.ReceiptType,ERP.Enum.AuditingState,System.Double,System.Double,System.String,System.Guid,System.Guid,System.Guid,System.Int32)">
+            <summary>
+            根据条件获取账目信息
+            </summary>
+            <param name="bankAccountsId">银行帐号Id</param>
+            <param name="endDate"></param>
+            <param name="receiptType"></param>
+            <param name="startDate"></param>
+            <param name="auditingState"></param>
+            <param name="minIncome"></param>
+            <param name="maxIncome"></param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <param name="keepyear"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookListToPage(System.Guid,System.DateTime,System.DateTime,ERP.Enum.ReceiptType,ERP.Enum.AuditingState,System.Double,System.Double,System.String,System.Guid,System.Guid,System.Guid,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            根据条件获取账目信息(分页)
+            </summary>
+            <param name="bankAccountsId">银行帐号Id</param>
+            <param name="endDate"></param>
+            <param name="receiptType"></param>
+            <param name="startDate"></param>
+            <param name="auditingState"></param>
+            <param name="minIncome"></param>
+            <param name="maxIncome"></param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <param name="keepyear"></param>
+            <param name="startPage"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookListBySaleFilialeIdToPage(System.Guid,System.DateTime,System.DateTime,ERP.Enum.ReceiptType,ERP.Enum.AuditingState,System.Double,System.Double,System.String,System.Guid,System.Guid,System.Guid,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> 根据条件获取账目信息
+            </summary>
+            <param name="saleFilialeId">公司Id</param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="receiptType"></param>
+            <param name="auditingState"></param>
+            <param name="minIncome"></param>
+            <param name="maxIncome"></param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <param name="keepyear"></param>
+            <param name="isCheck"> </param>
+            <param name="startPage"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetTradeCodeNum(System.String)">
+            <summary>
+            获取指定tradecode在表中的记录数
+            </summary>
+            <param name="tradecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPoundageForReckoning(System.String)">
+            <summary>
+            获取手续费（为reckoning表修改记录用）
+            </summary>
+            <param name="tradecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookId(System.String)">
+            <summary>
+            获取wastebookid
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookIdForUpdate(System.String)">
+            <summary>
+            获取wastebookid
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookIdForReckoning(System.String)">
+            <summary>
+            获取wastebookid
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookCheck(System.Guid)">
+            <summary>
+            根据条件获取账目信息
+            </summary>
+            <param name="wasteBookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBook(System.Guid)">
+            <summary>
+            根据条件获取账目信息
+            </summary>
+            <param name="wasteBookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookByLinkTradeCodeAndWasteSource(System.String,System.Int32)">
+            <summary>根据单据编号获取资金流
+            </summary>
+            <param name="linkTradeCode">关联单据编号</param>
+            <param name="wasteSource">1:天猫、京东、第三方交易佣金;2:积分代扣;3:订单交易金额</param>
+            <returns></returns>
+            zal 2016-06-15
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetWasteBookInfo(System.String)">
+            <summary>
+            根据条件获取账目信息
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetChildCompanyClassList(System.Guid)">
+            <summary>
+            根据条件获取子往来单位列表
+            </summary>
+            <param name="companyClassId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyCussentListByClass(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="companyClassId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetAllCompanyCussentList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyCussent(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="companyId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetNonceReckoningTotalled(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="companyId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetNonceReckoningTotalledDetail(System.Guid,System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="companyId"> </param>
+            <param name="filialeId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetReckoning(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="reckoningId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetReckoningType(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="reckoningId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetTotalled(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="companyId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPoundage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tradeCode"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.CheckPoundage(System.Decimal,System.Decimal)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateReckoning(System.Guid,Keede.Ecsoft.Model.ReckoningInfo)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="reckoningInfo"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateWasteBookDescription(System.Guid,System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="wasteBookId"> </param>
+            <param name="description"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateDescriptionForAuditing(System.Guid,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="tradeCode"> </param>
+            <param name="description"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateReckoningDescription(System.Guid,System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="reckongId"> </param>
+            <param name="description"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AuditingReckoning(System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="tradeCode"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.DeleteReckoning(System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="tradeCode"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCode(ERP.Enum.CodeType)">
+            <summary> 获取编码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateWasteBook(System.Guid,Keede.Ecsoft.Model.WasteBookInfo)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="wasteBookInfo"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateWasteBookWithBank(System.Guid,Keede.Ecsoft.Model.WasteBookInfo)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="wasteBookInfo"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateWasteBookDateTime(System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="tradeCode"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdatePoundageForReckoning(System.Guid,System.Guid,System.DateTime,System.Decimal)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="wastebookId"> </param>
+            <param name="dateCreated"> </param>
+            <param name="poundage"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.DeleteWasteBook(System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="tradeCode"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.DeleteWasteBookPoundage(System.Guid,System.String,System.Decimal)">
+            <summary>
+            
+            </summary>
+            <param name="poundage"> </param>
+            <param name="pushDataId"> </param>
+            <param name="tradeCode"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateWasteBookDescriptionForAuditing(System.Guid,System.String,System.String)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AuditingWasteBook(System.Guid,System.String)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateWasteBookCheck(System.Guid,Keede.Ecsoft.Model.WasteBookCheckInfo)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertWasteBookCheck(System.Guid,Keede.Ecsoft.Model.WasteBookCheckInfo)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateBll(System.Guid,System.Guid,System.String,System.Decimal,System.String,System.Decimal,System.Guid)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateBankAccountsId(System.Guid,System.Guid,System.Guid)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertPoundage(System.Guid,System.Guid,System.String,System.Decimal,System.Guid)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdatePoundage(System.Guid,System.String,System.Decimal)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.Virement(System.Guid,System.Guid,System.Guid,System.Decimal,System.Decimal,System.String,System.String,System.Guid)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AuditingWaste(System.Guid,System.String)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsPredictArrivalTime(System.Guid)">
+            <summary>
+            获取商品的预计到货时间
+            </summary>
+            <param name="realGoodsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsBarcodeInfo(System.String)">
+            <summary>
+            获取商品条码信息
+            </summary>
+            <param name="goodsCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetMemberIdListByRealGoodsIds(System.DateTime,System.DateTime,System.Collections.Generic.List{System.Guid})">
+            <summary> 根据商品ID获取会员ID集合
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="realGoodsIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateGoodsDaySalesStatistics(System.Guid,System.Guid,System.Collections.Generic.IList{ERP.Model.AfterSaleDetailInfo})">
+            <summary> 
+            售后日销量添加,修改
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="orderId"></param>
+            <param name="afterSaleDetailList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertCompanyFundReceiptForShop(Keede.Ecsoft.Model.CompanyFundReceiptInfo)">
+            <summary> 
+            往来单位收付款添加,修改
+            </summary>
+            <param name="companyFundReceiptInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyFundReceiptForShop(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Guid,System.Nullable{System.Int32},System.String)">
+            <summary>
+            往来单位收付款查询
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="companyId"></param>
+            <param name="filialeId"></param>
+            <param name="receiptType"></param>
+            <param name="searchKey"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateCompanyFundReceiptStatus(System.Guid,System.Guid,System.Int32,System.String)">
+            <summary>
+            更改往来单位收付款状态(门店)
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="receiptId"></param>
+            <param name="status"></param>
+            <param name="remark"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyFundReceiptStatus(System.Guid)">
+            <summary> 
+            根据id获取往来帐收付款状态
+            </summary>
+            <param name="receiptId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.RenewalWasteBookByIsOut(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>针对支付宝订单IsOut为False且事后申请发票更新订单和资金流字段IsOut为True（其他地方慎用）
+            </summary>
+            <param name="orderIds">订单Ids</param>
+            <param name="paidNo">交易流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.IsEnterFaxAudit(System.Boolean)">
+            <summary>
+            是否进入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetEnterFaxAuditState">
+            <summary>
+            获取税务审核状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPreloanWarningsCount(System.Guid,System.Guid)">
+            <summary>
+            根据员工ID获取对应的预借款预警信息
+            财务查询全部可输入Guid.Empty
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetOrderInfoByNo(System.String,System.DateTime)">
+            <summary>
+            根据年份和指定条件查询订单
+            </summary>
+            <param name="orderNo"></param>
+            <param name="orderTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsOrderDetailList(System.DateTime,System.String)">
+            <summary>根据年份和指定条件查询订单明细
+            </summary>
+            <param name="orderTime"></param>
+            <param name="orderNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderInvoice(System.Guid,Keede.Ecsoft.Model.InvoiceInfo)">
+            <summary>
+            修改发票
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="invoiceInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GeTaxrateProportionInfos(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            获取商品类型对应的税率比例(包含：商品类型、类型编码、税率)
+            </summary>
+            <param name="goodsTypes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SetGoodsOrderInvoiceState(System.Guid,System.Guid,ERP.Enum.InvoiceState,System.String)">
+            <summary>
+            修改发票状态
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="invoiceId">发票ID</param>
+            <param name="invoiceState">发票状态</param>
+            <param name="clew">备注</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.BatchSetInvoiceState(System.Guid,System.Collections.Generic.List{System.Guid},ERP.Enum.InvoiceState,System.String)">
+            <summary>
+            设置发票状态
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="invoiceIdList">发票编号列表</param>
+            <param name="invoiceState">发票状态</param>
+            <param name="cancelPersonel">作废申请人</param>
+            zal 2016-12-27
+        </member>
+        <member name="M:ERP.Service.Contract.IService.ThirdPartyOrderComplete(System.String,System.Guid,System.String,System.Guid)">
+            <summary>第三方订单直接完成发货【四维】        ADD  2016年12月6日  陈重文
+            </summary>
+            <param name="orderNo">订单号</param>
+            <param name="expressId">订单快递Id</param>
+            <param name="expressNo">订单快递号</param>
+            <param name="companyId">配置的往来单位ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsSaleBySaleFilialeId(System.DateTime,System.DateTime,System.Guid)">
+            <summary>根据销售公司获取其所有商品的销量
+            </summary>
+            <param name="fromTime">开始时间</param>
+            <param name="toTime">截止时间</param>
+            <param name="saleFilialeId">销售公司ID</param>
+            <returns>Key：商品GoodsId, Value: 销量</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetGoodsSaleBySalePlatformIdList(System.DateTime,System.DateTime,System.Collections.Generic.List{System.Guid})">
+            <summary>根据销售平台获取其所有商品的销量
+            </summary>
+            <param name="fromTime">开始时间</param>
+            <param name="toTime">截止时间</param>
+            <param name="salePlatformIdList">销售平台ID集合</param>
+            <returns>Key：商品GoodsId, Value: 销量</returns>
+            zal 2017-07-27
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetVocabularyListByState">
+            <summary>
+            根据词汇状态查询
+            </summary>
+            <returns></returns>
+            zal 2017-08-08
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SelectActivityNoticeInfo(System.Guid)">
+            <summary>
+            根据id获得一条
+            </summary>
+            <param name="noteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SelectShopActivityImageInfo(System.Int32)">
+            <summary>
+            查询加盟店首页广告图片
+            </summary>
+            <returns>空-返回null  注意判断</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetAllShopActivityNoticeList">
+            <summary>
+            获得所有的加盟店广告
+            请自行筛选
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SelectNoticeListByPage(System.Int32,System.Int32,System.Boolean,System.Nullable{System.Boolean})">
+            <summary>
+            根据条件查询广告---分页
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="isShow">是否显示</param>
+            <param name="isNotice">是否是广告-显示在首页</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateShopApplyStockState(System.Guid,System.Int32,System.String)">
+            <summary>
+            更新门店采购申请状态
+            </summary>
+            <param name="applyId"></param>
+            <param name="stockState"></param>
+            <param name="remark"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.ShopConfirmPurchaseOrder(System.Guid,ERP.Model.StorageRecordInfo,System.Collections.Generic.IList{ERP.Model.StorageRecordDetailInfo},Keede.Ecsoft.Model.ShopFront.ApplyStockInfo,System.Collections.Generic.IList{Keede.Ecsoft.Model.ShopFront.ApplyStockDetailInfo},System.Collections.Generic.IList{Keede.Ecsoft.Model.ReckoningInfo})">
+            <summary>
+            确认收获异常，原采购完成，生成新采购
+            </summary>
+            <param name="applyId"></param>
+            <param name="storageRecord"></param>
+            <param name="storageRecordDetail"></param>
+            <param name="applyStock"></param>
+            <param name="stockDetailInfos"></param>
+            <param name="list">往来帐列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetExchangeState(System.Guid)">
+            <summary>
+            获取退换货单的状态
+            </summary>
+            <param name="applyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.IsExistNoAuditMessage(System.Guid)">
+            <summary>
+            是否存在未审核的退货留言
+            </summary>
+            <param name="shopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddRefundMessage(ERP.Model.ShopFront.ShopRefundMessageInfo)">
+            <summary>
+            添加退货留言
+            </summary>
+            <param name="messageInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddBarterApplyGoodsList(ERP.Model.ShopFront.ShopExchangedApplyInfo,System.Collections.Generic.IList{ERP.Model.ShopFront.ShopExchangedApplyDetailInfo})">
+            <summary>
+            添加换货申请列表
+            </summary>
+            <param name="applyDetailInfo"></param>
+            <param name="detailInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateBarterApplyGoodsList(ERP.Model.ShopFront.ShopExchangedApplyInfo,System.Collections.Generic.IList{ERP.Model.ShopFront.ShopExchangedApplyDetailInfo})">
+            <summary>
+            修改换货申请列表
+            </summary>
+            <param name="applyDetailInfo"></param>
+            <param name="detailInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateCheckRefundList(Keede.Ecsoft.Model.CheckRefundInfo,System.Collections.Generic.IList{Keede.Ecsoft.Model.CheckRefundDetailInfo})">
+            <summary>
+            修改退货检查
+            </summary>
+            <param name="checkRefundInfo"></param>
+            <param name="checkRefundDetailInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddRefundApplyGoodsList(ERP.Model.ShopFront.ShopExchangedApplyInfo,System.Collections.Generic.IList{ERP.Model.ShopFront.ShopApplyDetailInfo})">
+            <summary>
+            添加退货申请列表
+            </summary>
+            <param name="applyDetailInfo"></param>
+            <param name="detailInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateRefundApplyGoodsList(ERP.Model.ShopFront.ShopExchangedApplyInfo,System.Collections.Generic.IList{ERP.Model.ShopFront.ShopApplyDetailInfo})">
+            <summary>
+            修改退货申请列表
+            </summary>
+            <param name="applyDetailInfo"></param>
+            <param name="detailInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateExchangeApplyState(System.Guid,System.Int32,System.String)">
+            <summary>
+            更新退换货申请状态
+            </summary>
+            <param name="applyId"></param>
+            <param name="exchangeState"></param>
+            <param name="remark"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.SelectOneMonthReturnedApplyList(System.Guid,System.DateTime)">
+            <summary>
+            获取当月的退货记录
+            </summary>
+            <param name="shopId"></param>
+            <param name="dateTime"></param>
+            <returns></returns>
+            zal 2017-03-15
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetExchangedApplyList(System.Boolean,System.Guid,System.DateTime,System.DateTime,System.String,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取退换货申请列表
+            </summary>
+            <param name="isBarter">false 换货，true 退货 </param>
+            <param name="shopId">店铺Id</param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="applyNo">申请编号</param>
+            <param name="state"></param>
+            <param name="goodsNameOrGoodsCode">商品名称或者商品Code</param>
+            <param name="pageSize">每页条数</param>
+            <param name="pageIndex">第几页</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBarterGoodsListByApplyId(System.Guid)">
+            <summary>
+            获取换货明细
+            </summary>
+            <param name="applyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetRefundGoodsListByApplyId(System.Guid)">
+            <summary>
+            获取退货明细
+            </summary>
+            <param name="applyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.IsAllowPurchase(System.Guid,System.Guid)">
+            <summary>
+            判断店铺下某商品是否允许采购
+            </summary>
+            <param name="shopId"></param>
+            <param name="goodsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetNoAuditedGoodsQuantity(System.Int32,System.Guid,System.Guid)">
+            <summary>
+            获取未审核及已审核的退还换货记录
+            </summary>
+            <param name="type">type:-1,全部，0：换货,1退货</param>
+            <param name="shopId">店铺Id</param>
+            <param name="goodsId">商品Id</param>
+            <returns>key:子商品Id,value:退换货数</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddApplyStock(Keede.Ecsoft.Model.ShopFront.ApplyStockInfo,System.Collections.Generic.IList{Keede.Ecsoft.Model.ShopFront.ApplyStockDetailInfo})">
+            <summary>
+            联盟店添加采购申请
+            </summary>
+            <param name="applyStock"></param>
+            <param name="list"></param>
+            <returns>采购申请状态</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.IsSuccessCreateCheck(System.Guid,System.Guid,System.String,System.String)">
+            <summary>
+            是否成功生成退货商品检查
+            </summary>
+            <param name="applyId">申请单号</param>
+            <param name="expressNo">快递单号</param>
+            <param name="expressName">快递公司</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBankAccountsByShopId">
+            <summary>
+            根据店铺获取帐户(用于联盟店往来单位收付款)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertCompanyFundReceipt(Keede.Ecsoft.Model.CompanyFundReceiptInfo)">
+            <summary>
+            添加往来单位收付款到ERP
+            </summary>
+            <param name="fundReceiptInfo"></param>
+            <returns>收付款单据号</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetBankAccountsList">
+            <summary>
+            获取资金帐号列表不关联BankAccountBinding
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetFilialeIdGoodsIdAvgSettlePrice(System.DateTime)">
+            <summary>
+            获取商品特定时间下最近的结算价存档，如果最近结算价没有(即表示是新添加的商品)，则取该商品的采购价
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+            zal 2016-05-19
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoiceByOrderId(System.Guid)">
+            <summary> 根据订单号，获取指定的发票索取记录
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetOrderScoreListToPage(System.Guid,System.Int32,System.Int32,System.Int32)">
+            <summary>获取会员Id订单金额，积分列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPurchaseSetInfo(System.Guid,System.Guid)">
+            <summary>获取商品的采购设置（用于门店自己采购，供应商直接发货至门店） 2016年10月27日   陈重文
+            </summary>
+            <param name="goodsId">商品ID</param>
+            <param name="warehouseId">仓库ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPurchaseSetList(System.Collections.Generic.List{System.Guid},System.Guid,System.Int32)">
+            <summary>
+            获取商品采购设置
+            </summary>
+            <param name="goodsIdList"></param>
+            <param name="warehouseId"></param>
+            <param name="isDelete"></param>
+            <returns>0:禁用；1:启用；2:全部</returns>
+            zal 2017-03-16
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetPurchaseSetListByWarehouseIdAndCompanyId(System.Guid,System.Guid)">
+            <summary>
+            获取所有商品采购设置
+            </summary>
+            <returns></returns>
+            zal 2017-03-07
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyBindFilialeIds(System.Guid)">
+            <summary>获取往来单位绑定公司信息   ADD 2016年12月7日  陈重文
+            </summary>
+            <param name="companyId">往来单位ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetCompanyDic">
+            <summary>
+            获取往来单位字典
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-28
+        </member>
+        <member name="M:ERP.Service.Contract.IService.RefuseInGoodsBill(System.String,System.String)">
+            <summary>
+            进货单据核退（更新ERP入库单据状态）。
+            </summary>
+            <param name="no">入库单号</param>
+            <param name="description">描述</param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-28
+        </member>
+        <member name="M:ERP.Service.Contract.IService.RefuseOutGoodsBill(System.String,System.String)">
+            <summary>
+            出货单据核退（更新ERP入库单据状态）。
+            </summary>
+            <param name="no">出库单号</param>
+            <param name="description">描述</param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-28
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetAllRealGoodsSaleNumber(System.DateTime,System.DateTime)">
+            <summary>
+            根据开始时间,截止时间获取指定时间段内的商品销量数据
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-28
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetAvgRealGoodsSaleNumber(System.DateTime,System.DateTime)">
+            <summary>
+            根据开始时间,截止时间获取指定时间段内的商品日均销量数据
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetRealGoodsSaleNumber(System.DateTime,System.DateTime,System.Guid,System.Guid)">
+            <summary>
+            根据开始时间,截止时间，子商品ID，销售平台 获取时间段内具体销售平台某个子商品的销量。
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="realGoodsId">子商品ID</param>
+            <param name="salePlatformId">销售平台</param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-28
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoiceList(System.String,System.Byte,System.Boolean,System.Boolean,System.DateTime,System.DateTime)">
+            <summary>
+            根据订单号，发票状态，订单是否完成发货，发票是否提交，开始时间，截止时间获取发票集合。
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoice(System.Guid)">
+            <summary>
+            根据发票ID获取发票信息
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoice(System.Int64)">
+            <summary>
+            根据发票号码获取发票信息
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetOrderBasic(System.String)">
+            <summary>
+            根据订单号获取订单简单信息
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoiceItem">
+            <summary>
+            获取发票品名的名称集合。
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateInvoiceStateWithInvoiceNo(System.String,System.Byte,System.Int64,System.String)">
+            <summary>
+            根据订单号更新发票状态，发票号，发票代码。
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoiceCodeAndCurInvoiceNo(System.Int64,System.Int64)">
+            <summary>
+            根据参数发票卷开始和截止号码获取（返回模型字段：发票卷代码，发票卷所属公司ID，当前发票卷使用到的最大发票号）。
+            </summary>
+            <param name="invoiceStartNo"></param>
+            <param name="invoiceEndNo"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-29
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoicePrintData(System.Guid)">
+            <summary>
+            根据发票ID获取发票打印所属数据
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-06-30
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetOrderCodRealTotalPrice(System.String,System.Decimal@)">
+            <summary>
+            根据订单号 获取订单信息 如果是货到付款的则返回金额，如果不是则返回默认值
+            </summary>
+            <param name="orderNo"></param>
+            <param name="realtotalPrice"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-30
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetOrder(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            根据订单号集合，是否打印发票来获取订单信息。
+            </summary>
+            <param name="orderNos"></param>
+            <param name="isPrintInvoice"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-06-30
+        </member>
+        <member name="M:ERP.Service.Contract.IService.ChInvoice(System.Guid,System.String,System.Int64)">
+            <summary>
+            红冲发票并返回发票打印所属数据
+            </summary>
+            1.根据原发票ID查询发票信息
+            2.增加一条新的发票信息，金额等于原发票信息的金额的负数，InvoiceCode，InvoiceNo的值等于 参数（红冲后的发票代码，红冲后的发票号码），RequestTime和AcceptedTime为当前时间
+            3.修改原发票InvoiceChCode和InvoiceChNo字段为（红冲后的发票代码，红冲后的发票号码）
+            4.插入lmshop_OrderInvoice表
+            For WMS
+            <returns></returns>
+            ww 2016-07-01
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddInvoice(ERP.Model.AddInvoiceInfo)">
+            <summary>
+            新增发票信息并返回发票打印所属数据
+            </summary>
+            <param name="invoiceAdd"></param>
+             For WMS
+            <returns></returns>
+            ww 2016-07-01
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AgainInvoice(ERP.Model.AgainInvoiceInfo,System.Boolean)">
+            <summary>
+            重开发票或重开并作废原发票并返回发票打印所属数据
+            </summary>
+            <param name="invoiceAdd"></param>
+            <param name="isCancelOriginalInvoice">是否作废原发票</param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-01
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateInvoiceRollStateInvocation(System.Guid,System.Int64)">
+            <summary>
+            根据发票id和起始号更新发票卷为启用
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-04
+        </member>
+        <member name="M:ERP.Service.Contract.IService.FinishStorageRecordIn(System.String,System.String,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>入库单完成
+            </summary>
+            <param name="inTradeCode"></param>
+            <param name="description"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.FinishStorageRecordOut(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>出库单完成
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.UpdateNonceWarehouseGoodsStock(System.String,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>
+            更新出入库明细商品当前库存
+            </summary>
+            <param name="inTradeCode"></param>
+            <param name="stockQuantitys"></param>
+            <param name="operatorName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.InsertReckoningForLostBack(System.String,System.Decimal,System.Decimal)">
+            <summary>
+            丢件找回插入相关往来帐
+            </summary>
+            <param name="orderNo"></param>
+            <param name="payToKede"></param>
+            <param name="badMoney"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.GetInvoiceListByOrderNos(System.Collections.Generic.List{System.String})">
+            <summary>
+            根据订单号列表获取发票信息
+            </summary>
+            <param name="orders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.IsAbeyanced(System.String)">
+            <summary>
+            判断进货单关联的入库单对应的往来单位是否搁置
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddBySellReturnIn(ERP.Model.WMS.WMSReturnGoodsRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.CancelStorageRecord(System.String)">
+            <summary>
+            取消/作废订单 删除订单相关出库单据
+            </summary>
+            <param name="orderNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.AddByLostBackReturnIn(ERP.Model.WMS.WMSLostBackReturnDTO)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.HasPurchseSetGoodsIds(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            存在采购设置的商品集合
+            </summary>
+            <param name="goodsIds"></param>
+            <param name="warehouseIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.HasPurchseSetGoodsIdsGroup(System.Collections.Generic.IEnumerable{System.Guid},System.Guid)">
+            <summary>
+            验证商品是否存在采购设置
+            </summary>
+            <param name="goodsIds"></param>
+            <param name="warehouseId"></param>
+            <returns>Key物流公司,Value 存在采购设置的商品列表</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.IService.CreateByCombineSplit(System.Boolean,System.String,System.Guid,System.Guid,System.Int32,System.Collections.Generic.Dictionary{System.Guid,System.Int32},System.DateTime,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>
+            拆分组合更新结算价
+            </summary>
+            <param name="isSplit">是否为拆分</param>
+            <param name="billNo"></param>
+            <param name="hostingFilialeId"></param>
+            <param name="combineSplitGoodsId">主商品ID</param>
+            <param name="combineSplitGoodsQuantity">主商品数量</param>
+            <param name="combineSplitDetailGoodsIds">组合或拆分的商品明细，主商品ID、数量</param>
+            <param name="occerTime"></param>
+            <param name="stockQuantitys">各主商品库存</param>
+            <returns></returns>
+        </member>
+        <member name="T:ERP.Service.Contract.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.IsExistByOrderNoAndPaystate(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetPayNoticeInfoListByOrderNo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdatePayNoticeInfo(Keede.Ecsoft.Model.PaymentNoticeInfo,System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="pninfo"></param>
+            <param name="pushDataId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.DeletePayNoticeByPayId(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="payid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.InsertGoodsOrderInvoice(Keede.Ecsoft.Model.InvoiceInfo,System.Guid[],System.Guid)">
+            <summary>插入发票数据
+            </summary>
+            <param name="invoice">发票模型</param>
+            <param name="orderIds">订单详细</param>
+            <param name="pushDataId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GeTaxrateProportionInfos(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            获取商品类型对应的税率比例(包含：商品类型、类型编码、比例)
+            </summary>
+            <param name="goodsTypes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderToRedeploy(System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为需调拨
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderToRedeployNew(System.Collections.Generic.List{System.String},System.Guid,System.Byte,System.Guid,System.Guid)">
+            <summary>更新订单状态为需调拨
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderToPurchase(System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为需采购
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderStateToWaitOutbound(System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为出货中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderStateToWaitOutboundNew(System.Collections.Generic.List{System.String},System.Guid,System.Byte,System.Guid,System.Guid)">
+            <summary>更新订单状态为出货中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderExpressNo(System.Collections.Generic.List{System.String},System.String)">
+            <summary>设置订单快递号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderToConsignmented(System.Guid,System.String,System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为完成
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsOrderToCancellation(System.Guid,System.String,System.Boolean,System.Collections.Generic.List{System.String})">
+            <summary>更新订单状态为作废
+            </summary>
+            <returns></returns>  
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsIdsIsStockUp(System.Guid,System.Collections.Generic.List{System.Guid})">
+            <summary>获取商品备货信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetHistoryGoodsOrderByMemberIdAndOrderTime(System.Guid,System.DateTime)">
+            <summary>获取会员历史订单记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetHistoryOrderInfoByOrderId(System.Guid,System.DateTime)">
+            <summary>获取历史订单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetHistoryOrderInfoByOrderNo(System.String,System.DateTime)">
+            <summary>获取历史订单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetHistoryGoodsOrderDetailListByOrderId(System.Guid,System.DateTime)">
+            <summary>获取历史订单明细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetInvoiceStateToWasteRequest(System.Guid,System.String)">
+            <summary>申请发票作废
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetInvoiceStateToCancel(System.Guid,System.String)">
+            <summary>申请发票作废
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetInvoiceNameAndInvoiceContent(System.Guid,System.String,System.String)">
+            <summary>更新发票抬头和发票内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoiceNoAndIsCommitByOrderId(System.Guid)">
+            <summary>通过订单ID获取发票号码和发票是否报税     (Key:发票号码，Value:是否报税)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetFilialeIdGoodsIdAvgSettlePrice(System.DateTime)">
+            <summary>
+            获取商品特定时间下最近的结算价存档，如果最近结算价没有(即表示是新添加的商品)，则取该商品的采购价
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+            zal 2016-05-19
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoiceByOrderId(System.Guid)">
+            <summary> 根据订单号，获取指定的发票索取记录
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetOrderScoreListToPage(System.Guid,System.Int32,System.Int32,System.Int32)">
+            <summary>获取会员Id订单金额，积分列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsState(System.Guid,System.Collections.Generic.List{System.Guid},System.Int32,System.Guid)">
+            <summary>
+            设置商品上下架
+            Add by liucaijun at 2011-March-25th
+            </summary>
+            <param name="personnelId"> </param>
+            <param name="goodsList">商品列表</param>
+            <param name="state">上下架状态</param>
+            <param name="pushDataId">命令ID</param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SetGoodsIsScarcityState(System.Collections.Generic.List{System.Guid},System.Int32,System.Guid)">
+            <summary>
+            设置商品是否缺货
+            </summary>
+            <param name="goodsList">商品列表</param>
+            <param name="state">缺货</param>
+            <param name="pushDataId">命令ID</param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsState(System.Guid)">
+            <summary>
+            根据商品标识获取商品上下架状态 add jiang 2011-08-01
+            </summary>
+            <param name="goodsid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateGoodsISScarcity(System.Guid,System.Guid,System.Int32,System.Int32)">
+            <summary>
+            根据商品ID设置商品是否缺货
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="goodsId">商品ID</param>
+            <param name="isScarcity">是否缺货</param>
+            <param name="state"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateRealGoodsISScarcity(System.Guid,System.Guid,System.Int32)">
+            <summary>
+            设置子商品是否缺货
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="realGoodsId"></param>
+            <param name="isScarcity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsSales(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.InsertReckoningInfo(Keede.Ecsoft.Model.ReckoningInfo,System.Guid)">
+            <summary>
+            添加帐务记录数据
+            </summary>
+            <param name="info"></param>
+            <param name="pushDataId"> </param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyCussentList(System.Int32)">
+            <summary>
+            获取指定类型的往来单位信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetBankAccountList(System.Guid)">
+            <summary>
+            获取所有仓库集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.CheckReckoning(System.Collections.Generic.IList{Keede.Ecsoft.Model.ReckoningInfo},System.Collections.Generic.IList{Keede.Ecsoft.Model.ReckoningInfo},Keede.Ecsoft.Model.WasteBookInfo)">
+            <summary>
+            对帐
+            </summary>
+            <param name="lstModify"></param>
+            <param name="lstAdd"></param>
+            <param name="wastBookinfo"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetReckoningInfo(System.Guid,System.String,ERP.Enum.CheckType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="companyId"></param>
+            <param name="originalTradeCode"></param>
+            <param name="checkType"></param>
+            <param name="reckoningCheckType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetValidateDataPage(System.Guid,System.Guid,System.Guid,System.DateTime,System.DateTime,ERP.Enum.CheckType,ERP.Enum.AuditingState,ERP.Enum.ReceiptType,System.String,System.Guid,System.Int32,System.Int64,System.Int32,System.Int32[])">
+            <summary>
+            按是否对账,日期,账单类型获取往来账（未对账）
+            用于列表显示
+            </summary>
+            <param name="companyClass">往来单位类型</param>
+            <param name="companyId">往来单位编号</param>
+            <param name="filialeId">公司ID </param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="cType"></param>
+            <param name="auditingState"></param>
+            <param name="receiptType"></param>
+            <param name="tradeCode"></param>
+            <param name="warehouseId"></param>
+            <param name="keepyear">保留几年数据</param>
+            <param name="money"></param>
+            <param name="start"> </param>
+            <param name="limit"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsOrder(System.Guid,System.DateTime,System.DateTime,System.String,System.String,System.String,System.String,System.Guid,System.Int32,System.Int32)">
+            <summary>根据年份和指定条件查询订单
+            </summary>
+            <param name="salePlatformId"> </param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="orderNo"></param>
+            <param name="consignee"></param>
+            <param name="expressNo"></param>
+            <param name="mobile"></param>
+            <param name="memberId"></param>
+            <param name="startPage"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetBankAccountsListFromERP">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetBankAccountsListByFBP(System.Guid,System.Guid,System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="filialeId"> </param>
+            <param name="branchId"> </param>
+            <param name="positionId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetAllCompanyBankAccountsList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetBankAccountsNonce(System.Guid)">
+            <summary>
+            取得某银行当前金额
+            </summary>
+            <param name="bankAccountsId">银行ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookList(System.Guid,System.DateTime,System.DateTime,ERP.Enum.ReceiptType,ERP.Enum.AuditingState,System.Double,System.Double,System.String,System.Guid,System.Guid,System.Guid,System.Int32)">
+            <summary>
+            根据条件获取账目信息
+            </summary>
+            <param name="bankAccountsId">银行帐号Id</param>
+            <param name="endDate"></param>
+            <param name="receiptType"></param>
+            <param name="startDate"></param>
+            <param name="auditingState"></param>
+            <param name="minIncome"></param>
+            <param name="maxIncome"></param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <param name="keepyear"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookListToPage(System.Guid,System.DateTime,System.DateTime,ERP.Enum.ReceiptType,ERP.Enum.AuditingState,System.Double,System.Double,System.String,System.Guid,System.Guid,System.Guid,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            根据条件获取账目信息(分页)
+            </summary>
+            <param name="bankAccountsId">银行帐号Id</param>
+            <param name="endDate"></param>
+            <param name="receiptType"></param>
+            <param name="startDate"></param>
+            <param name="auditingState"></param>
+            <param name="minIncome"></param>
+            <param name="maxIncome"></param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <param name="keepyear"></param>
+            <param name="startPage"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookListBySaleFilialeIdToPage(System.Guid,System.DateTime,System.DateTime,ERP.Enum.ReceiptType,ERP.Enum.AuditingState,System.Double,System.Double,System.String,System.Guid,System.Guid,System.Guid,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            根据条件获取账目信息
+            </summary>
+            <param name="saleFilialeId">公司Id</param>
+            <param name="endDate"></param>
+            <param name="receiptType"></param>
+            <param name="startDate"></param>
+            <param name="auditingState"></param>
+            <param name="minIncome"></param>
+            <param name="maxIncome"></param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"></param>
+            <param name="branchId"></param>
+            <param name="positionId"></param>
+            <param name="keepyear"></param>
+            <param name="isCheck"> </param>
+            <param name="startPage"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetTradeCodeNum(System.String)">
+            <summary>
+            获取指定tradecode在表中的记录数
+            </summary>
+            <param name="tradecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetPoundageForReckoning(System.String)">
+            <summary>
+            获取手续费（为reckoning表修改记录用）
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookId(System.String)">
+            <summary>
+            获取wastebookid
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookIdForUpdate(System.String)">
+            <summary>
+            获取wastebookid
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookIdForReckoning(System.String)">
+            <summary>
+            获取wastebookid
+            </summary>
+            <param name="tradeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookCheck(System.Guid)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBook(System.Guid)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookByLinkTradeCodeAndWasteSource(System.String,System.Int32)">
+            <summary>根据单据编号获取资金流
+            </summary>
+            <param name="linkTradeCode">关联单据编号</param>
+            <param name="wasteSource">1:天猫、京东、第三方交易佣金;2:积分代扣;3:订单交易金额</param>
+            <returns></returns>
+            zal 2016-06-15
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetWasteBookInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetChildCompanyClassList(System.Guid)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyCussentListByClass(System.Guid)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetAllCompanyCussentList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyCussent(System.Guid)">
+            <summary>
+            获取往来单位信息类
+            </summary>
+            <param name="companyId">往来单位编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetNonceReckoningTotalled(System.Guid)">
+            <summary>
+            获取指定公司现在的应付款数，即相对于本公司的应收款数
+            </summary>
+            <param name="companyId">往来公司编号</param>
+            <returns>返回对本公司而言的指定公司应收款</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetNonceReckoningTotalledDetail(System.Guid,System.Guid)">
+            <summary>
+            获取指定公司现在的应付款数，即相对于本公司的应收款数
+            </summary>
+            <param name="companyId">往来公司编号</param>
+            <param name="filialeId"> </param>
+            <returns>返回对本公司而言的指定公司应收款</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetReckoning(System.Guid)">
+            <summary> 根据账单编号查询往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetReckoningType(System.Guid)">
+            <summary>
+            获取指定reckoningId的ReckoningType
+            </summary>
+            <param name="reckoningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetTotalled(System.Guid)">
+            <summary>
+            获取指定往来单位的往来总帐
+            </summary>
+            <param name="companyId">往来单位编号</param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetPoundage(System.String)">
+            <summary>
+            获取手续费
+            </summary>
+            <param name="tradeCode">往来单位编号</param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.CheckPoundage(System.Decimal,System.Decimal)">
+            <summary>
+            获取指定reckoningId的ReckoningType
+            </summary>
+            <param name="sum"> </param>
+            <param name="poundage"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateReckoning(Keede.Ecsoft.Model.ReckoningInfo,System.Guid)">
+            <summary> 根据账单编号查询往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateWasteBookDescription(System.Guid,System.String,System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="wasteBookId"></param>
+            <param name="description"></param>
+            <param name="pushDataId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateDescriptionForAuditing(System.String,System.String,System.Guid)">
+            <summary> 修改往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateReckoningDescription(System.Guid,System.String,System.Guid)">
+            <summary> 修改往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.AuditingReckoning(System.String,System.Guid)">
+            <summary> 根据账单编号查询往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.DeleteReckoning(System.String,System.Guid)">
+            <summary> 根据账单编号删除往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCode(ERP.Enum.CodeType)">
+            <summary> 获取编码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateWasteBook(Keede.Ecsoft.Model.WasteBookInfo,System.Guid)">
+            <summary> 修改账目记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateWasteBookWithBank(Keede.Ecsoft.Model.WasteBookInfo,System.Guid)">
+            <summary> 修改账目记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateWasteBookDateTime(System.String,System.Guid)">
+            <summary> 修改账目记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdatePoundageForReckoning(System.Guid,System.DateTime,System.Decimal,System.Guid)">
+            <summary>
+            在reckoning中更改wastebook中的手续费
+            </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.DeleteWasteBook(System.String,System.Guid)">
+            <summary> 删除账目记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.DeleteWasteBookPoundage(System.String,System.Decimal,System.Guid)">
+            <summary>
+            删除手续费
+            </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateWasteBookDescriptionForAuditing(System.String,System.String,System.Guid)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.AuditingWasteBook(System.String,System.Guid)">
+            <summary> 审核往来账信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateWasteBookCheck(Keede.Ecsoft.Model.WasteBookCheckInfo,System.Guid)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.InsertWasteBookCheck(Keede.Ecsoft.Model.WasteBookCheckInfo,System.Guid)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateBll(System.Guid,System.Guid,System.String,System.Decimal,System.String,System.Decimal,System.Guid)">
+            <summary>
+            更改一笔账目
+             </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateBankAccountsId(System.Guid,System.Guid,System.Guid)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.InsertPoundage(System.Guid,System.Guid,System.String,System.Decimal,System.Guid)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdatePoundage(System.Guid,System.String,System.Decimal)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.Virement(System.Guid,System.Guid,System.Guid,System.Decimal,System.Decimal,System.String,System.String,System.Guid)">
+            <summary>
+            转帐
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="inBankAccountsId">转入帐号Id</param>
+            <param name="outBankAccountsId">转出帐号Id</param>
+            <param name="sum">金额</param>
+            <param name="poundage"></param>
+            <param name="description">说明</param>
+            <param name="tradeCode"></param>
+            <param name="filialeId"> </param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.AuditingWaste(System.Guid,System.String)">
+            <summary> 修改账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsPredictArrivalTime(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="realGoodsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetMemberIdListByRealGoodsIds(System.DateTime,System.DateTime,System.Collections.Generic.List{System.Guid})">
+            <summary> 根据商品ID获取会员ID集合
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="realGoodsIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateGoodsDaySalesStatistics(System.Guid,System.Guid,System.Collections.Generic.IList{ERP.Model.AfterSaleDetailInfo})">
+            <summary>
+            
+            </summary>
+            <param name="pushDataId"> </param>
+            <param name="orderId"></param>
+            <param name="afterSaleDetailList"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.InsertCompanyFundReceiptForShop(Keede.Ecsoft.Model.CompanyFundReceiptInfo)">
+            <summary> 
+            往来单位收付款添加,修改
+            </summary>
+            <param name="receipt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyFundReceiptForShop(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Guid,System.Nullable{System.Int32},System.String)">
+            <summary>
+            往来单位收付款查询
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="companyId"></param>
+            <param name="filialeId"></param>
+            <param name="receiptType"></param>
+            <param name="searchKey"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateCompanyFundReceiptStatus(System.Guid,System.Guid,System.Int32,System.String)">
+            <summary>
+            更改往来单位收付款状态
+            </summary>
+            <param name="pushDataId"></param>
+            <param name="receiptId"></param>
+            <param name="status"></param>
+            <param name="remark"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyFundReceiptStatus(System.Guid)">
+            <summary> 
+            根据id获取往来帐收付款状态
+            </summary>
+            <param name="receiptId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.RenewalWasteBookByIsOut(System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>针对支付宝订单IsOut为False且事后申请发票更新订单和资金流字段IsOut为True（其他地方慎用）
+            </summary>
+            <param name="orderIds">订单Ids </param>
+            <param name="paidNo">交易流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyDic">
+            <summary>
+            获取往来单位字典
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.RefuseInGoodsBill(System.String,System.String)">
+            <summary>
+            进货单据核退（更新ERP入库单据状态）。
+            </summary>
+            <param name="no">入库单号</param>
+            <param name="description">描述</param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.RefuseOutGoodsBill(System.String,System.String)">
+            <summary>
+            出货单据核退（更新ERP入库单据状态）。
+            </summary>
+            <param name="no">出库单号</param>
+            <param name="description">描述</param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetAllRealGoodsSaleNumber(System.DateTime,System.DateTime)">
+            <summary>
+            根据开始时间,截止时间获取指定时间段内的商品销量数据
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetRealGoodsSaleNumber(System.DateTime,System.DateTime,System.Guid,System.Guid)">
+            <summary>
+            根据开始时间,截止时间，子商品ID，销售平台 获取时间段内具体销售平台某个子商品的销量。
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="realGoodsId">子商品ID</param>
+            <param name="salePlatformId">销售平台</param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoiceList(System.String,System.Byte,System.Boolean,System.Boolean,System.DateTime,System.DateTime)">
+            <summary>
+            根据订单号，发票状态，订单是否完成发货，发票是否提交，开始时间，截止时间获取发票集合。
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoice(System.Guid)">
+            <summary>
+            根据发票ID获取发票信息
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoice(System.Int64)">
+            <summary>
+            根据发票号码获取发票信息
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetOrderBasic(System.String)">
+            <summary>
+            根据订单号获取订单简单信息
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoiceItem">
+            <summary>
+            获取发票品名的名称集合。
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateInvoiceStateWithInvoiceNo(System.String,System.Byte,System.Int64,System.String)">
+            <summary>
+            根据发票ID更新发票状态，发票号，发票代码。
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoiceCodeAndCurInvoiceNo(System.Int64,System.Int64)">
+            <summary>
+            根据参数发票卷开始和截止号码获取（返回模型字段：发票卷代码，发票卷所属公司ID，当前发票卷使用到的最大发票号）。
+            </summary>
+            <param name="invoiceStartNo"></param>
+            <param name="invoiceEndNo"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoicePrintData(System.Guid)">
+            <summary>
+            根据发票ID获取发票打印所属数据
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetOrderCodRealTotalPrice(System.String,System.Decimal@)">
+            <summary>
+            根据订单号 获取订单信息 如果是货到付款的则返回金额，如果不是则返回默认值
+            </summary>
+            <param name="orderNo"></param>
+            <param name="realtotalPrice"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetOrder(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            根据订单号集合，是否打印发票来获取订单信息。
+            </summary>
+            <param name="orderNos"></param>
+            <param name="isPrintInvoice"></param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.ChInvoice(System.Guid,System.String,System.Int64)">
+            <summary>
+            红冲发票并返回发票打印所属数据
+            </summary>
+            1.根据原发票ID查询发票信息
+            2.增加一条新的发票信息，金额等于原发票信息的金额的负数，InvoiceCode，InvoiceNo的值等于 参数（红冲后的发票代码，红冲后的发票号码），RequestTime和AcceptedTime为当前时间
+            3.修改原发票InvoiceChCode和InvoiceChNo字段为（冲红后的发票代码，红冲后的发票号码）
+            4.插入lmshop_OrderInvoice表
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.AddInvoice(ERP.Model.AddInvoiceInfo)">
+            <summary>
+            新增发票信息并返回发票打印所属数据
+            </summary>
+            <param name="invoiceAdd"></param>
+             For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.AgainInvoice(ERP.Model.AgainInvoiceInfo,System.Boolean)">
+            <summary>
+            重开发票或重开并作废原发票并返回发票打印所属数据
+            </summary>
+            <param name="invoiceAdd"></param>
+            <param name="isCancelOriginalInvoice">是否作废原发票</param>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateInvoiceRollStateInvocation(System.Guid,System.Int64)">
+            <summary>
+            根据发票id和起始号更新发票卷为启用
+            </summary>
+            For WMS
+            <returns></returns>
+            ww 2016-07-13
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.FinishStorageRecordIn(System.String,System.String,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>入库单完成
+            </summary>
+            <param name="inTradeCode"></param>
+            <param name="description"></param>
+            <param name="stockQuantitys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.FinishStorageRecordOut(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>出库单完成
+            </summary>
+            <param name="outTradeCode"></param>
+            <param name="description"></param>
+            <param name="operatorName"></param>
+            <param name="stockQuantitys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.UpdateNonceWarehouseGoodsStock(System.String,System.Collections.Generic.Dictionary{System.Guid,System.Int32})">
+            <summary>
+            更新出入库明细商品当前库存
+            </summary>
+            <param name="tradeCode"></param>
+            <param name="stockQuantitys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.InsertReckoningForLostBack(System.String,System.Decimal,System.Decimal)">
+            <summary>
+            丢件找回插入相关往来帐
+            </summary>
+            <param name="orderNo"></param>
+            <param name="payToKede"></param>
+            <param name="badMoney"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetInvoiceListByOrderNos(System.Collections.Generic.List{System.String})">
+            <summary>
+            根据订单号列表获取发票信息
+            </summary>
+            <param name="orders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetPurchaseSetInfo(System.Guid,System.Guid)">
+            <summary>获取商品的采购设置（用于门店自己采购，供应商直接发货至门店） 2016年10月27日   陈重文
+            </summary>
+            <param name="goodsId">商品ID</param>
+            <param name="warehouseId">仓库ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetPurchaseSetList(System.Collections.Generic.List{System.Guid},System.Guid,System.Int32)">
+            <summary>
+            获取商品采购设置
+            </summary>
+            <param name="goodsIdList"></param>
+            <param name="warehouseId"></param>
+            <param name="isDelete"></param>
+            <returns>0:禁用；1:启用；2:全部</returns>
+            zal 2017-03-16
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetPurchaseSetListByWarehouseIdAndCompanyId(System.Guid,System.Guid)">
+            <summary>
+            获取所有商品采购设置
+            </summary>
+            <returns></returns>
+            zal 2017-03-07
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.ThirdPartyOrderComplete(System.String,System.Guid,System.String,System.Guid)">
+            <summary>第三方订单直接完成发货【四维】        ADD  2016年12月6日  陈重文
+            </summary>
+            <param name="orderNo">订单号</param>
+            <param name="expressId">订单快递Id</param>
+            <param name="expressNo">订单快递号</param>
+            <param name="companyId">配置的往来单位ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetCompanyBindFilialeIds(System.Guid)">
+            <summary>获取往来单位绑定公司信息   ADD 2016年12月7日  陈重文
+            </summary>
+            <param name="companyId">往来单位ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.SelectOneMonthReturnedApplyList(System.Guid,System.DateTime)">
+            <summary>
+            获取当月的退货记录
+            </summary>
+            <param name="shopId"></param>
+            <param name="dateTime"></param>
+            <returns></returns>
+            zal 2017-03-15
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsSaleBySaleFilialeId(System.DateTime,System.DateTime,System.Guid)">
+            <summary>根据销售公司获取其所有商品的销量
+            </summary>
+            <param name="fromTime">开始时间</param>
+            <param name="toTime">截止时间</param>
+            <param name="saleFilialeId">销售公司ID</param>
+            <returns>Key：商品GoodsId, Value: 销量</returns>
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetGoodsSaleBySalePlatformIdList(System.DateTime,System.DateTime,System.Collections.Generic.List{System.Guid})">
+            <summary>根据销售平台获取其所有商品的销量
+            </summary>
+            <param name="fromTime">开始时间</param>
+            <param name="toTime">截止时间</param>
+            <param name="salePlatformIdList">销售平台ID集合</param>
+            <returns>Key：商品GoodsId, Value: 销量</returns>
+            zal 2017-07-27
+        </member>
+        <member name="M:ERP.Service.Contract.Instance.GetVocabularyListByState">
+            <summary>
+            根据词汇状态查询
+            </summary>
+            <returns></returns>
+            zal 2017-08-08
+        </member>
+        <member name="T:ERP.Service.Contract.ITestForJMeter">
+            <summary>
+            仅用于测试
+            </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.ITestForJMeter.InsertStorageRecord(ERP.Model.StorageRecordInfo,System.Collections.Generic.IList{ERP.Model.StorageRecordDetailInfo})">
+            <summary>
+            插入出入库单据
+            </summary>
+            <param name="storageRecord"></param>
+            <param name="storageRecordDetail"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ERP.Service.Contract.ResultInfo">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="M:ERP.Service.Contract.ResultInfo.#ctor(System.Boolean,System.String,System.ServiceModel.FaultException)">
+            <summary>
+            
+            </summary>
+            <param name="isSuccess"></param>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.ResultInfo.Success">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.ResultInfo.Failure(System.String,System.ServiceModel.FaultException)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ERP.Service.Contract.ResultInfo.IsSuccess">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:ERP.Service.Contract.ResultInfo.Message">
+            <summary>
+            消息日志
+            </summary>
+        </member>
+        <member name="P:ERP.Service.Contract.ResultInfo.FaultException">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="T:ERP.Service.Contract.ResultInfo`1">
+            <summary>
+            带有返回值的返回信息
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ERP.Service.Contract.ResultInfo`1.#ctor(`0,System.Boolean,System.String,System.ServiceModel.FaultException)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="isSuccess"></param>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:ERP.Service.Contract.ResultInfo`1.Success``1(``0)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ERP.Service.Contract.ResultInfo`1.Failure``1(System.String,System.ServiceModel.FaultException)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ERP.Service.Contract.ResultInfo`1.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+    </members>
+</doc>

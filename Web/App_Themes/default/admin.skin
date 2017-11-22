@@ -1,0 +1,64 @@
+﻿<asp:TextBox SkinID="AutoInput" runat="server" CssClass="AutoInput"/>
+<asp:TextBox SkinID="LongInput" runat="server" CssClass="LongInput"/>
+<asp:TextBox SkinID="StandardInput" runat="server" CssClass="StandardInput"/>
+<asp:TextBox SkinID="ShortInput" runat="server" CssClass="ShortInput"/>
+<asp:TextBox SkinID="MinisizeInput" runat="server" CssClass="MinisizeInput"/>
+<asp:TextBox SkinID="AutoTextarea" runat="server" CssClass="AutoTextarea"/>
+<asp:TextBox SkinID="LongTextarea" runat="server" CssClass="LongTextarea"/>
+<asp:DropDownList SkinID="ShortDropDown" runat="server" CssClass="ShortDropDownList"/>
+<asp:DropDownList SkinID="StandardDropDown" runat="server" CssClass="StandardDropDownList"/>
+<asp:DropDownList SkinID="LongDropDown" runat="server" CssClass="LongDropDownList"/>
+<asp:RadioButtonList SkinID="GridRadio" runat="server" RepeatDirection="Horizontal" CssClass="GridRadioList"/>
+
+<asp:ImageButton SkinId="LoginButton" runat="server" ImageUrl="./images/LoginButton.gif"/>
+
+<asp:ImageButton SkinID="RefreshImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Refresh.gif"/>
+<asp:ImageButton SkinID="AddImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Add.gif"/>
+<asp:ImageButton SkinID="InsertImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Insert.gif"/>
+<asp:ImageButton SkinID="UpdateImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Update.gif"/>
+<asp:ImageButton SkinID="EditImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Edit.gif"/>
+<asp:ImageButton SkinID="CancelImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Cancel.gif"/>
+<asp:ImageButton SkinID="DeleteImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Delete.gif"/>
+<asp:ImageButton SkinID="AffirmImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Affirm.gif"/>
+<asp:ImageButton SkinID="SearchButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/SearchButton.gif"/>
+<asp:ImageButton SkinID="MessagesImageButton" CssClass="CursorPointer" runat="server" ImageUrl="./images/Messages.gif"/>
+<asp:ImageButton SkinID="CreationData" runat="server" CssClass="CursorPointer" ImageUrl="./images/CreationData.gif"/>
+<asp:ImageButton SkinID="set" runat="server" CssClass="CursorPointer" ImageUrl="./images/Set.gif"/>
+<asp:ImageButton SkinID="ExportData" runat="server" CssClass="CursorPointer" ImageUrl="./images/ExportData.gif"/>
+<asp:ImageButton SkinID="CreationChart" runat="server" CssClass="CursorPointer" ImageUrl="./images/CreationChart.gif"/>
+<asp:ImageButton SkinID="UparrowImageButton" runat="server" CssClass="CursorPointer" ImageUrl="./images/Uparrow.gif"/>
+<asp:ImageButton SkinID="DownarrowImageButtom" runat="server" CssClass="CursorPointer" ImageUrl="./images/Downarrow.gif"/>
+<asp:ImageButton SkinID="BuyImageButtom" runat="server" CssClass="CursorPointer" ImageUrl="./images/Buy.gif"/>
+<asp:ImageButton SkinID="PurchaseData" runat="server" CssClass="CursorPointer" ImageUrl="./images/Purchase.gif"/>
+<asp:ImageButton SkinID="Auth" runat="server" CssClass="CursorPointer" ImageUrl="./images/Auth.gif"/>
+
+<asp:Image SkinID="RefreshImageButton" runat="server" ImageUrl="./images/Refresh.gif" />
+<asp:Image SkinID="AddImageButton" runat="server" ImageUrl="./images/Add.gif" />
+<asp:Image SkinID="InsertImageButton" runat="server" ImageUrl="./images/Insert.gif" />
+<asp:Image SkinID="UpdateImageButton" runat="server" ImageUrl="./images/Update.gif" />
+<asp:Image SkinID="EditImageButton" runat="server" ImageUrl="./images/Edit.gif" />
+<asp:Image SkinID="CancelImageButton" runat="server" ImageUrl="./images/Cancel.gif" />
+<asp:Image SkinID="DeleteImageButton" runat="server" ImageUrl="./images/Delete.gif" />
+<asp:Image SkinID="RedeployImageButton" runat="server" ImageUrl="./images/Redeploy.gif" />
+<asp:Image SkinID="AffirmImageButton" runat="server" ImageUrl="./images/Affirm.gif" />
+<asp:Image SkinID="SearchImageButton" runat="server" ImageUrl="./images/Search.gif" />
+<asp:Image SkinID="PrintButton" runat="server" ImageUrl="./images/Print.gif" />
+<asp:Image SkinID="ExportXLS" runat="server" ImageUrl="./images/ExportXLS.gif"/>
+<asp:Image SkinID="BuyImageButtom" runat="server" ImageUrl="./images/Buy.gif"/>
+<asp:Image SkinID="MemoImg" runat="server" ImageUrl="./images/Memo.gif" />
+<asp:Image SkinID="URLImg" runat="server" ImageUrl="./images/Url.gif" />
+<asp:Image SkinID="EmailImg" runat="server" ImageUrl="./images/Email.gif" />
+<asp:Image SkinID="ShowPicImg" runat="server" ImageUrl="./images/ShowPic.gif" />
+<asp:Image SkinID="LastImg" runat="server" ImageUrl="./images/Last.gif" />
+<asp:Image SkinID="TransferImg" runat="server" ImageUrl="./images/Transfer.gif" />
+
+<asp:Image SkinID="DiscussImg" runat="server" ImageUrl="./images/Discuss.gif" />
+<asp:Image SkinID="ExperienceImg" runat="server" ImageUrl="./images/Experience.gif" />
+<asp:Image SkinID="AskImg" runat="server" ImageUrl="./images/Ask.gif" />
+
+<asp:Image SkinID="QuaereImg" runat="server" ImageUrl="./images/Quaere.gif" />
+<asp:Image SkinID="AdviceImg" runat="server" ImageUrl="./images/Advice.gif" />
+<asp:Image SkinID="LeagueImg" runat="server" ImageUrl="./images/League.gif" />
+<asp:Image SkinID="AllianceImg" runat="server" ImageUrl="./images/Alliance.gif" />
+<asp:Image SkinID="ExpertsAnswerImg" runat="server" ImageUrl="./images/ExpertsAnswer.gif" />
+<asp:Image SkinID="RefundmentImg" runat="server" ImageUrl="./images/Refundment.gif" />

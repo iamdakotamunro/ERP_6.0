@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>3.0.0-beta2</version>
+        <title>ERP双十一性能优化</title>
+        <authors>kede</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+2017/8/31 ERP双十一性能优化，对应业务nuget版本1.3.1-beta1
+1）WCF 标记DataContract
+2）接入数据库读写分离
+        </description>
+        <tags>双十一性能优化</tags>
+    </metadata>
+</package>

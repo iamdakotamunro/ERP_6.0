@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model.ShopFront" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ApplyStockInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ApplyId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_CompanyId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_CompanyName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CompanyWarehouseId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_DateCreated_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Direction_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_FilialeId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_FilialeName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ParentApplyId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_PurchaseType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_SemiStockCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SemiStockId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_StockState_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_SubtotalQuantity_x003E_k__BackingField" type="xs:double" />
+      <xs:element name="_x003C_TradeCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Transactor_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WarehouseId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_WarehouseName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplyStockInfo" nillable="true" type="tns:ApplyStockInfo" />
+  <xs:complexType name="ArrayOfApplyStockDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplyStockDetailInfo" nillable="true" type="tns:ApplyStockDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplyStockDetailInfo" nillable="true" type="tns:ArrayOfApplyStockDetailInfo" />
+  <xs:complexType name="ApplyStockDetailInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ApplyId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ComfirmTips_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CompGoodsID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_CompanyId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_CompanyWarehouseId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_GoodsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsStock_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_IsComfirmed_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsPrint_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_Price_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_ProcessNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Quantity_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ShopFilialeId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Specification_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Units_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WarehouseId_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplyStockDetailInfo" nillable="true" type="tns:ApplyStockDetailInfo" />
+  <xs:complexType name="ShopActivityNoticeInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_CreateTime_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_IsNotice_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsShow_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_NoticeContent_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_NoticeID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_NoticeTitle_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OrderIndex_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShopActivityNoticeInfo" nillable="true" type="tns:ShopActivityNoticeInfo" />
+  <xs:complexType name="ShopActivityImageInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ShopActivityImageType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ShopActivityImage_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShopActivityImageInfo" nillable="true" type="tns:ShopActivityImageInfo" />
+  <xs:complexType name="ArrayOfShopActivityNoticeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShopActivityNoticeInfo" nillable="true" type="tns:ShopActivityNoticeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShopActivityNoticeInfo" nillable="true" type="tns:ArrayOfShopActivityNoticeInfo" />
+</xs:schema>

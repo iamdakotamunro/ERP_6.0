@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7630937-FCCB-4D12-B89A-0346CD12ADF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.BLL.UnitTest</RootNamespace>
+    <AssemblyName>ERP.BLL.UnitTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Config.Keede.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Config.Keede.Library.1.0.7\lib\net40\Config.Keede.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Config.Keede.Library, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Config.Keede.Library.1.0.7\lib\net40\Config.Keede.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Core, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Core.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.DDD, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.DDD.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.Helper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.RWSplitting, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.RWSplitting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KeedeGroup.GoodsManageSystem.Public, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.GoodsCenter.3.5.5.4\lib\net40\KeedeGroup.GoodsManageSystem.Public.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework.10.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.10.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="MIS.Enum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Enum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MIS.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MIS.Service.Contract, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Service.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.ClientEngine, Version=0.8.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Config.Keede.Library.1.0.7\lib\net40\SuperSocket.ClientEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest_RealTimeGrossSettlementManager.cs" />
+    <Compile Include="UnitTest_SubsidyPayment.cs" />
+    <Compile Include="UnitTest_RefundsMoney.cs" />
+    <Compile Include="UnitTest_StorageManager.cs" />
+    <Compile Include="UnitTest_SaleOrderGoodsSettlementManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\ERP.Common\ERP.Environment.csproj">
+      <Project>{4951062B-D3C0-443D-8AB4-C233250A7584}</Project>
+      <Name>ERP.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.BLL\ERP.BLL.csproj">
+      <Project>{406bac57-5c85-42f0-9e33-2d64ab9662ff}</Project>
+      <Name>ERP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Cache\ERP.Cache.csproj">
+      <Project>{965B2175-58B4-4589-9AB7-A9C7508E52E1}</Project>
+      <Name>ERP.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.DAL\ERP.DAL.csproj">
+      <Project>{D9792169-3E1C-42F5-8ADA-6DF9337353C1}</Project>
+      <Name>ERP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Enum\ERP.Enum.csproj">
+      <Project>{B2AFAEBA-CB9E-4BA0-B61A-3E0708847FE9}</Project>
+      <Name>ERP.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Model\ERP.Model.csproj">
+      <Project>{A6595739-E966-4F89-B771-6AB481AEDB5D}</Project>
+      <Name>ERP.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.SAL\ERP.SAL.csproj">
+      <Project>{DCAE6D15-457F-4FD5-A097-F0EE3E330047}</Project>
+      <Name>ERP.SAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\WCF\CMS.WCF.Service\ERP.Service.Implement.csproj">
+      <Project>{B76D8AAA-7CF4-471B-8C9A-17AC96A1D813}</Project>
+      <Name>ERP.Service.Implement</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.VisualStudio.QualityTools.UnitTestFramework.fakes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

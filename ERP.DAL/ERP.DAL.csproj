@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9792169-3E1C-42F5-8ADA-6DF9337353C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.DAL</RootNamespace>
+    <AssemblyName>ERP.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AllianceShop.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shop.Service.7.0.2.0\lib\AllianceShop.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AllianceShop.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shop.Service.7.0.2.0\lib\AllianceShop.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AllianceShop.Enum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shop.Service.7.0.2.0\lib\AllianceShop.Enum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Core, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Core.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.DDD, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.DDD.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.Helper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.RWSplitting, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.RWSplitting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\System.Net.Http.4.0.0\lib\net45\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompleteOrderTask.cs" />
+    <Compile Include="ConfigDAL.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Factory\BasisInstance.cs" />
+    <Compile Include="Factory\InstanceBase.cs" />
+    <Compile Include="Factory\InventoryInstance.cs" />
+    <Compile Include="Factory\OrderInstance.cs" />
+    <Compile Include="Finance\Interface\IPaymentDAL.cs" />
+    <Compile Include="Finance\PaymentDAL.cs" />
+    <Compile Include="Finance\GatheringDAL.cs" />
+    <Compile Include="Finance\Interface\IGatheringDAL.cs" />
+    <Compile Include="Implement\Basis\Units.cs" />
+    <Compile Include="Implement\Basis\WebRudder.cs" />
+    <Compile Include="Implement\Company\BankAccountDao.cs" />
+    <Compile Include="Implement\Company\CompanyBankAccountBindDao.cs" />
+    <Compile Include="Implement\Company\ComparePrice.cs" />
+    <Compile Include="Implement\Company\ExcelTemplate.cs" />
+    <Compile Include="Implement\Company\QualificationManager.cs" />
+    <Compile Include="Implement\Company\TemplateManage.cs" />
+    <Compile Include="Implement\FinanceModule\SubsidyPaymentDal.cs" />
+    <Compile Include="Implement\FinanceModule\RefundsMoneyDal.cs" />
+    <Compile Include="Implement\FinanceModule\RealTimeGrossSettlementDal.cs" />
+    <Compile Include="Implement\FinanceModule\SaleOrderGoodsSettlementDal.cs" />
+    <Compile Include="Implement\Goods\GoodsPriceDao.cs" />
+    <Compile Include="Implement\Inventory\ActivityFiling.cs" />
+    <Compile Include="Implement\Inventory\ActivityOperateLog.cs" />
+    <Compile Include="Implement\Inventory\BankAccounts.cs" />
+    <Compile Include="Implement\Inventory\CheckDataRecord.cs" />
+    <Compile Include="Implement\Inventory\Code.cs" />
+    <Compile Include="Implement\Inventory\CompanyAuditingPower.cs" />
+    <Compile Include="Implement\Inventory\CompanyClass.cs" />
+    <Compile Include="Implement\Inventory\CompanyCussent.cs" />
+    <Compile Include="Implement\Inventory\CompanyCussentRelation.cs" />
+    <Compile Include="Implement\Inventory\CompanyFundReceipt.cs" />
+    <Compile Include="Implement\Inventory\CompanyFundReceiptInvoice.cs" />
+    <Compile Include="Implement\Inventory\CompanyGrossProfitRecordDao.cs" />
+    <Compile Include="Implement\Inventory\CompanyGrossProfitRecordDetailChildDao.cs" />
+    <Compile Include="Implement\Inventory\CompanyGrossProfitRecordDetailDao.cs" />
+    <Compile Include="Implement\Inventory\CompanyInvoicePower.cs" />
+    <Compile Include="Implement\Inventory\CompanyPurchaseGoupDao.cs" />
+    <Compile Include="Implement\Inventory\CompanySubjectDiscountDal.cs" />
+    <Compile Include="Implement\Inventory\CostClass.cs" />
+    <Compile Include="Implement\Inventory\CostCussent.cs" />
+    <Compile Include="Implement\Inventory\CostInvoiceMoneyDAL.cs" />
+    <Compile Include="Implement\Inventory\CostReckoning.cs" />
+    <Compile Include="Implement\Inventory\CostReport.cs" />
+    <Compile Include="Implement\Inventory\CostReportAmountDal.cs" />
+    <Compile Include="Implement\Inventory\CostReportAuditingPower.cs" />
+    <Compile Include="Implement\Inventory\CostReportBillDal.cs" />
+    <Compile Include="Implement\Inventory\CostReportDepositRecovery.cs" />
+    <Compile Include="Implement\Inventory\CostReportInvoice.cs" />
+    <Compile Include="Implement\Inventory\CostReportSearch.cs" />
+    <Compile Include="Implement\Inventory\DebitNote.cs" />
+    <Compile Include="Implement\Inventory\DocumentRedDao.cs" />
+    <Compile Include="Implement\Inventory\FilingReport.cs" />
+    <Compile Include="Implement\Goods\GoodsDemand.cs" />
+    <Compile Include="Implement\Goods\GoodsOrderDeliver.cs" />
+    <Compile Include="Implement\Goods\GoodsStockPile.cs" />
+    <Compile Include="Implement\Inventory\GoodsDaySalesStatistics.cs" />
+    <Compile Include="Implement\Inventory\GoodsGrossProfitDao.cs" />
+    <Compile Include="Implement\Inventory\GoodsGrossProfitRecordDetailDao.cs" />
+    <Compile Include="Implement\Inventory\GoodsInfoForGoodsDaySalesLogsDAL.cs" />
+    <Compile Include="Implement\Inventory\GoodsPriceChangeDal.cs" />
+    <Compile Include="Implement\Inventory\InternalPriceSetDao.cs" />
+    <Compile Include="Implement\Inventory\Invoice.cs" />
+    <Compile Include="Implement\Inventory\CostReportTerminiDal.cs" />
+    <Compile Include="Implement\Inventory\CostReportTravelDal.cs" />
+    <Compile Include="Implement\Inventory\InvoiceApply.cs" />
+    <Compile Include="Implement\Inventory\ManuallyCheckBillDal.cs" />
+    <Compile Include="Implement\Inventory\ManuallyCheckBillDetailDal.cs" />
+    <Compile Include="Implement\Inventory\MediumReckoning.cs" />
+    <Compile Include="Implement\Inventory\ProcurementCompactQuantityDAL.cs" />
+    <Compile Include="Implement\Inventory\ProcurementTicketLimitDAL.cs" />
+    <Compile Include="Implement\Inventory\PurchasingInStockStatistics.cs" />
+    <Compile Include="Implement\Inventory\ReckoningRecord.cs" />
+    <Compile Include="Implement\Inventory\ShippAddressDal.cs" />
+    <Compile Include="Implement\Inventory\StorageRecordDao.cs" />
+    <Compile Include="Implement\Inventory\PaymentInterface.cs" />
+    <Compile Include="Implement\Inventory\PaymentNotice.cs" />
+    <Compile Include="Implement\Inventory\PurchasePromotion.cs" />
+    <Compile Include="Implement\Inventory\PurchaseSet.cs" />
+    <Compile Include="Implement\Inventory\PurchaseSetLog.cs" />
+    <Compile Include="Implement\Inventory\Purchasing.cs" />
+    <Compile Include="Implement\Inventory\PurchasingDetail.cs" />
+    <Compile Include="Implement\Inventory\PurchasingManagement.cs" />
+    <Compile Include="Implement\Inventory\Reckoning.cs" />
+    <Compile Include="Implement\Inventory\ReckoningCheck.cs" />
+    <Compile Include="Implement\Inventory\SalesGoodsRanking.cs" />
+    <Compile Include="Implement\Inventory\StockWarning.cs" />
+    <Compile Include="Implement\Inventory\SupplierReportDao.cs" />
+    <Compile Include="Implement\Inventory\SupplierSaleRecordDao.cs" />
+    <Compile Include="Implement\Inventory\TaxrateProportionDao.cs" />
+    <Compile Include="Implement\Inventory\VocabularyDal.cs" />
+    <Compile Include="Implement\Inventory\WaitCheckStockGoods.cs" />
+    <Compile Include="Implement\Inventory\WasteBook.cs" />
+    <Compile Include="Implement\Inventory\WasteBookCheck.cs" />
+    <Compile Include="Implement\Inventory\WasteBookDao.cs" />
+    <Compile Include="Implement\Order\CheckRefund.cs" />
+    <Compile Include="Implement\Order\CompleteOrderTaskDAL.cs" />
+    <Compile Include="Implement\Order\GoodsOrder.cs" />
+    <Compile Include="Implement\Order\GoodsOrderDetail.cs" />
+    <Compile Include="Implement\Shop\ApplyStockDAL.cs" />
+    <Compile Include="Implement\Shop\ShopActivityImageDAL.cs" />
+    <Compile Include="Implement\Shop\ShopActivityNoticeDal.cs" />
+    <Compile Include="Implement\Shop\ShopExchangedApplyDal.cs" />
+    <Compile Include="Implement\Shop\ShopExchangedApplyDetailDal.cs" />
+    <Compile Include="Implement\Shop\ShopRefundMessageDal.cs" />
+    <Compile Include="Implement\Storage\ASYNStorageRecordDao.cs" />
+    <Compile Include="Implement\Storage\BorrowLendDao.cs" />
+    <Compile Include="Implement\Storage\GoodsStockRecordDao.cs" />
+    <Compile Include="Interface\FinanceModule\ISubsidyPaymentDal.cs" />
+    <Compile Include="Interface\FinanceModule\IRefundsMoneyDal.cs" />
+    <Compile Include="Interface\FinanceModule\IRealTimeGrossSettlementDal.cs" />
+    <Compile Include="Interface\FinanceModule\ISaleOrderGoodsSettlementDal.cs" />
+    <Compile Include="Interface\IBasis\IUnits.cs" />
+    <Compile Include="Interface\IBasis\IWebRudder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\ICompany\IBankAccountDao.cs" />
+    <Compile Include="Interface\ICompany\ICompanyBankAccountBind.cs" />
+    <Compile Include="Interface\ICompany\IComparePrice.cs" />
+    <Compile Include="Interface\ICompany\IExcelTemplate.cs" />
+    <Compile Include="Interface\ICompany\IQualificationManager.cs" />
+    <Compile Include="Interface\ICompany\ITemplateManage.cs" />
+    <Compile Include="Interface\IGoodsOrder\IGoodsOrder.cs" />
+    <Compile Include="Interface\IGoods\IGoodsPrice.cs" />
+    <Compile Include="Interface\IInventory\IActivityFiling.cs" />
+    <Compile Include="Interface\IInventory\IActivityOperateLog.cs" />
+    <Compile Include="Interface\IInventory\IBankAccounts.cs" />
+    <Compile Include="Interface\IInventory\ICheckDataRecord.cs" />
+    <Compile Include="Interface\IInventory\ICode.cs" />
+    <Compile Include="Interface\IInventory\ICompanyAuditingPower.cs" />
+    <Compile Include="Interface\IInventory\ICompanyClass.cs" />
+    <Compile Include="Interface\IInventory\ICompanyCussent.cs" />
+    <Compile Include="Interface\IInventory\ICompanyCussentRelation.cs" />
+    <Compile Include="Interface\IInventory\ICompanyFundReceipt.cs" />
+    <Compile Include="Interface\IInventory\ICompanyFundReceiptInvoice.cs" />
+    <Compile Include="Interface\IInventory\ICompanyGrossProfitRecord.cs" />
+    <Compile Include="Interface\IInventory\ICompanyGrossProfitRecordDetail.cs" />
+    <Compile Include="Interface\IInventory\ICompanyGrossProfitRecordDetailChild.cs" />
+    <Compile Include="Interface\IInventory\ICompanyInvoicePower.cs" />
+    <Compile Include="Interface\IInventory\ICompanyPurchaseGoupDao.cs" />
+    <Compile Include="Interface\IInventory\ICostClass.cs" />
+    <Compile Include="Interface\IInventory\ICostCussent.cs" />
+    <Compile Include="Interface\IInventory\ICostInvoiceMoney.cs" />
+    <Compile Include="Interface\IInventory\ICostReckoning.cs" />
+    <Compile Include="Interface\IInventory\ICostReport.cs" />
+    <Compile Include="Interface\IInventory\ICostReportAmount.cs" />
+    <Compile Include="Interface\IInventory\ICostReportAuditingPower.cs" />
+    <Compile Include="Interface\IInventory\ICostReportBill.cs" />
+    <Compile Include="Interface\IInventory\ICostReportDepositRecovery.cs" />
+    <Compile Include="Interface\IInventory\ICostReportInvoice.cs" />
+    <Compile Include="Interface\IInventory\ICostReportTermini.cs" />
+    <Compile Include="Interface\IInventory\ICostReportTravel.cs" />
+    <Compile Include="Interface\IInventory\IDebitNote.cs" />
+    <Compile Include="Interface\IInventory\IDocumentRedDao.cs" />
+    <Compile Include="Interface\IInventory\IFilingReport.cs" />
+    <Compile Include="Interface\IGoods\IGoodsDemand.cs" />
+    <Compile Include="Interface\IGoods\IGoodsOrderDeliver.cs" />
+    <Compile Include="Interface\IGoods\IGoodsStockPile.cs" />
+    <Compile Include="Interface\IInventory\IGoodsDaySalesStatistics.cs" />
+    <Compile Include="Interface\IInventory\IGoodsGrossProfit.cs" />
+    <Compile Include="Interface\IInventory\IGoodsGrossProfitRecordDetail.cs" />
+    <Compile Include="Interface\IInventory\IGoodsInfoForGoodsDaySalesLogs.cs" />
+    <Compile Include="Interface\IInventory\IGoodsPriceChange.cs" />
+    <Compile Include="Interface\IInventory\IInternalPriceSetDao.cs" />
+    <Compile Include="Interface\IInventory\IInvoice.cs" />
+    <Compile Include="Interface\IInventory\IInvoiceApply.cs" />
+    <Compile Include="Interface\IInventory\IManuallyCheckBill.cs" />
+    <Compile Include="Interface\IInventory\IManuallyCheckBillDetail.cs" />
+    <Compile Include="Interface\IInventory\IMediumReckoning.cs" />
+    <Compile Include="Interface\IInventory\IMemberMention.cs" />
+    <Compile Include="Interface\IInventory\IProcurementCompactQuantity.cs" />
+    <Compile Include="Interface\IInventory\IProcurementTicketLimit.cs" />
+    <Compile Include="Interface\IInventory\IShippAddress.cs" />
+    <Compile Include="Interface\IInventory\IStorageRecordDao.cs" />
+    <Compile Include="Interface\IInventory\IPaymentInterface.cs" />
+    <Compile Include="Interface\IInventory\IPaymentNotice.cs" />
+    <Compile Include="Interface\IInventory\IPurchasePromotion.cs" />
+    <Compile Include="Interface\IInventory\IPurchaseSet.cs" />
+    <Compile Include="Interface\IInventory\IPurchaseSetLog.cs" />
+    <Compile Include="Interface\IInventory\IPurchasing.cs" />
+    <Compile Include="Interface\IInventory\IPurchasingDetail.cs" />
+    <Compile Include="Interface\IInventory\IPurchasingManagement.cs" />
+    <Compile Include="Interface\IInventory\IReckoning.cs" />
+    <Compile Include="Interface\IInventory\IReckoningCheck.cs" />
+    <Compile Include="Interface\IInventory\ISalesGoodsRanking.cs" />
+    <Compile Include="Interface\IInventory\IStockWarning.cs" />
+    <Compile Include="Interface\IInventory\ISupplierReport.cs" />
+    <Compile Include="Interface\IInventory\ISupplierSaleRecord.cs" />
+    <Compile Include="Interface\IInventory\ITaxrateProportion.cs" />
+    <Compile Include="Interface\IInventory\IVocabulary.cs" />
+    <Compile Include="Interface\IInventory\IWaitCheckStockGoods.cs" />
+    <Compile Include="Interface\IInventory\IWasteBook.cs" />
+    <Compile Include="Interface\IInventory\IWasteBookCheck.cs" />
+    <Compile Include="Interface\IInventory\IWasteBookReport.cs" />
+    <Compile Include="Interface\IOrder\ICheckRefund.cs" />
+    <Compile Include="Interface\IOrder\ICompleteOrderTask.cs" />
+    <Compile Include="Interface\IOrder\IGoodsOrder.cs" />
+    <Compile Include="Interface\IOrder\IGoodsOrderDetail.cs" />
+    <Compile Include="Interface\IShop\IApplyStockDAL.cs" />
+    <Compile Include="Interface\IShop\IShopActivityImageDAL.cs" />
+    <Compile Include="Interface\IShop\IShopActivityNoticeDal.cs" />
+    <Compile Include="Interface\IShop\IShopExchangedApply.cs" />
+    <Compile Include="Interface\IShop\IShopExchangedApplyDetail.cs" />
+    <Compile Include="Interface\IShop\IShopRefundMessage.cs" />
+    <Compile Include="Interface\IStorage\IASYNStorageRecordDao.cs" />
+    <Compile Include="Interface\IStorage\IBorrowLendDao.cs" />
+    <Compile Include="Interface\IStorage\IGoodsStockRecord.cs" />
+    <Compile Include="Interface\IUtilities\IUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlRead.cs" />
+    <Compile Include="Utilities\UtilityDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\ERP.Common\ERP.Environment.csproj">
+      <Project>{4951062b-d3c0-443d-8ab4-c233250a7584}</Project>
+      <Name>ERP.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Enum\ERP.Enum.csproj">
+      <Project>{B2AFAEBA-CB9E-4BA0-B61A-3E0708847FE9}</Project>
+      <Name>ERP.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Model\ERP.Model.csproj">
+      <Project>{A6595739-E966-4F89-B771-6AB481AEDB5D}</Project>
+      <Name>ERP.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.SAL\ERP.SAL.csproj">
+      <Project>{dcae6d15-457f-4fd5-a097-f0ee3e330047}</Project>
+      <Name>ERP.SAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

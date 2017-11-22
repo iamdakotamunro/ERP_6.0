@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ERP.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ERP.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/ITestForJMeter?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="StorageRecordInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountReceivable" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AuditTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BillNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FilialeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="LinkTradeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkTradeID" type="ser:guid" />
+      <xs:element minOccurs="0" name="LinkTradeType" type="xs:int" />
+      <xs:element minOccurs="0" name="LogisticsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RelevanceFilialeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RelevanceWarehouseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="StockId" type="ser:guid" />
+      <xs:element minOccurs="0" name="StockState" type="xs:int" />
+      <xs:element minOccurs="0" name="StockType" type="xs:int" />
+      <xs:element minOccurs="0" name="StockValidation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StorageType" type="xs:int" />
+      <xs:element minOccurs="0" name="SubtotalQuantity" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ThirdCompanyID" type="ser:guid" />
+      <xs:element minOccurs="0" name="TradeBothPartiesType" type="xs:int" />
+      <xs:element minOccurs="0" name="TradeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Transactor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WarehouseId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StorageRecordInfo" nillable="true" type="tns:StorageRecordInfo" />
+  <xs:complexType name="ArrayOfStorageRecordDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StorageRecordDetailInfo" nillable="true" type="tns:StorageRecordDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStorageRecordDetailInfo" nillable="true" type="tns:ArrayOfStorageRecordDetailInfo" />
+  <xs:complexType name="StorageRecordDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApprovalNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BatchNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EffectiveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GoodsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GoodsId" type="ser:guid" />
+      <xs:element minOccurs="0" name="GoodsName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GoodsType" type="xs:int" />
+      <xs:element minOccurs="0" name="JoinPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NonceWarehouseGoodsStock" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="RealGoodsId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ShelfType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Specification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StockId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ThirdCompanyID" type="ser:guid" />
+      <xs:element minOccurs="0" name="UnitPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Units" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StorageRecordDetailInfo" nillable="true" type="tns:StorageRecordDetailInfo" />
+</xs:schema>

@@ -1,0 +1,142 @@
+﻿<rad:RadChart SkinID="Pie" runat="server" DefaultType="Pie" 
+                Width="520px" Height="450px" SkinsOverrideStyles="True" 
+                 TempImagesFolder="~/ChartTemp" >
+                <ChartTitle>
+                    <TextBlock>
+                        <Appearance TextProperties-Color="DimGray" TextProperties-Font="宋体, 14px">
+                        </Appearance>
+                    </TextBlock>
+                    <Appearance Position-AlignedPosition="Top" Border-Color="DimGray" Corners="Round, Round, Round, Round, 6"
+                        Dimensions-Margins="5px, 5px, 5px, 5px" Dimensions-Paddings="5px, 3px, 3px, 0px">
+                        <FillStyle GammaCorrection="False" MainColor="224, 224, 224">
+                        </FillStyle>
+
+<Border Color="DimGray"></Border>
+                    </Appearance>
+                    <Marker Visible="True">
+                    </Marker>
+                </ChartTitle>
+                <Series>
+                    <rad:ChartSeries Name="MemberSeries" Type="Pie" YAxisType="Primary">
+                        <Appearance Border-Color="Silver">
+                            <EmptyValue Mode="Approximation">
+                            </EmptyValue>
+                            <FillStyle MainColor="150, 150, 150" SecondColor="194, 194, 194">
+                            </FillStyle>
+                            <TextAppearance TextProperties-Color="83, 83, 83">
+                            </TextAppearance>
+
+<Border Color="Silver"></Border>
+                        </Appearance>
+                    </rad:ChartSeries>
+                </Series>
+                <PlotArea>
+                    <DataTable>
+                        <Appearance RenderType="PlotAreaRelative" TextHorizontalAlign="Center" TextVerticalAlign="Middle">
+                        </Appearance>
+                    </DataTable>
+                    <XAxis LayoutMode="Between" VisibleValues="All" MaxItemsCount="10">
+                        <Appearance Color="Silver" MajorTick-Color="Silver">
+                            <MajorGridLines Color="Silver" />
+                        </Appearance>
+                    </XAxis>
+                    <YAxis AxisMode="Normal" VisibleValues="All" MaxItemsCount="10">
+                        <ScaleBreaks LineStyle="Sinusoid">
+                        </ScaleBreaks>
+                        <Appearance Color="Silver" MajorTick-Color="Silver" MinorTick-Color="Silver">
+                            <MajorGridLines Color="Silver" />
+                            <MinorGridLines Color="224, 224, 224" />
+                        </Appearance>
+                    </YAxis>
+                    <YAxis2 AxisMode="Normal" VisibleValues="All">
+                        <ScaleBreaks LineStyle="Sinusoid">
+                        </ScaleBreaks>
+                    </YAxis2>
+                    <Appearance Border-Color="Silver" Dimensions-Margins="10%, 3%, 3%, 3%">
+                        <FillStyle MainColor="White" SecondColor="White" FillType="Solid">
+                        </FillStyle>
+
+<Border Color="Silver"></Border>
+                    </Appearance>
+                </PlotArea>
+                <Appearance Border-Color="DimGray">
+                    <FillStyle MainColor="WhiteSmoke">
+                    </FillStyle>
+
+<Border Color="DimGray"></Border>
+                </Appearance>
+                <Legend>
+                    <Appearance Position-AlignedPosition="Bottom">
+                    </Appearance>
+                </Legend>
+            </rad:RadChart>
+            
+            
+    <rad:RadChart  SeriesOrientation="Vertical"  runat="server"  SkinID="Common"
+        Width="980px" Height="450px" SkinsOverrideStyles="True" TempImagesFolder="~/ChartTemp">
+        <ChartTitle>
+            <TextBlock>
+                <Appearance TextProperties-Color="DimGray" TextProperties-Font="宋体, 14px" Dimensions-Paddings="1px, 1px, 1px, 0px">
+                </Appearance>
+            </TextBlock>
+            <Appearance Position-AlignedPosition="Top" Border-Color="DimGray" Corners="Round, Round, Round, Round, 6"
+                Dimensions-Margins="10px, 5px, 5px, 5px" Dimensions-Paddings="5px, 3px, 3px, 0px">
+                <FillStyle GammaCorrection="False" MainColor="224, 224, 224">
+                </FillStyle>
+            </Appearance>
+            <Marker Visible="True">
+            </Marker>
+        </ChartTitle>
+        <Series>
+            <rad:ChartSeries Type="Bar" YAxisType="Primary">
+                <Appearance Border-Color="Silver">
+                    <EmptyValue Mode="Approximation">
+                    </EmptyValue>
+                    <FillStyle FillType="ComplexGradient">
+                        <FillSettings>
+                            <ComplexGradient>
+                                <rad:GradientElement Color="213, 247, 255" />
+                                <rad:GradientElement Color="193, 239, 252" Position="0.5" />
+                                <rad:GradientElement Color="157, 217, 200" Position="1" />
+                            </ComplexGradient>
+                        </FillSettings>
+                    </FillStyle>
+                </Appearance>
+            </rad:ChartSeries>
+        </Series>
+        <PlotArea >
+            <DataTable>
+                <Appearance RenderType="PlotAreaRelative" TextHorizontalAlign="Center" TextVerticalAlign="Middle">
+                </Appearance>
+            </DataTable>
+            <XAxis LayoutMode="Between" VisibleValues="All" MaxItemsCount="12">
+                <Appearance Color="Silver" MajorTick-Color="Silver">
+                    <MajorGridLines Color="Silver" />
+                </Appearance>
+            </XAxis>
+            <YAxis AxisMode="Normal" VisibleValues="All" MaxItemsCount="12">
+                <ScaleBreaks LineStyle="Sinusoid">
+                </ScaleBreaks>
+                <Appearance Color="Silver" MajorTick-Color="Silver" MinorTick-Color="Silver">
+                    <MajorGridLines Color="Silver" />
+                    <MinorGridLines Color="224, 224, 224" />
+                </Appearance>
+            </YAxis>
+            <YAxis2 AxisMode="Normal" VisibleValues="All">
+                <ScaleBreaks LineStyle="Sinusoid">
+                </ScaleBreaks>
+            </YAxis2>
+            <Appearance Border-Color="Silver" Dimensions-Margins="13%, 6%, 6%, 6%">
+                <FillStyle MainColor="White" SecondColor="White" FillType="Solid">
+                </FillStyle>
+            </Appearance>
+        </PlotArea>
+        <Appearance Border-Color="Silver">
+            <FillStyle MainColor="WhiteSmoke">
+            </FillStyle>
+        </Appearance>
+        <Legend>
+            <Appearance Border-Color="Silver" Dimensions-Margins="1%, 1%, 1px, 1px" Position-AlignedPosition="TopRight">
+            </Appearance>
+        </Legend>
+    </rad:RadChart>

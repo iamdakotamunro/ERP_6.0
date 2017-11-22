@@ -1,0 +1,614 @@
+﻿<rad:RadEditor  Skin="WebBlue" Height="450px" Width="99.8%" SkinID="ShopWebSite" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/ShopERP/PublicImages" UploadPaths="~/ShopERP/PublicImages" DeletePaths="~/ShopERP/PublicImages" ContentProviderTypeName="ERP.UI.Web.Common.ResourceFileBrowserContentProvider,ERP.UI.Web" />
+    <FlashManager ViewPaths="~/ShopERP/PublicFlashs" UploadPaths="~/ShopERP/PublicFlashs" DeletePaths="~/ShopERP/PublicFlashs" ContentProviderTypeName="ERP.UI.Web.Common.ResourceFileBrowserContentProvider,ERP.UI.Web" />
+    <MediaManager ViewPaths="~/ShopERP/PublicMedias" UploadPaths="~/ShopERP/PublicMedias" DeletePaths="~/ShopERP/PublicMedias"  ContentProviderTypeName="ERP.UI.Web.Common.ResourceFileBrowserContentProvider,ERP.UI.Web" />
+    <DocumentManager ViewPaths="/ShopERP/PublicDocuments" UploadPaths="/ShopERP/PublicDocuments" DeletePaths="/ShopERP/PublicDocuments"  ContentProviderTypeName="ERP.UI.Web.Common.ResourceFileBrowserContentProvider,ERP.UI.Web" />
+    <TemplateManager ViewPaths="~/ShopERP/Templates" UploadPaths="~/ShopERP/Templates" DeletePaths="~/ShopERP/Templates" ContentProviderTypeName="ERP.UI.Web.Common.ResourceFileBrowserContentProvider,ERP.UI.Web" />
+	<Tools>
+	    <rad:EditorToolGroup>
+			<rad:EditorTool Name="FindAndReplace" ShortCut="CTRL+F" />
+			<rad:EditorTool Name="Cut" />
+			<rad:EditorTool Name="Copy" ShortCut="CTRL+C" />
+			<rad:EditorTool Name="Paste" ShortCut="CTRL+V" />
+			<rad:EditorTool Name="PasteStrip" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="FlashManager" />
+			<rad:EditorTool Name="MediaManager" />
+			<rad:EditorTool Name="DocumentManager" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="LinkManager" ShortCut="CTRL+K" />
+			<rad:EditorTool Name="Unlink" ShortCut="CTRL+SHIFT+K" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Superscript" />
+			<rad:EditorTool Name="Subscript" />
+			<rad:EditorTool Name="InsertParagraph" />
+			<rad:EditorTool Name="InsertHorizontalRule" />
+			<rad:EditorTool Name="InsertDate" />
+			<rad:EditorTool Name="InsertTime" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="FormatBlock" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="SelectAll" ShortCut="CTRL+A" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="InsertSymbol" />
+			<rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="InsertSnippet" />
+			<rad:EditorTool Name="ImageMapDialog" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="ConvertToLower" />
+			<rad:EditorTool Name="ConvertToUpper" />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+
+<rad:RadEditor  Skin="WebBlue" Height="350px" Width="99.8%" SkinID="Common" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/UserDir/PublicImages" UploadPaths="~/UserDir/PublicImages" DeletePaths="~/UserDir/PublicImages"/>
+    <FlashManager ViewPaths="~/UserDir/PublicFlashs" UploadPaths="~/UserDir/PublicFlashs" DeletePaths="~/UserDir/PublicFlashs"/>
+    <MediaManager ViewPaths="~/UserDir/PublicMedias" UploadPaths="~/UserDir/PublicMedias" DeletePaths="~/UserDir/PublicMedias"/>
+    <DocumentManager ViewPaths="/UserDir/PublicDocuments" UploadPaths="/UserDir/PublicDocuments" DeletePaths="/UserDir/PublicDocuments" />
+    <TemplateManager ViewPaths="~/UserDir/Templates" UploadPaths="~/UserDir/Templates" DeletePaths="~/UserDir/Templates"/>
+	<Tools>
+	    <rad:EditorToolGroup>
+			<rad:EditorTool Name="FindAndReplace" ShortCut="CTRL+F" />
+			<rad:EditorTool Name="Cut" />
+			<rad:EditorTool Name="Copy" ShortCut="CTRL+C" />
+			<rad:EditorTool Name="Paste" ShortCut="CTRL+V" />
+			<rad:EditorTool Name="PasteStrip" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="FlashManager" />
+			<rad:EditorTool Name="MediaManager" />
+			<rad:EditorTool Name="DocumentManager" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="LinkManager" ShortCut="CTRL+K" />
+			<rad:EditorTool Name="Unlink" ShortCut="CTRL+SHIFT+K" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Superscript" />
+			<rad:EditorTool Name="Subscript" />
+			<rad:EditorTool Name="InsertParagraph" />
+			<rad:EditorTool Name="InsertHorizontalRule" />
+			<rad:EditorTool Name="InsertDate" />
+			<rad:EditorTool Name="InsertTime" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="FormatBlock" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="SelectAll" ShortCut="CTRL+A" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="InsertSymbol" />
+			<rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="InsertSnippet" />
+			<rad:EditorTool Name="ImageMapDialog" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="ConvertToLower" />
+			<rad:EditorTool Name="ConvertToUpper" />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+
+<rad:RadEditor  Skin="WebBlue" Height="255px" Width="100%" SkinID="Bank" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/UserDir/BankImages" UploadPaths="~/UserDir/BankImages" DeletePaths="~/UserDir/BankImages"/>
+    <FlashManager ViewPaths="~/UserDir/BankFlashs" UploadPaths="~/UserDir/BankFlashs" DeletePaths="~/UserDir/BankFlashs"/>
+    <MediaManager ViewPaths="~/UserDir/BankMedias" UploadPaths="~/UserDir/BankMedias" DeletePaths="~/UserDir/BankMedias"/>
+    <DocumentManager ViewPaths="/UserDir/BankDocuments" UploadPaths="/UserDir/BankDocuments" DeletePaths="/UserDir/BankDocuments" />
+    <TemplateManager ViewPaths="~/UserDir/Templates" UploadPaths="~/UserDir/Templates" DeletePaths="~/UserDir/Templates"/>
+	<Tools>
+	    <rad:EditorToolGroup>
+			<rad:EditorTool Name="FindAndReplace" ShortCut="CTRL+F" />
+			<rad:EditorTool Name="Cut" />
+			<rad:EditorTool Name="Copy" ShortCut="CTRL+C" />
+			<rad:EditorTool Name="Paste" ShortCut="CTRL+V" />
+			<rad:EditorTool Name="PasteStrip" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="FlashManager" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="LinkManager" ShortCut="CTRL+K" />
+			<rad:EditorTool Name="Unlink" ShortCut="CTRL+SHIFT+K" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Superscript" />
+			<rad:EditorTool Name="Subscript" />
+			<rad:EditorTool Name="InsertParagraph" />
+			<rad:EditorTool Name="InsertHorizontalRule" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="FormatBlock" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="SelectAll" ShortCut="CTRL+A" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="InsertSymbol" />
+			<rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="InsertSnippet" />
+			<rad:EditorTool Name="ImageMapDialog" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="ConvertToLower" />
+			<rad:EditorTool Name="ConvertToUpper" />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+
+<rad:RadEditor  Skin="WebBlue" Height="200px" Width="84%" SkinID="Express" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/UserDir/ExpressImages" UploadPaths="~/UserDir/ExpressImages" DeletePaths="~/UserDir/ExpressImages"/>
+    <FlashManager ViewPaths="~/UserDir/ExpressFlashs" UploadPaths="~/UserDir/ExpressFlashs" DeletePaths="~/UserDir/ExpressFlashs"/>
+    <TemplateManager ViewPaths="~/UserDir/Templates" UploadPaths="~/UserDir/Templates" DeletePaths="~/UserDir/Templates"/>
+	<Tools>
+	    <rad:EditorToolGroup>
+			<rad:EditorTool Name="FindAndReplace" ShortCut="CTRL+F" />
+			<rad:EditorTool Name="Cut" />
+			<rad:EditorTool Name="Copy" ShortCut="CTRL+C" />
+			<rad:EditorTool Name="Paste" ShortCut="CTRL+V" />
+			<rad:EditorTool Name="PasteStrip" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="FlashManager" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="LinkManager" ShortCut="CTRL+K" />
+			<rad:EditorTool Name="Unlink" ShortCut="CTRL+SHIFT+K" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Superscript" />
+			<rad:EditorTool Name="Subscript" />
+			<rad:EditorTool Name="InsertParagraph" />
+			<rad:EditorTool Name="InsertHorizontalRule" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="InsertSymbol" />
+			<rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="ImageMapDialog" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="ConvertToLower" />
+			<rad:EditorTool Name="ConvertToUpper" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="FormatBlock" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+<rad:RadEditor  Skin="WebBlue" Height="350px" Width="84%" SkinID="ExpressBill" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/UserDir/ExpressBillImages" UploadPaths="~/UserDir/ExpressBillImages" DeletePaths="~/UserDir/ExpressBillImages"/>
+    <TemplateManager ViewPaths="~/UserDir/Templates" UploadPaths="~/UserDir/Templates" DeletePaths="~/UserDir/Templates"/>
+	<Tools>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+		    <rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+<rad:RadEditor  Skin="WebBlue" Height="200px" Width="88%" SkinID="Simple" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<Tools>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+<rad:RadEditor  Skin="WebBlue" Height="350px" Width="99.8%" SkinID="GoodsInfo" EnableResize="false" runat="server"  ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/UserDir/ProductImages" UploadPaths="~/UserDir/ProductImages" DeletePaths="~/UserDir/ProductImages"/>
+    <FlashManager ViewPaths="~/UserDir/ProductFlashs" UploadPaths="~/UserDir/ProductFlashs" DeletePaths="~/UserDir/ProductFlashs"/>
+    <MediaManager ViewPaths="~/UserDir/ProductMedias" UploadPaths="~/UserDir/ProductMedias" DeletePaths="~/UserDir/ProductMedias"/>
+    <DocumentManager ViewPaths="/UserDir/ProductDocuments" UploadPaths="/UserDir/ProductDocuments" DeletePaths="/UserDir/ProductDocuments" />
+    <TemplateManager ViewPaths="~/UserDir/Templates" UploadPaths="~/UserDir/Templates" DeletePaths="~/UserDir/Templates"/>
+	<Tools>
+	    <rad:EditorToolGroup>
+			<rad:EditorTool Name="FindAndReplace" ShortCut="CTRL+F" />
+			<rad:EditorTool Name="Cut" />
+			<rad:EditorTool Name="Copy" ShortCut="CTRL+C" />
+			<rad:EditorTool Name="Paste" ShortCut="CTRL+V" />
+			<rad:EditorTool Name="PasteStrip" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="FlashManager" />
+			<rad:EditorTool Name="MediaManager" />
+			<rad:EditorTool Name="DocumentManager" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="LinkManager" ShortCut="CTRL+K" />
+			<rad:EditorTool Name="Unlink" ShortCut="CTRL+SHIFT+K" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Superscript" />
+			<rad:EditorTool Name="Subscript" />
+			<rad:EditorTool Name="InsertParagraph" />
+			<rad:EditorTool Name="InsertHorizontalRule" />
+			<rad:EditorTool Name="InsertDate" />
+			<rad:EditorTool Name="InsertTime" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="FormatBlock" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="SelectAll" ShortCut="CTRL+A" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="InsertSymbol" />
+			<rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="InsertSnippet" />
+			<rad:EditorTool Name="ImageMapDialog" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="ConvertToLower" />
+			<rad:EditorTool Name="ConvertToUpper" />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>
+
+
+<rad:RadEditor  Skin="WebBlue" Height="350px" Width="84%" SkinID="Advertisment" EnableResize="false" runat="server" ContentFilters="ConvertToXhtml">
+	<ImageManager ViewPaths="~/UserDir/AdImages" UploadPaths="~/UserDir/AdImages" DeletePaths="~/UserDir/AdImages"/>
+	<Tools>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="Bold" ShortCut="CTRL+B" />
+			<rad:EditorTool Name="Italic" ShortCut="CTRL+I" />
+			<rad:EditorTool Name="Underline" ShortCut="CTRL+U" />
+			<rad:EditorTool Name="StrikeThrough" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="JustifyLeft" />
+			<rad:EditorTool Name="JustifyCenter" />
+			<rad:EditorTool Name="JustifyRight" />
+			<rad:EditorTool Name="JustifyFull" />
+			<rad:EditorTool Name="JustifyNone" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="Indent" />
+			<rad:EditorTool Name="Outdent" />
+			<rad:EditorSeparator />
+			<rad:EditorTool Name="InsertOrderedList" />
+			<rad:EditorTool Name="InsertUnorderedList" />
+			<rad:EditorTool Name="ToggleTableBorder" />
+			<rad:EditorTool Name="FontName" ShortCut="CTRL+SHIFT+F" />
+			<rad:EditorTool Name="RealFontSize" ShortCut="CTRL+SHIFT+P" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+			<rad:EditorTool Name="ForeColor" />
+			<rad:EditorTool Name="BackColor" />
+			<rad:EditorTool Name="FormatStripper" />
+			<rad:EditorTool Name="Undo" ShortCut="CTRL+Z" />
+			<rad:EditorTool Name="Redo" ShortCut="CTRL+Y" />
+		</rad:EditorToolGroup>
+		<rad:EditorToolGroup>
+		    <rad:EditorTool Name="InsertTable" />
+			<rad:EditorTool Name="ImageManager" ShortCut="CTRL+G" />
+			<rad:EditorTool Name="AbsolutePosition" />
+			<rad:EditorTool Name="TemplateManager" />
+			<rad:EditorTool Name="ToggleScreenMode" ShortCut="F11" />
+		</rad:EditorToolGroup>
+	</Tools>
+	 <FontNames>
+	    <rad:EditorFont Value="Arial"/>
+        <rad:EditorFont Value="Arial Black"/>
+        <rad:EditorFont Value="Times New Roman"/>
+        <rad:EditorFont Value="宋体"/>
+        <rad:EditorFont Value="仿宋_GB2312"/>
+        <rad:EditorFont Value="楷体_GB2312"/>
+        <rad:EditorFont Value="黑体"/>
+        <rad:EditorFont Value="隶书"/>
+        <rad:EditorFont Value="新宋体"/>
+        <rad:EditorFont Value="幼圆"/>
+        <rad:EditorFont Value="华文彩云"/>
+     </FontNames>
+</rad:RadEditor>

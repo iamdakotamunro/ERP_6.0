@@ -1,0 +1,23 @@
+﻿      <KPJL>
+        <FPDM>{FPDM}</FPDM>
+        <FPHM>{FPHM}</FPHM>
+        <KPLX>{KPLX}</KPLX>
+        <KPRQ>{KPRQ}</KPRQ>
+        <HYFLDM>{HYFLDM}</HYFLDM>
+        <JE>{JE}</JE>
+        <SKRMC>上海可得光学科技有限公司</SKRMC>
+        <SKRSH>310227695808144</SKRSH>
+        <FKRMC>{FKRMC}</FKRMC>
+        <FKRSH>{FKRSH}</FKRSH>
+        <GHFQYLX>{GHFQYLX}</GHFQYLX>
+        <KPFDZJDH>上海市松江区中山街道五昆路318号5幢329室 021-57726998</KPFDZJDH>
+        <KPFYHJZH>上海银行松江支行 03001199209</KPFYHJZH>
+        <SPFDZJDH>{SPFDZJDH}</SPFDZJDH>
+        <SPFYHJZH>{SPFYHJZH}</SPFYHJZH>
+        <KPRXM>朱美萍</KPRXM>
+        <FHRXM>朱美萍</FHRXM>
+        {YFPDM_TPLX_Content}
+        <FPMX  RowNum="{FPMX_RowNum}"  HJJE="{HJJE}">
+          {FPMX_Row}
+        </FPMX>
+      </KPJL>

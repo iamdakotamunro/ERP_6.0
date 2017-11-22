@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailServer>
+  <Connect>
+    <host>222.73.240.76</host>
+    <port>2300</port>
+    <!--密匙-->
+    <key>keed2009</key>
+    <!--日志文件路径 (注意最后带"\")-->
+    <LogPath>D:\OrdersAccomplish\temp\</LogPath>
+    <!--主仓库 开1关0-->
+    <IsRun key="7AE62AF0-EB1F-49C6-8FD1-128D77C84698">1</IsRun>
+    <!--松江分仓库 开1关0-->
+    <IsRun key="B5BCDF6E-95D5-4AEE-9B19-6EE218255C05">1</IsRun>
+    <!-- 售后仓库 -->
+    <IsRun key="C9752B7B-D2FB-466E-BA73-53F3C36C864A">1</IsRun>
+    <!-- 测试仓库 -->
+    <IsRun key="373628CB-CA40-4C7F-B1C1-1D250C852777">1</IsRun>
+    <!-- 太空仓库 -->>
+    <IsRun key="12BEEC21-9961-40B6-B70F-698208F806DE">1</IsRun>
+
+  </Connect>
+</MailServer>

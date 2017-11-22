@@ -1,0 +1,16 @@
+#RGGoods_ctl01{ height:90%;}
+table{ width:98%}
+input{ color:#000; width:40px; border:0px; font-size:12px;}
+tr{ border:1px solid #000}
+#pt{ font-size:11px; width:100%;}
+#RGGoods_ctl01_ctl04_print_del{ display:none; font-size:1px; width:1px;overflow:hidden; clear:none; margin-left:-50px;}
+#div_P{display:none; font-size:1px; width:1px;overflow:hidden; clear:none;}
+#divh{ margin-left:68px;}
+#headfont{ font-size:11px; width:80%;}
+#print_del{ display:none;}
+#bottom{ margin-right:5px; font-size:14px; text-align:right;}
+#pt td{ border-bottom-style:dashed ; border-bottom-width:1px; border-bottom-color:#000;}
+.StandardInput1{ width:100px;overflow:hidden; clear:none;}
+.StandardInput{ display:none;width:1px;overflow:hidden; clear:none;}
+.tt{font-size:16px}
+

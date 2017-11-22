@@ -1,0 +1,23 @@
+﻿      <KPJL>
+        <FPDM>{FPDM}</FPDM>
+        <FPHM>{FPHM}</FPHM>
+        <KPLX>{KPLX}</KPLX>
+        <KPRQ>{KPRQ}</KPRQ>
+        <HYFLDM>{HYFLDM}</HYFLDM>
+        <JE>{JE}</JE>
+        <SKRMC>镜拓光学科技（上海）有限公司</SKRMC>
+        <SKRSH>31022705129415X</SKRSH>
+        <FKRMC>{FKRMC}</FKRMC>
+        <FKRSH>{FKRSH}</FKRSH>
+        <GHFQYLX>{GHFQYLX}</GHFQYLX>
+        <KPFDZJDH>上海市松江区文翔东路218号1号楼203室 57751537</KPFDZJDH>
+        <KPFYHJZH>招商银行上海松江支行  121910356110901</KPFYHJZH>
+        <SPFDZJDH>{SPFDZJDH}</SPFDZJDH>
+        <SPFYHJZH>{SPFYHJZH}</SPFYHJZH>
+        <KPRXM>张太娟</KPRXM>
+        <FHRXM>张太娟</FHRXM>
+        {YFPDM_TPLX_Content}
+        <FPMX  RowNum="{FPMX_RowNum}"  HJJE="{HJJE}">
+          {FPMX_Row}
+        </FPMX>
+      </KPJL>

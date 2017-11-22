@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ERP.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ERP.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfBankAccountInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BankAccountInfo" nillable="true" type="tns:BankAccountInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBankAccountInfo" nillable="true" type="tns:ArrayOfBankAccountInfo" />
+  <xs:complexType name="BankAccountInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_AccountType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_AccountsKey_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_AccountsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Accounts_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_BankAccountsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_BankIcon_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_BankName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsBacktrack_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsDisplay_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsFinish_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsMain_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsUse_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_NonceBalance_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_OrderIndex_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_PaymentInterfaceId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_PaymentType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_TargetId_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankAccountInfo" nillable="true" type="tns:BankAccountInfo" />
+  <xs:complexType name="ArrayOfGoodsSalesInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GoodsSalesInfo" nillable="true" type="tns:GoodsSalesInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGoodsSalesInfo" nillable="true" type="tns:ArrayOfGoodsSalesInfo" />
+  <xs:complexType name="GoodsSalesInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_DeliverWarehouseId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_GoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Quantity_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_RealGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_SaleFilialeId_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GoodsSalesInfo" nillable="true" type="tns:GoodsSalesInfo" />
+  <xs:complexType name="ArrayOfGoodsAvgDaySalesInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GoodsAvgDaySalesInfo" nillable="true" type="tns:GoodsAvgDaySalesInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGoodsAvgDaySalesInfo" nillable="true" type="tns:ArrayOfGoodsAvgDaySalesInfo" />
+  <xs:complexType name="GoodsAvgDaySalesInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_AvgQuantity_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_DeliverWarehouseId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_GoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_RealGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_SaleFilialeId_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GoodsAvgDaySalesInfo" nillable="true" type="tns:GoodsAvgDaySalesInfo" />
+  <xs:complexType name="ArrayOfSimpleInvoiceDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SimpleInvoiceDetailInfo" nillable="true" type="tns:SimpleInvoiceDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSimpleInvoiceDetailInfo" nillable="true" type="tns:ArrayOfSimpleInvoiceDetailInfo" />
+  <xs:complexType name="SimpleInvoiceDetailInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SimpleInvoiceInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceId" type="ser:guid" />
+          <xs:element minOccurs="0" name="InvoiceState" type="xs:int" />
+          <xs:element minOccurs="0" name="IsCommit" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Receiver" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SimpleInvoiceDetailInfo" nillable="true" type="tns:SimpleInvoiceDetailInfo" />
+  <xs:complexType name="SimpleInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceNo" type="xs:long" />
+      <xs:element minOccurs="0" name="InvoiceSum" type="xs:double" />
+      <xs:element minOccurs="0" name="OrderNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimpleInvoiceInfo" nillable="true" type="tns:SimpleInvoiceInfo" />
+  <xs:complexType name="SimpleGoodsOrderInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_Consignee_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Direction_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OrderId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_PostalCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RealTotalPrice_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_SaleFilialeId_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimpleGoodsOrderInfo" nillable="true" type="tns:SimpleGoodsOrderInfo" />
+  <xs:complexType name="InvoiceRollInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FilialeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="InvoiceCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxInvoiceNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceRollInfo" nillable="true" type="tns:InvoiceRollInfo" />
+  <xs:complexType name="ArrayOfGoodsOrderInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GoodsOrderInvoiceInfo" nillable="true" type="tns:GoodsOrderInvoiceInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGoodsOrderInvoiceInfo" nillable="true" type="tns:ArrayOfGoodsOrderInvoiceInfo" />
+  <xs:complexType name="GoodsOrderInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Carriage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Consignee" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpressNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GoodsOrderDetailList" nillable="true" type="tns:ArrayOfGoodsOrderDetails" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaidUp" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayMode" type="xs:int" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PromotionValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RealTotalPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SimpleInvoiceList" nillable="true" type="tns:ArrayOfSimpleInvoiceInfo" />
+      <xs:element minOccurs="0" name="TotalPrice" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GoodsOrderInvoiceInfo" nillable="true" type="tns:GoodsOrderInvoiceInfo" />
+  <xs:complexType name="ArrayOfGoodsOrderDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GoodsOrderDetails" nillable="true" type="tns:GoodsOrderDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGoodsOrderDetails" nillable="true" type="tns:ArrayOfGoodsOrderDetails" />
+  <xs:complexType name="GoodsOrderDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GoodsId" type="ser:guid" />
+      <xs:element minOccurs="0" name="GoodsName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:double" />
+      <xs:element minOccurs="0" name="SellPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Specification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalPrice" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GoodsOrderDetails" nillable="true" type="tns:GoodsOrderDetails" />
+  <xs:complexType name="ArrayOfSimpleInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SimpleInvoiceInfo" nillable="true" type="tns:SimpleInvoiceInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSimpleInvoiceInfo" nillable="true" type="tns:ArrayOfSimpleInvoiceInfo" />
+  <xs:complexType name="AddInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceNo" type="xs:long" />
+      <xs:element minOccurs="0" name="IsPurchaserType" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OrderId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddInvoiceInfo" nillable="true" type="tns:AddInvoiceInfo" />
+  <xs:complexType name="AgainInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceId" type="ser:guid" />
+      <xs:element minOccurs="0" name="InvoiceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceNo" type="xs:long" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AgainInvoiceInfo" nillable="true" type="tns:AgainInvoiceInfo" />
+  <xs:complexType name="FrameProcessCertificateInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_Consignee_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_LeftEyeInfo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OperationTime_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Optician_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OrderId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_PD_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ProcessNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RightEyeInfo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SaleFilialeID_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FrameProcessCertificateInfo" nillable="true" type="tns:FrameProcessCertificateInfo" />
+  <xs:complexType name="ArrayOfAfterSaleDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AfterSaleDetailInfo" nillable="true" type="tns:AfterSaleDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAfterSaleDetailInfo" nillable="true" type="tns:ArrayOfAfterSaleDetailInfo" />
+  <xs:complexType name="AfterSaleDetailInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_AfterSaleId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_AgainCount_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_BackCount_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_BackGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_BackGoodsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_BackRealGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_BackSpecification_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_BuyType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_CauseId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_CompGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_CompIndex_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Explain_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GiveScore_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_GoodsCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_GoodsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsScore_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_GoodsType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_IsReissue_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_MarketPrice_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_Quantity_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_RealGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ReasonType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_RefundType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ReissueGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ReissueRealGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ReissueSpecification_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReturnReasonType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_SellPrice_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_SellType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Specification_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TotalGoodsScore_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_TotalPrice_x003E_k__BackingField" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AfterSaleDetailInfo" nillable="true" type="tns:AfterSaleDetailInfo" />
+  <xs:complexType name="ArrayOfTaxrateProportionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxrateProportionInfo" nillable="true" type="tns:TaxrateProportionInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxrateProportionInfo" nillable="true" type="tns:ArrayOfTaxrateProportionInfo" />
+  <xs:complexType name="TaxrateProportionInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_GoodsTypeCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_OperateType_x003E_k__BackingField" type="xs:unsignedByte" />
+      <xs:element name="_x003C_Operator_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Percentage_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_Remark_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_UpdateDate_x003E_k__BackingField" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxrateProportionInfo" nillable="true" type="tns:TaxrateProportionInfo" />
+  <xs:complexType name="ArrayOfVocabularyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VocabularyInfo" nillable="true" type="tns:VocabularyInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVocabularyInfo" nillable="true" type="tns:ArrayOfVocabularyInfo" />
+  <xs:complexType name="VocabularyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="OperatingTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" type="xs:int" />
+      <xs:element minOccurs="0" name="VocabularyName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VocabularyInfo" nillable="true" type="tns:VocabularyInfo" />
+  <xs:complexType name="StorageRecordInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_AccountReceivable_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_AuditTime_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_BillNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DateCreated_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_FilialeId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_LinkTradeCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_LinkTradeID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_LinkTradeType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_LogisticsCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RelevanceFilialeId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_RelevanceWarehouseId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_StockId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_StockState_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_StockType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_StockValidation_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_StorageType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_SubtotalQuantity_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_ThirdCompanyID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_TradeBothPartiesType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_TradeCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Transactor_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WarehouseId_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StorageRecordInfo" nillable="true" type="tns:StorageRecordInfo" />
+  <xs:complexType name="ArrayOfStorageRecordDetailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StorageRecordDetailInfo" nillable="true" type="tns:StorageRecordDetailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStorageRecordDetailInfo" nillable="true" type="tns:ArrayOfStorageRecordDetailInfo" />
+  <xs:complexType name="StorageRecordDetailInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_ApprovalNO_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_BatchNo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DateCreated_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EffectiveDate_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_GoodsCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_GoodsName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GoodsType_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_JoinPrice_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_NonceWarehouseGoodsStock_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Quantity_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_RealGoodsId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ShelfType_x003E_k__BackingField" type="xs:unsignedByte" />
+      <xs:element name="_x003C_Specification_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_StockId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ThirdCompanyID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_UnitPrice_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_Units_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StorageRecordDetailInfo" nillable="true" type="tns:StorageRecordDetailInfo" />
+</xs:schema>

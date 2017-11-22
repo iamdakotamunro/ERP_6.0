@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://192.168.117.230:15004/IService?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" />
+  <xs:complexType name="WCFReturnInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_IsAccomplishExecuted_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_IsReceived_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_Message_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OperationDate_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_PushDataId_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ReturnValue_x003E_k__BackingField" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WCFReturnInfo" nillable="true" type="tns:WCFReturnInfo" />
+  <xs:complexType name="DataListInfoOfGoodsOrderInfoI24ZYJXj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="DataListInfoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="GoodsOrderInfo" Namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="_x003C_AllRecordCount_x003E_k__BackingField" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" name="_x003C_Items_x003E_k__BackingField" nillable="true" type="q1:ArrayOfGoodsOrderInfo" />
+      <xs:element name="_x003C_PageIndex_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_PageSize_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataListInfoOfGoodsOrderInfoI24ZYJXj" nillable="true" type="tns:DataListInfoOfGoodsOrderInfoI24ZYJXj" />
+  <xs:complexType name="DataListInfoOfReckoningInfoI24ZYJXj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="DataListInfoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Framework.WCF.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ReckoningInfo" Namespace="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="_x003C_AllRecordCount_x003E_k__BackingField" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Keede.Ecsoft.Model" name="_x003C_Items_x003E_k__BackingField" nillable="true" type="q2:ArrayOfReckoningInfo" />
+      <xs:element name="_x003C_PageIndex_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_PageSize_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataListInfoOfReckoningInfoI24ZYJXj" nillable="true" type="tns:DataListInfoOfReckoningInfoI24ZYJXj" />
+</xs:schema>

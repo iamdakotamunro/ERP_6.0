@@ -1,0 +1,44 @@
+﻿<rad:RadGrid SkinID="Common" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+    GridLines="None" ShowStatusBar="True" PageSize="20">
+    <ClientSettings>
+        <Selecting AllowRowSelect="True" />
+    </ClientSettings>
+    <PagerStyle Mode="NextPrevNumericAndAdvanced" HorizontalAlign="Center" >
+    </PagerStyle>
+     <MasterTableView CommandItemDisplay="Top">
+     <CommandItemStyle HorizontalAlign="Right" Height="26px" />
+    </MasterTableView>
+</rad:RadGrid>
+<rad:RadGrid SkinID="Common_Foot" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+    GridLines="None" ShowStatusBar="True" PageSize="20">
+    <ClientSettings>
+        <Selecting AllowRowSelect="True" />
+    </ClientSettings>
+    <PagerStyle Mode="NextPrevNumericAndAdvanced" HorizontalAlign="Center" AlwaysVisible="True">
+    </PagerStyle>
+     <MasterTableView CommandItemDisplay="Top">
+     <CommandItemStyle HorizontalAlign="Right" Height="26px" />
+    </MasterTableView>
+</rad:RadGrid>
+<rad:RadGrid  runat="server" AllowPaging="True" AutoGenerateColumns="False" Skin="WebBlue"
+    GridLines="None" ShowStatusBar="True" PageSize="20">
+    <ClientSettings>
+        <Selecting AllowRowSelect="True" />
+    </ClientSettings>
+    <PagerStyle Mode="NextPrevNumericAndAdvanced" HorizontalAlign="Center" AlwaysVisible="True">
+    </PagerStyle>
+     <MasterTableView CommandItemDisplay="Top">
+     <CommandItemStyle HorizontalAlign="Right" Height="26px" />
+    </MasterTableView>
+</rad:RadGrid>
+<rad:RadGrid SkinID="CustomPaging" runat="server" AllowPaging="True" AutoGenerateColumns="False" AllowCustomPaging="true" 
+    GridLines="None" ShowStatusBar="True" PageSize="20">
+    <ClientSettings>
+        <Selecting AllowRowSelect="True" />
+    </ClientSettings>
+    <PagerStyle Mode="NextPrevNumericAndAdvanced" HorizontalAlign="Center">
+    </PagerStyle>
+     <MasterTableView CommandItemDisplay="Top">
+     <CommandItemStyle HorizontalAlign="Right" Height="26px" />
+    </MasterTableView>
+</rad:RadGrid>

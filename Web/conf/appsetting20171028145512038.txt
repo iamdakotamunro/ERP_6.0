@@ -1,0 +1,29 @@
+﻿/**********************************************************************/
+/*
+/*以下配置文件每行格式为【KEY VALUE //REMARK】，以单个空格键作为分割符，
+/*注意：如果配置项值或者注释中必须包含空格，则以^^双字符转移一个空格替代
+/*
+/*以上内容请勿擅自修改，否则可能导致配置文件无法读取
+/**********************************************************************/
+b2curl http://192.168.117.39:8012/api/Invoice/ //B2C发票服务
+keepyearsdata 2 //数据保留年份
+shopbranchid 74f712a7-0614-4298-baeb-8ef68edb0eb1 //默认门店分公司
+db_erp_history_writeconnection server=192.168.117.126;database=BakKeede;user^^id=test;password=t#@!$%;min^^pool^^size=20;max^^pool^^size=1000; //ERP历史库^^写库
+percentage 1,3,4,5,8 //商品类型默认税率列表
+pageautorefreshdelaytime 1000 //页面自动刷新延迟时间，单位：毫秒
+imagesize 90 //销量排行读取图片大小
+filialeid 06B30857-82F5-45F5-8768-79BD4211806C //ERP^^公司ID
+wmsapiurl http://192.168.117.39:3005/api/ //WMS^^API
+systemid B7E7DFC0-03A6-40AF-9333-B2E8B4695F1D //系统ID
+resourceserverinformation http://picerp.keede.com //资源网站
+resourceserverimg http://192.168.117.39:8009/main/ //资源服务器图片路径
+loginouturl http://192.168.117.39:3000/LoginOut.ashx //注销页面
+notificationpushapiurl 192.168.117.167:8131 //通知推送API
+mainwarehouseid 84B303F5-2AA6-437D-9D23-3488AD55D278 //主仓库ID
+db_erp_readconnections_1 server=192.168.117.126;database=Group.ERP;user^^id=test;password=t#@!$%;min^^pool^^size=20;max^^pool^^size=1000; //ERP读库1
+version 20171028145512038 //版本号
+codegeneratorappid c600a63c-948e-4fc4-9566-92eb5aafd2f3 //用于业务编号生成器的应用ID
+db_erp_report_writeconnection server=192.168.117.126;database=Group.ERP.Report;user^^id=test;password=t#@!$%;min^^pool^^size=20;max^^pool^^size=1000; //ERP报表库^^写库
+expire 30 //资质过期时间，小于等于30天为快过期
+notificationpushsignkey 956D57F2A26D47C489FB67E4AFDDD776 //通知推送API
+db_erp_writeconnection server=192.168.117.126;database=Group.ERP;user^^id=test;password=t#@!$%;min^^pool^^size=20;max^^pool^^size=1000; //ERP写库

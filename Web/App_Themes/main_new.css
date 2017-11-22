@@ -1,0 +1,76 @@
+﻿*{font-family:Verdana !important; font-size:12px !important; margin:0; padding:0;}
+html{}
+body{font-size:12px !important;background-color:#F1F1F1;}
+a { color : #15428B; }
+a:link, a:visited { text-decoration : none; }
+a:hover { text-decoration : underline; }
+
+#header {
+    background : #7F99BE url(layout-browser-hd-bg.gif) repeat-x scroll center center; 
+    border: solid 1px #122A59;
+	height:20px;
+	color:#FFF;
+	line-height:20px;
+	padding:5px;
+	font-size:14px;
+	margin-bottom:5px;
+}
+#main{ margin-left:5px; margin-right:5px;}
+#menu{float:left; width:140px; overflow:hidden;}
+#content{ padding-left:5px; overflow:hidden;}
+#footer{ height:30px; line-height:30px; text-align:right; padding-right:5px;}
+
+.RadMultiPage{border-top:solid 0px #8A8A8A;border-left:solid 1px #8A8A8A;border-bottom:solid 1px #8A8A8A;border-right:solid 1px #8A8A8A; background-color:White;}
+.childTopMenu {
+    background: #7F99BE url('title.png') repeat-x scroll center center;
+    padding: 5px;
+    overflow: hidden;
+    text-align: right;
+}
+.rightTabTooltipMenu{float:right; margin-right:5px;display: inline;}
+.rightTabTooltipMenu a{color:Blue;}
+.rightTabTooltipMenu a:hover{color:#999;}
+
+.floatright{float:right;}
+.space{ margin-bottom:10px;}
+
+.text-right{text-align:right;}
+
+.label{ margin-left:5px; padding-top:3px;}
+
+.red{color:Red;}
+.green{color:Green;}
+.gray{color:Gray;}
+
+
+/*rtsIn*/
+.rtsIn img
+{
+    vertical-align:middle;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+}
+
+.rtsIn .textWrapper
+{
+    display: inline;
+}
+
+/* IE6 fixes for line-height bug */
+* html .rtsIn img
+{
+    margin-bottom: 10px;
+}
+
+* html .rtsIn .textWrapper
+{
+    float: left;
+    height: 26px;
+}
+
+* html .rtsIn .ie6shim
+{
+    height: 26px;
+    display: inline-block;
+}

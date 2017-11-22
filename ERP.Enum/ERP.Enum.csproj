@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2AFAEBA-CB9E-4BA0-B61A-3E0708847FE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.Enum</RootNamespace>
+    <AssemblyName>ERP.Enum</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ERP.Enum.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Core, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Core.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Keede.DAL.DDD, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.DDD.dll</HintPath>
+    </Reference>
+    <Reference Include="Keede.DAL.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Keede.DAL.RWSplitting, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.RWSplitting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountType.cs" />
+    <Compile Include="ActivityFilingState.cs" />
+    <Compile Include="AloneFont.cs" />
+    <Compile Include="ApplyInvocie\ApplyInvoiceKindType.cs" />
+    <Compile Include="ApplyInvocie\ApplyInvoiceSourceType.cs" />
+    <Compile Include="ApplyInvocie\ApplyInvoiceState.cs" />
+    <Compile Include="ApplyInvocie\ApplyInvoiceTitleType.cs" />
+    <Compile Include="ApplyInvocie\ApplyInvoiceType.cs" />
+    <Compile Include="ASYN\ASYNReckoningFromType.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyStatusEnum.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentStatusEnum.cs" />
+    <Compile Include="SubsidyPayment\SubsidyTypeEnum.cs" />
+    <Compile Include="Utilities\EnumUtility.cs" />
+    <Compile Include="AuditingState.cs" />
+    <Compile Include="BuyType.cs" />
+    <Compile Include="CancelPosition.cs" />
+    <Compile Include="ChargingType.cs" />
+    <Compile Include="CheckDataState.cs" />
+    <Compile Include="CheckState.cs" />
+    <Compile Include="CheckStockState.cs" />
+    <Compile Include="CheckType.cs" />
+    <Compile Include="CompanyFundReceiptInvoiceState.cs" />
+    <Compile Include="CompleteOrderTaskState.cs" />
+    <Compile Include="CostReportBillState.cs" />
+    <Compile Include="CostsVarieties.cs" />
+    <Compile Include="DocumentRedState.cs" />
+    <Compile Include="DocumentType.cs" />
+    <Compile Include="EntityPurchaseType.cs" />
+    <Compile Include="GoodsQualificationType.cs" />
+    <Compile Include="GoodsAuditState.cs" />
+    <Compile Include="InvoiceKindType.cs" />
+    <Compile Include="LibraryManageType.cs" />
+    <Compile Include="MedicineDosageFormType.cs" />
+    <Compile Include="MedicineQualityType.cs" />
+    <Compile Include="MedicineSaleKindType.cs" />
+    <Compile Include="MedicineStorageConditionType.cs" />
+    <Compile Include="MedicineStorageModeType.cs" />
+    <Compile Include="MedicineStoreCounterType.cs" />
+    <Compile Include="MemberBalanceChangeStateEnum.cs" />
+    <Compile Include="MemberBalanceChangeTypeEnum.cs" />
+    <Compile Include="MemoType.cs" />
+    <Compile Include="MatchType.cs" />
+    <Compile Include="OldCustomerType.cs" />
+    <Compile Include="OperateType.cs" />
+    <Compile Include="Overseas\DeliverType.cs" />
+    <Compile Include="Overseas\SalesScopeType.cs" />
+    <Compile Include="ReckoningLinkTradeType.cs" />
+    <Compile Include="RedType.cs" />
+    <Compile Include="SaleOrderGoodsSettlementRelatedTradeType.cs" />
+    <Compile Include="SaleStockState.cs" />
+    <Compile Include="CodeType.cs" />
+    <Compile Include="CompanyFundReceiptInvoiceType.cs" />
+    <Compile Include="CompanyFundReceiptPowerBindType.cs" />
+    <Compile Include="CompanyFundReceiptState.cs" />
+    <Compile Include="CompanyFundReceiptType.cs" />
+    <Compile Include="CompanyType.cs" />
+    <Compile Include="CompareType.cs" />
+    <Compile Include="ContructType.cs" />
+    <Compile Include="CostReportAuditingPowerType.cs" />
+    <Compile Include="CostReportExecuteMoneyType.cs" />
+    <Compile Include="CostReportInvoiceState.cs" />
+    <Compile Include="CostReportInvoiceType.cs" />
+    <Compile Include="CostReportKind.cs" />
+    <Compile Include="CostReportState.cs" />
+    <Compile Include="CurrencyType.cs" />
+    <Compile Include="DataState.cs" />
+    <Compile Include="DebitNoteState.cs" />
+    <Compile Include="EmailSmsStatusType.cs" />
+    <Compile Include="Attribute\EnumArrtibute.cs" />
+    <Compile Include="FilingType.cs" />
+    <Compile Include="GoodsKindType.cs" />
+    <Compile Include="GoodsOrderPayState.cs" />
+    <Compile Include="GoodsPurchaseType.cs" />
+    <Compile Include="GoodsServicePosition.cs" />
+    <Compile Include="InformationType.cs" />
+    <Compile Include="InvoiceNoteType.cs" />
+    <Compile Include="InvoicePurchaserType.cs" />
+    <Compile Include="InvoiceRollState.cs" />
+    <Compile Include="InvoiceState.cs" />
+    <Compile Include="InvoiceType.cs" />
+    <Compile Include="IsNeedManualType.cs" />
+    <Compile Include="JoinType.cs" />
+    <Compile Include="LogType.cs" />
+    <Compile Include="MailType.cs" />
+    <Compile Include="MemberMentionState.cs" />
+    <Compile Include="MergeSplitState.cs" />
+    <Compile Include="MergeSplitType.cs" />
+    <Compile Include="OrderState.cs" />
+    <Compile Include="OrderOtherState.cs" />
+    <Compile Include="PaymentType.cs" />
+    <Compile Include="PayMode.cs" />
+    <Compile Include="PayState.cs" />
+    <Compile Include="PickingState.cs" />
+    <Compile Include="PromotionKind.cs" />
+    <Compile Include="PromotionType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasePromotionType.cs" />
+    <Compile Include="PurchaseSetLogStatue.cs" />
+    <Compile Include="PurchaseSetLogType.cs" />
+    <Compile Include="PurchasingState.cs" />
+    <Compile Include="PurchasingType.cs" />
+    <Compile Include="ReceiptPage.cs" />
+    <Compile Include="ReceiptType.cs" />
+    <Compile Include="ReckoningCheckType.cs" />
+    <Compile Include="ReckoningStateType.cs" />
+    <Compile Include="ReckoningType.cs" />
+    <Compile Include="RefundmentMode.cs" />
+    <Compile Include="SaleStockType.cs" />
+    <Compile Include="SearchTime.cs" />
+    <Compile Include="SellType.cs" />
+    <Compile Include="ShopFront\ApplyStockState.cs" />
+    <Compile Include="ShopFront\ExchangedState.cs" />
+    <Compile Include="ShopFront\PurchaseType.cs" />
+    <Compile Include="ShopFront\ReturnMsgState.cs" />
+    <Compile Include="ShopFront\ShopActivityImageType.cs" />
+    <Compile Include="SMSType.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="StorageAuthType.cs" />
+    <Compile Include="StorageRecordLinkTradeType.cs" />
+    <Compile Include="StorageRecordState.cs" />
+    <Compile Include="StorageRecordType.cs" />
+    <Compile Include="StorageTransferOutType.cs" />
+    <Compile Include="SupplierCompleteType.cs" />
+    <Compile Include="SupplierQualificationType.cs" />
+    <Compile Include="SupplierTimeLimitType.cs" />
+    <Compile Include="TemplateType.cs" />
+    <Compile Include="TradeBothPartiesType.cs" />
+    <Compile Include="VocabularyState.cs" />
+    <Compile Include="WaitCheckGoodsState.cs" />
+    <Compile Include="WarehouseState.cs" />
+    <Compile Include="WarehouseType.cs" />
+    <Compile Include="WasteBookLinkTradeType.cs" />
+    <Compile Include="WasteBookState.cs" />
+    <Compile Include="WasteBookType.cs" />
+    <Compile Include="WasteSource.cs" />
+    <Compile Include="RealTimeGrossSettlementRelatedTradeType.cs" />
+    <Compile Include="YesOrNo.cs" />
+    <Compile Include="PurchasingGoodsType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

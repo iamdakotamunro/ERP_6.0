@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{406BAC57-5C85-42F0-9E33-2D64AB9662FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.BLL</RootNamespace>
+    <AssemblyName>ERP.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AllianceShop.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shop.Service.7.0.2.0\lib\AllianceShop.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AllianceShop.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shop.Service.7.0.2.0\lib\AllianceShop.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AllianceShop.Enum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shop.Service.7.0.2.0\lib\AllianceShop.Enum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="B2C.Enum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\B2C.Admin.4.12.0-beta2\lib\B2C.Enum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="B2C.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\B2C.Admin.4.12.0-beta2\lib\B2C.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="B2C.Service.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\B2C.Admin.4.12.0-beta2\lib\B2C.Service.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Config.Keede.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Config.Keede.Library.1.0.7\lib\net40\Config.Keede.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Config.Keede.Library, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Config.Keede.Library.1.0.7\lib\net40\Config.Keede.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework, Version=2.0.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.2.0.9.9\lib\net40\Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Core, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Framework.Core.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.DDD, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.DDD.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.Helper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keede.DAL.RWSplitting, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.RWSplitting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KeedeGroup.GoodsManageSystem.Public, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.GoodsCenter.3.5.5.4\lib\net40\KeedeGroup.GoodsManageSystem.Public.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KeedeGroup.WMS.Application.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMS.3.0.0-beta2\lib\net461\KeedeGroup.WMS.Application.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KeedeGroup.WMS.Infrastructure.CrossCutting, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMS.3.0.0-beta2\lib\net461\KeedeGroup.WMS.Infrastructure.CrossCutting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net.Ext.Json, Version=1.2.15.4228, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.Ext.Json.1.2.15.14586\lib\net45-full\log4net.Ext.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MIS.Enum">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Enum.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OperationLog.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.OperationLogCenter.1.0.4.0\lib\net40\OperationLog.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PUSH.Core, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Push.Core.1.0.1\lib\net40\PUSH.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.ClientEngine, Version=0.8.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Config.Keede.Library.1.0.7\lib\net40\SuperSocket.ClientEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\System.Net.Http.4.0.0\lib\net45\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BllInstance.cs" />
+    <Compile Include="Implement\Company\QualificationManager.cs" />
+    <Compile Include="Implement\ConfigManage.cs" />
+    <Compile Include="Implement\FinanceModule\SubsidyPaymentManager.cs" />
+    <Compile Include="Implement\FinanceModule\SaleOrderGoodsSettlementManager.cs" />
+    <Compile Include="Implement\Goods\GoodsManager.cs" />
+    <Compile Include="Implement\Inventory\CheckDataManager.cs" />
+    <Compile Include="Implement\Inventory\CompanyFundReceiptInvoice.cs" />
+    <Compile Include="Implement\Inventory\CompanyGrossProfitRecordBll.cs" />
+    <Compile Include="Implement\Inventory\GoodsGrossProfitBll.cs" />
+    <Compile Include="Implement\Inventory\GoodsGrossProfitRecordDetailBll.cs" />
+    <Compile Include="Implement\Inventory\GoodsInfoForGoodsDaySalesLogsManager.cs" />
+    <Compile Include="Implement\Inventory\GoodsPriceChangeManager.cs" />
+    <Compile Include="Implement\Inventory\GoodsStockPile.cs" />
+    <Compile Include="Implement\Inventory\GoodsStockSettleRecordBll.cs" />
+    <Compile Include="Implement\Inventory\InternalPriceSetManager.cs" />
+    <Compile Include="Implement\FinanceModule\RefundsMoneyManager.cs" />
+    <Compile Include="Implement\Inventory\InvoiceApplySerivce.cs" />
+    <Compile Include="Implement\Inventory\MediumReckoning .cs" />
+    <Compile Include="Implement\Inventory\SalesGoodsRanking.cs" />
+    <Compile Include="Implement\Inventory\SupplierReportBll.cs" />
+    <Compile Include="Implement\Inventory\SupplierSaleRecordBll.cs" />
+    <Compile Include="Implement\OperationLogManager.cs" />
+    <Compile Include="Implement\Order\CheckRefund.cs" />
+    <Compile Include="Implement\Order\CompleteOrderTaskManager.cs" />
+    <Compile Include="Implement\Order\FrameProcessManager.cs" />
+    <Compile Include="Implement\Order\GoodsOrder.cs" />
+    <Compile Include="Implement\Order\OrderManager.cs" />
+    <Compile Include="Implement\Organization\AccountManager.cs" />
+    <Compile Include="Implement\Organization\FilialeManager.cs" />
+    <Compile Include="Implement\Organization\PersonnelManager.cs" />
+    <Compile Include="Implement\Basis\WebRudder.cs" />
+    <Compile Include="Implement\CacheManager.cs" />
+    <Compile Include="Implement\Inventory\BankAccountManager.cs" />
+    <Compile Include="Implement\Inventory\Code.cs" />
+    <Compile Include="Implement\Inventory\CompanyClass.cs" />
+    <Compile Include="Implement\Inventory\CompanyFundReceipt.cs" />
+    <Compile Include="Implement\Inventory\CostClass.cs" />
+    <Compile Include="Implement\Inventory\CostReport.cs" />
+    <Compile Include="Implement\Inventory\Invoice.cs" />
+    <Compile Include="Implement\Inventory\StorageManager.cs" />
+    <Compile Include="Implement\Inventory\Purchasing.cs" />
+    <Compile Include="Implement\Inventory\PurchasingDetail.cs" />
+    <Compile Include="Implement\Inventory\PurchasingManagement.cs" />
+    <Compile Include="Implement\Inventory\Reckoning.cs" />
+    <Compile Include="Implement\Inventory\StockWarning.cs" />
+    <Compile Include="Implement\Inventory\WaitCheckStockGoods.cs" />
+    <Compile Include="Implement\Inventory\WarehouseManager.cs" />
+    <Compile Include="Implement\Inventory\WasteBookManager.cs" />
+    <Compile Include="Implement\Goods\GoodsClassManager.cs" />
+    <Compile Include="Implement\Purchasing\StockDeclareManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Implement\PushManager.cs" />
+    <Compile Include="Implement\RealTimeGrossSettlementManager.cs" />
+    <Compile Include="Implement\ReckoningManager.cs" />
+    <Compile Include="Implement\Shop\ShopActivityImageBll.cs" />
+    <Compile Include="Implement\Shop\ShopActivityNoticeBll.cs" />
+    <Compile Include="Implement\Shop\ShopExchangedApplyBll.cs" />
+    <Compile Include="Implement\Shop\ShopExchangedApplyDetailBll.cs" />
+    <Compile Include="Implement\Shop\ShopRefundMessageBll.cs" />
+    <Compile Include="Interface\IGoodsPrice.cs" />
+    <Compile Include="Interface\IInternalPriceSetManager.cs" />
+    <Compile Include="Interface\ILensProcessManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\IOperationLogManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\IRealTimeGrossSettlementManager.cs" />
+    <Compile Include="Interface\IReckoningManager.cs" />
+    <Compile Include="Interface\ISaleOrderGoodsSettlementManager.cs" />
+    <Compile Include="Interface\IStorageManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Implement\Shop\ApplyStockBLL.cs" />
+    <Compile Include="Utilities\UtilityManage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\ERP.Common\ERP.Environment.csproj">
+      <Project>{4951062B-D3C0-443D-8AB4-C233250A7584}</Project>
+      <Name>ERP.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Cache\ERP.Cache.csproj">
+      <Project>{965B2175-58B4-4589-9AB7-A9C7508E52E1}</Project>
+      <Name>ERP.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.DAL\ERP.DAL.csproj">
+      <Project>{d9792169-3e1c-42f5-8ada-6df9337353c1}</Project>
+      <Name>ERP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Enum\ERP.Enum.csproj">
+      <Project>{B2AFAEBA-CB9E-4BA0-B61A-3E0708847FE9}</Project>
+      <Name>ERP.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Model\ERP.Model.csproj">
+      <Project>{A6595739-E966-4F89-B771-6AB481AEDB5D}</Project>
+      <Name>ERP.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.SAL\ERP.SAL.csproj">
+      <Project>{DCAE6D15-457F-4FD5-A097-F0EE3E330047}</Project>
+      <Name>ERP.SAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="log4net.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.Ext.Json.LICENSE.txt" />
+    <Content Include="log4net.Ext.Json.README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

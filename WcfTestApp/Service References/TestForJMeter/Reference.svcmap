@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="19355b32-3cb6-401a-92cf-81e9ab0bd0ca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.117.230:15004/ITestForJMeter" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ITestForJMeter.xsd" MetadataType="Schema" ID="7061dcd6-d368-4aa0-8c42-819b6025ace9" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?xsd=xsd3" />
+    <MetadataFile FileName="ITestForJMeter.wsdl" MetadataType="Wsdl" ID="56ffa0f1-dcdb-4828-a827-76858b055419" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?wsdl=wsdl0" />
+    <MetadataFile FileName="ITestForJMeter.disco" MetadataType="Disco" ID="8bd38a53-87ec-4605-bdaf-07b85a2324b1" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?disco" />
+    <MetadataFile FileName="ITestForJMeter1.xsd" MetadataType="Schema" ID="57585673-26c7-41ab-ad0d-7d437047c8f5" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?xsd=xsd1" />
+    <MetadataFile FileName="TestForJMeter.wsdl" MetadataType="Wsdl" ID="67bab713-ae80-4001-88e7-79d3259da16e" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?wsdl" />
+    <MetadataFile FileName="ITestForJMeter2.xsd" MetadataType="Schema" ID="2885dfe2-2d24-4a5b-ad38-d67d03c2e1e4" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?xsd=xsd4" />
+    <MetadataFile FileName="ITestForJMeter3.xsd" MetadataType="Schema" ID="21eca702-4526-44f5-ba89-0f8bc2b45714" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?xsd=xsd2" />
+    <MetadataFile FileName="ITestForJMeter4.xsd" MetadataType="Schema" ID="7da4d214-f496-4e3f-b1c3-36d430e6f443" SourceId="1" SourceUrl="http://192.168.117.230:15004/ITestForJMeter?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

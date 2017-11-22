@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6595739-E966-4F89-B771-6AB481AEDB5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.Model</RootNamespace>
+    <AssemblyName>ERP.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ERP.Model.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Core, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Core.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Framework.Core.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Keede.DAL.DDD, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.DDD.dll</HintPath>
+    </Reference>
+    <Reference Include="Keede.DAL.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Keede.DAL.RWSplitting, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.3.2.0-beta14\lib\Keede.DAL.RWSplitting.dll</HintPath>
+    </Reference>
+    <Reference Include="MIS.Enum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Enum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MIS.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MIS.Service.Contract, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Core.MIS.1.4.5-beta\lib\net40\MIS.Service.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityFilingInfo.cs" />
+    <Compile Include="ActivityFilingTotalModel.cs" />
+    <Compile Include="ActivityOperateLogModel.cs" />
+    <Compile Include="AddInvoiceInfo.cs" />
+    <Compile Include="AfterSaleDetailInfo.cs" />
+    <Compile Include="AfterSaleInfo.cs" />
+    <Compile Include="AgainInvoiceInfo.cs" />
+    <Compile Include="ASYN\ASYNReckoningInfo.cs" />
+    <Compile Include="ASYN\ASYNStorageRecordInfo.cs" />
+    <Compile Include="ASYN_GoodsDaySalesStatisticsInfo.cs" />
+    <Compile Include="AuthorizeCompanyDTO.cs" />
+    <Compile Include="BorrowLendDetailInfo.cs" />
+    <Compile Include="BorrowLendInfo.cs" />
+    <Compile Include="CheckDataDetailInfo.cs" />
+    <Compile Include="CheckDataRecordInfo.cs" />
+    <Compile Include="CheckingData.cs" />
+    <Compile Include="CompanyBankAccountBindInfo.cs" />
+    <Compile Include="CompanyCussentRelationInfo.cs" />
+    <Compile Include="CompanyFundReceiptInvoiceInfo.cs" />
+    <Compile Include="CostReportAmountInfo.cs" />
+    <Compile Include="Finance\Gathering\GoodsOrderDTO.cs" />
+    <Compile Include="Finance\ResultInfo.cs" />
+    <Compile Include="Invoice\InvoiceApplyGridDTO.cs" />
+    <Compile Include="Invoice\InvoiceBindGoods.cs" />
+    <Compile Include="Finance\Gathering\CostReportDTO.cs" />
+    <Compile Include="Finance\Gathering\WasteBookDTO.cs" />
+    <Compile Include="ManuallyCheckBillDetailInfo.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyInfo_Payment.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyInfo_Approval.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyInfo_Add.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyInfo_Edit.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyInfo.cs" />
+    <Compile Include="RefundsMoney\RefundsMoneyInfo_SeachModel.cs" />
+    <Compile Include="ResultModel.cs" />
+    <Compile Include="SourceBindGoods.cs" />
+    <Compile Include="SubjectInfo.cs" />
+    <Compile Include="SubjectClassInfo.cs" />
+    <Compile Include="FinanceModule\GoodsGrossSettlementByMonthInfo.cs" />
+    <Compile Include="FinanceModule\SaleOrderGoodsSettlementInfo.cs" />
+    <Compile Include="FinanceModule\SampleSaleOrderInfo.cs" />
+    <Compile Include="Finance\Gathering\GatheringDTO.cs" />
+    <Compile Include="Finance\Gathering\CompanyFundReceiptDTO.cs" />
+    <Compile Include="Finance\InvoiceDTO.cs" />
+    <Compile Include="Finance\Payment\PaymentDTO.cs" />
+    <Compile Include="Finance\StockBillDTO.cs" />
+    <Compile Include="Finance\VendorDTO.cs" />
+    <Compile Include="GoodsAvgDaySalesInfo.cs" />
+    <Compile Include="Goods\GoodsQualificationDetailInfo.cs" />
+    <Compile Include="Goods\GoodsStockCurrentInfo.cs" />
+    <Compile Include="InnerPurchaseRelationInfo.cs" />
+    <Compile Include="InternalPriceSetInfo.cs" />
+    <Compile Include="Invoice\ApiResultInfo.cs" />
+    <Compile Include="Invoice\B2CInvoiceDTO.cs" />
+    <Compile Include="Invoice\B2CInvoiceStatistics.cs" />
+    <Compile Include="Invoice\InvoiceApplyDetailInfo.cs" />
+    <Compile Include="Invoice\InvoiceApplyInfo.cs" />
+    <Compile Include="Invoice\InvoiceRelationInfo.cs" />
+    <Compile Include="ManuallyCheckBillInfo.cs" />
+    <Compile Include="MatchOrderResultInfo.cs" />
+    <Compile Include="MergeSplitDetailInfo.cs" />
+    <Compile Include="MergeSplitInfo.cs" />
+    <Compile Include="NeedPurchasingGoods.cs" />
+    <Compile Include="RealTimeGrossSettlementProcessQueueInfo.cs" />
+    <Compile Include="RealTimeGrossSettlementInfo.cs" />
+    <Compile Include="Report\CompanyGrossProfitRecordDetailChildInfo.cs" />
+    <Compile Include="Report\CompanyGrossProfitRecordDetailInfo.cs" />
+    <Compile Include="CompanyPaymentDaysInfo.cs" />
+    <Compile Include="CompanyPurchaseGoupInfo.cs" />
+    <Compile Include="CompanySaleStatisticsInfo.cs" />
+    <Compile Include="CompanySubjectDiscountInfo.cs" />
+    <Compile Include="CompleteOrderTaskInfo.cs" />
+    <Compile Include="CompleteOrderTaskDetailsInfo.cs" />
+    <Compile Include="CompleteOrderTaskRecordInfo.cs" />
+    <Compile Include="CostCompanyBindingBankAccountsInfo.cs" />
+    <Compile Include="CostInvoiceMoneyInfo.cs" />
+    <Compile Include="CostReportBillInfo.cs" />
+    <Compile Include="CostReportDepositRecoveryInfo.cs" />
+    <Compile Include="DeliveryRatioInfo.cs" />
+    <Compile Include="DocumentRedDetailInfo.cs" />
+    <Compile Include="DocumentRedInfo.cs" />
+    <Compile Include="ExceptionReckoningInfo.cs" />
+    <Compile Include="FundPaymentDaysInfo.cs" />
+    <Compile Include="GoodsDaySalesInfo.cs" />
+    <Compile Include="GoodsDemandSearchInfo.cs" />
+    <Compile Include="GoodsInfoForGoodsDaySalesLogs.cs" />
+    <Compile Include="GoodsOrderDemandInfo.cs" />
+    <Compile Include="GoodsOrderDetailBaseInfo.cs" />
+    <Compile Include="GoodsOrderInvoiceInfo.cs" />
+    <Compile Include="GoodsPurchaseLastPriceInfo.cs" />
+    <Compile Include="GoodsSalesInfo.cs" />
+    <Compile Include="GoodsStockSearchInfo.cs" />
+    <Compile Include="Goods\GoodsMedicineInfo.cs" />
+    <Compile Include="GoodsPriceChange.cs" />
+    <Compile Include="GoodsPriceVerificationInfo.cs" />
+    <Compile Include="GoodsStatementInfo.cs" />
+    <Compile Include="GoodsStockPriceRecordInfo.cs" />
+    <Compile Include="Goods\AttributeGroupInfo.cs" />
+    <Compile Include="Goods\AttributeInfo.cs" />
+    <Compile Include="Goods\AttributeWordInfo.cs" />
+    <Compile Include="BankAccountBalanceInfo.cs" />
+    <Compile Include="BankAccountPermissionInfo.cs" />
+    <Compile Include="BankAccountInfo.cs" />
+    <Compile Include="DescriptionExtendTitleInfo.cs" />
+    <Compile Include="Goods\FrameGoodsInfo.cs" />
+    <Compile Include="Goods\GoodsBaseModel.cs" />
+    <Compile Include="Goods\GoodsPriceSerachInfo.cs" />
+    <Compile Include="Goods\GoodsSaleStockInfo.cs" />
+    <Compile Include="Goods\GoodsAllInfo.cs" />
+    <Compile Include="Goods\GoodsBarcodeInfo.cs" />
+    <Compile Include="Goods\GoodsBrandInfo.cs" />
+    <Compile Include="CacheOrderCheck.cs" />
+    <Compile Include="CheckRefundDetailInfo.cs" />
+    <Compile Include="CheckRefundInfo.cs" />
+    <Compile Include="CheckStockDetailInfo.cs" />
+    <Compile Include="CheckStockInfo.cs" />
+    <Compile Include="CheckStorageStatisticsInfo.cs" />
+    <Compile Include="CompanyAuditingPowerInfo.cs" />
+    <Compile Include="CompanyBalanceDetailInfo.cs" />
+    <Compile Include="CompanyBalanceInfo.cs" />
+    <Compile Include="CompanyBankAccountsInfo.cs" />
+    <Compile Include="CompanyClassInfo.cs" />
+    <Compile Include="CompanyCussentInfo.cs" />
+    <Compile Include="CompanyFundReceiptInfo.cs" />
+    <Compile Include="CompanyInvoicePowerInfo.cs" />
+    <Compile Include="CompareDataInfo.cs" />
+    <Compile Include="ConsigneeInfo.cs" />
+    <Compile Include="CostCompanyClassInfo.cs" />
+    <Compile Include="CostCussentInfo.cs" />
+    <Compile Include="CostReportAuditingInfo.cs" />
+    <Compile Include="CostReportInvoiceInfo.cs" />
+    <Compile Include="CostPersionInfo.cs" />
+    <Compile Include="CostReckoningInfo.cs" />
+    <Compile Include="CostReportInfo.cs" />
+    <Compile Include="DebitNoteInfo.cs" />
+    <Compile Include="DemandQuantityInfo.cs" />
+    <Compile Include="DrawBackInfo.cs" />
+    <Compile Include="ExcelTemplateInfo.cs" />
+    <Compile Include="ExpressCodeInfo.cs" />
+    <Compile Include="FetchDataInfo.cs" />
+    <Compile Include="FieldInfo.cs" />
+    <Compile Include="FilialeInfo.cs" />
+    <Compile Include="FilingReportInfo.cs" />
+    <Compile Include="FinishOrderInfo.cs" />
+    <Compile Include="FrameProcessInfo.cs" />
+    <Compile Include="Goods\GoodsClassFieldInfo.cs" />
+    <Compile Include="Goods\GoodsClassInfo.cs" />
+    <Compile Include="Goods\GoodsDaySalesStatisticsInfo.cs" />
+    <Compile Include="Goods\GoodsDemandInfo.cs" />
+    <Compile Include="Goods\GoodsDescriptionInfo.cs" />
+    <Compile Include="Goods\GoodsExtendInfo.cs" />
+    <Compile Include="Goods\GoodsFieldInfo.cs" />
+    <Compile Include="Goods\GoodsGroupInfo.cs" />
+    <Compile Include="Goods\GoodsInfo.cs" />
+    <Compile Include="Goods\GoodsInformationInfo.cs" />
+    <Compile Include="Goods\GoodsMemberRemarkInfo.cs" />
+    <Compile Include="Goods\GoodsMonthDemandInfo.cs" />
+    <Compile Include="GoodsOrderDeliverInfo.cs" />
+    <Compile Include="GoodsOrderDetailInfo.cs" />
+    <Compile Include="GoodsOrderInfo.cs" />
+    <Compile Include="GoodsOrderPayInfo.cs" />
+    <Compile Include="Goods\GoodsOutInStorageStatisticsInfo.cs" />
+    <Compile Include="Goods\GoodsPriceInfo.cs" />
+    <Compile Include="Goods\GoodsRolePriceInfo.cs" />
+    <Compile Include="Goods\GoodsSalePriceInfo.cs" />
+    <Compile Include="Goods\GoodsSeriesInfo.cs" />
+    <Compile Include="Goods\GoodsShelfInfo.cs" />
+    <Compile Include="Goods\GoodsStockPileInfo.cs" />
+    <Compile Include="Goods\GoodsStockPileIsInfo.cs" />
+    <Compile Include="Goods\GoodsStockRunning.cs" />
+    <Compile Include="Goods\GoodsSyncInfo.cs" />
+    <Compile Include="Goods\GoodsTaskInfo.cs" />
+    <Compile Include="Goods\ThirdGoodsSalePriceInfo.cs" />
+    <Compile Include="InvoiceInfo.cs" />
+    <Compile Include="InvoiceRoll.cs" />
+    <Compile Include="InvoiceRollDetail.cs" />
+    <Compile Include="InvoiceRollInfo.cs" />
+    <Compile Include="InvoiceStatisticsInfo.cs" />
+    <Compile Include="KeyAndValue.cs" />
+    <Compile Include="LensProcessDetailsInfo.cs" />
+    <Compile Include="LensProcessInfo.cs" />
+    <Compile Include="LensProcessMatchInfo.cs" />
+    <Compile Include="CostReportTerminiInfo.cs" />
+    <Compile Include="CostReportTravelInfo.cs" />
+    <Compile Include="LoginResultInfo.cs" />
+    <Compile Include="LogisticsMessageInfo.cs" />
+    <Compile Include="MakeOutInvoiceAreaInfo.cs" />
+    <Compile Include="MediumReckoningInfo.cs" />
+    <Compile Include="MemberBalanceFlowInfo.cs" />
+    <Compile Include="MemberBaseInfo.cs" />
+    <Compile Include="MemberMentionApplyInfo.cs" />
+    <Compile Include="MemberReckoningInfo.cs" />
+    <Compile Include="MemeberBalanceChangeInfo.cs" />
+    <Compile Include="MonthGoodsStockRecordInfo.cs" />
+    <Compile Include="MonthlyInvoiceLimitInfo.cs" />
+    <Compile Include="NeedToAllocateDetailInfo.cs" />
+    <Compile Include="NeedToAllocateInfo.cs" />
+    <Compile Include="NodeInfo.cs" />
+    <Compile Include="OperationLogInfo.cs" />
+    <Compile Include="OrderCheckInfo.cs" />
+    <Compile Include="PersonnelInfo.cs" />
+    <Compile Include="ProcurementCompactQuantityInfo.cs" />
+    <Compile Include="ProcurementTicketLimitInfo.cs" />
+    <Compile Include="PurchasingGoodsAmountInfo.cs" />
+    <Compile Include="PurchasingGoodsModel.cs" />
+    <Compile Include="PurchasingGoodsSplitInfo.cs" />
+    <Compile Include="Report\CompanyGrossProfitRecordInfo.cs" />
+    <Compile Include="Report\GoodsGrossProfitInfo.cs" />
+    <Compile Include="Report\GoodsGrossProfitRecordDetailInfo.cs" />
+    <Compile Include="Report\GoodsOrderDetailsForProfit.cs" />
+    <Compile Include="Report\MonthGoodsStockInfo.cs" />
+    <Compile Include="Report\MonthGoodsStockReportInfo.cs" />
+    <Compile Include="Report\RecordReckoningInfo.cs" />
+    <Compile Include="Report\SupplierPaymentsRecordInfo.cs" />
+    <Compile Include="Report\SupplierPaymentsReportInfo.cs" />
+    <Compile Include="Report\SupplierSaleRecordDetailInfo.cs" />
+    <Compile Include="Report\SupplierSaleRecordInfo.cs" />
+    <Compile Include="Report\SupplierSaleReportInfo.cs" />
+    <Compile Include="Report\TempStorageRecordDetailInfo.cs" />
+    <Compile Include="Report\WasteBookInfo.cs" />
+    <Compile Include="RequirementOrderInfo.cs" />
+    <Compile Include="SaleRaningShowInfo.cs" />
+    <Compile Include="SalesVolumeInfo.cs" />
+    <Compile Include="SearchGoodsInfo.cs" />
+    <Compile Include="ServiceResult.cs" />
+    <Compile Include="ShelfInfo.cs" />
+    <Compile Include="ShippAddress.cs" />
+    <Compile Include="ShopFront\MiniCItyInfo.cs" />
+    <Compile Include="ShopFront\MiniDistrictInfo.cs" />
+    <Compile Include="ShopFront\MiniProvinceInfo.cs" />
+    <Compile Include="ShopFront\OrderScoreInfo.cs" />
+    <Compile Include="ShopFront\ShopActivityImageInfo.cs" />
+    <Compile Include="ShopFront\ShopActivityNoticeInfo.cs" />
+    <Compile Include="ShopFront\ShopApplyDetailInfo.cs" />
+    <Compile Include="ShopFront\ShopBankAccountsInfo.cs" />
+    <Compile Include="ShopFront\ShopExchangedApplyDetailInfo.cs" />
+    <Compile Include="ShopFront\ShopExchangedApplyInfo.cs" />
+    <Compile Include="ShopFront\ShopLensProcessInfo.cs" />
+    <Compile Include="ShopFront\ShopRefundInfo.cs" />
+    <Compile Include="ShopFront\ShopRefundMessageInfo.cs" />
+    <Compile Include="ShowDeliverCarriageInfo.cs" />
+    <Compile Include="SimpleGoodsOrderInfo.cs" />
+    <Compile Include="SimpleInvoiceInfo.cs" />
+    <Compile Include="StockRequirementDetailInfo.cs" />
+    <Compile Include="StorageRecordDetailInfo.cs" />
+    <Compile Include="StorageRecordInfo.cs" />
+    <Compile Include="PaymentInterfaceInfo.cs" />
+    <Compile Include="PaymentNoticeInfo.cs" />
+    <Compile Include="PickInfo.cs" />
+    <Compile Include="PickingOrderInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DebitNoteDetailInfo.cs" />
+    <Compile Include="PurchasePromotionInfo.cs" />
+    <Compile Include="PurchaseSetInfo.cs" />
+    <Compile Include="PurchaseSetLogInfo.cs" />
+    <Compile Include="PurchaseStatisticsInfo.cs" />
+    <Compile Include="PurchasingDetailInfo.cs" />
+    <Compile Include="PurchasingInfo.cs" />
+    <Compile Include="Goods\ChildGoodsInfo.cs" />
+    <Compile Include="ReckoningCheckInfo.cs" />
+    <Compile Include="ReckoningInfo.cs" />
+    <Compile Include="RefundLogInfo.cs" />
+    <Compile Include="RelatedClassInfo.cs" />
+    <Compile Include="ReportClassInfo.cs" />
+    <Compile Include="ReportInfo.cs" />
+    <Compile Include="SalePlatformInfo.cs" />
+    <Compile Include="SalesGoodsRankingInfo.cs" />
+    <Compile Include="SalesReturnInfo.cs" />
+    <Compile Include="ShopFilialeInfo.cs" />
+    <Compile Include="ShopFront\ApplyStockDetailInfo.cs" />
+    <Compile Include="ShopFront\ApplyStockInfo.cs" />
+    <Compile Include="ShopFront\GoodsBrandInfo.cs" />
+    <Compile Include="ShopFront\GoodsClassInfo.cs" />
+    <Compile Include="ShopFront\GoodsClassRelationFieldInfo.cs" />
+    <Compile Include="ShopFront\GoodsFieldInfo.cs" />
+    <Compile Include="ShopFront\GoodsInfo.cs" />
+    <Compile Include="ShopFront\GoodsRealInfo.cs" />
+    <Compile Include="ShopFront\GoodsRelationClassInfo.cs" />
+    <Compile Include="ShopFront\GoodsRelationFieldInfo.cs" />
+    <Compile Include="ShopFront\GoodsSemiStockStateInfo.cs" />
+    <Compile Include="ShopFront\StockDetailInfo.cs" />
+    <Compile Include="ShopFront\StockInfo.cs" />
+    <Compile Include="SiteInfo.cs" />
+    <Compile Include="StockTurnOverInfo.cs" />
+    <Compile Include="StockWarningInfo.cs" />
+    <Compile Include="StoTempInfo.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo_Check.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo_Payment.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo_Approval.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo_Edit.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo_Add.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo.cs" />
+    <Compile Include="SubsidyPayment\SubsidyPaymentInfo_SeachModel.cs" />
+    <Compile Include="SupplierGoodsInfo.cs" />
+    <Compile Include="SupplierInfomationInfo.cs" />
+    <Compile Include="TaxrateProportionInfo.cs" />
+    <Compile Include="TemplateInfo.cs" />
+    <Compile Include="TempOrderDetailInfo.cs" />
+    <Compile Include="TempOrderInfo.cs" />
+    <Compile Include="TicketLimitBindInfo.cs" />
+    <Compile Include="UnitsInfo.cs" />
+    <Compile Include="UpateInvoiceInfo.cs" />
+    <Compile Include="VocabularyInfo.cs" />
+    <Compile Include="WaitCheckGoodsInfo.cs" />
+    <Compile Include="WaitConsignmentOrderInfo.cs" />
+    <Compile Include="WarehousePermissionInfo.cs" />
+    <Compile Include="WasteBookCheckInfo.cs" />
+    <Compile Include="WasteBookInfo.cs" />
+    <Compile Include="WasteTypeInfo.cs" />
+    <Compile Include="WebRudderInfo.cs" />
+    <Compile Include="WMS\ErpPurchaseDeclarationBill.cs" />
+    <Compile Include="WMS\ErpStockSearchDTO.cs" />
+    <Compile Include="WMS\HostingFilialeSaleDetailDTO.cs" />
+    <Compile Include="WMS\HostingFilialeSaleDTO.cs" />
+    <Compile Include="WMS\RequireSearchDTO.cs" />
+    <Compile Include="WMS\UpDownGoodsQuantityLendDTO.cs" />
+    <Compile Include="WMS\WMSLostBackReturnDTO.cs" />
+    <Compile Include="WMS\WMSResultInfo.cs" />
+    <Compile Include="WMS\WMSReturnGoodsDetailRequest.cs" />
+    <Compile Include="WMS\WMSReturnGoodsRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Enum\ERP.Enum.csproj">
+      <Project>{B2AFAEBA-CB9E-4BA0-B61A-3E0708847FE9}</Project>
+      <Name>ERP.Enum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9607B32-8776-48B8-965D-7B08A7A70663}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WcfTestApp</RootNamespace>
+    <AssemblyName>WcfTestApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ErpService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TestForJMeter\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Service References\ErpService\IService.wsdl" />
+    <None Include="Service References\ErpService\IService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\IService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ErpService\Service.wsdl" />
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddApplyStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddBarterApplyGoodsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddByLostBackReturnInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddBySellReturnInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddOrderAndInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddReckoningInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddRefundApplyGoodsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddRefundMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AddShopFrontApplyStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AgainInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AuditingReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AuditingWasteBookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.AuditingWasteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.BatchSetInvoiceStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.CancelStorageRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.CheckingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.CheckPoundageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.ChInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.CreateByCombineSplitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.DeletePayNoticeByPayIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.DeleteReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.DeleteWasteBookPoundageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.DeleteWasteBookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.FinishStorageRecordInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.FinishStorageRecordOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetAllCompanyBankAccountsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetAllCompanyCussentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetAllRealGoodsSaleNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetAllShopActivityNoticeListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetAvgRealGoodsSaleNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GeTaxrateProportionInfosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBankAccountListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBankAccountsByShopIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBankAccountsListByFBPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBankAccountsListFromERPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBankAccountsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBankAccountsNonceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetBarterGoodsListByApplyIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetChildCompanyClassListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyBindFilialeIdsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyCussentListByClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyCussentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyCussentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyDicResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyFundReceiptForShopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetCompanyFundReceiptStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetEnterFaxAuditStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetExchangedApplyListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetExchangeStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetFilialeIdGoodsIdAvgSettlePriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetFrameProcessCertificateInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsBarcodeInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsIdsIsStockUpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsOrderDetailListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsPredictArrivalTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsSaleBySaleFilialeIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsSaleBySalePlatformIdListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsSalesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetGoodsStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetHistoryGoodsOrderByMemberIdAndOrderTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetHistoryGoodsOrderDetailListByOrderIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetHistoryOrderInfoByOrderIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetHistoryOrderInfoByOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceByInvoiceIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceByInvoiceNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceByOrderIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceCodeAndCurInvoiceNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceListByOrderNosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoiceNoAndIsCommitByOrderIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetInvoicePrintDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetMemberIdListByRealGoodsIdsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetNoAuditedGoodsQuantityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetNonceReckoningTotalledDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetNonceReckoningTotalledResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetOrderBasicResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetOrderCodRealTotalPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetOrderInfoByNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetOrderScoreListToPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetOutStockGoodsBarcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPayNoticeInfoListByOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPoundageForReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPoundageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPreloanWarningsCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPurchaseSetInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPurchaseSetListByWarehouseIdAndCompanyIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetPurchaseSetListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetRealGoodsSaleNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetReckoningInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetReckoningTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetRefundGoodsListByApplyIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetTotalledResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetTradeCodeNumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetValidateDataPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetVocabularyListByStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookByLinkTradeCodeAndWasteSourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookIdForReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookIdForUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookListBySaleFilialeIdToPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookListToPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.GetWasteBookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.HasPurchseSetGoodsIdsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertCompanyFundReceiptForShopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertCompanyFundReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertGoodsOrderInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertPoundageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertReckoningForLostBackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertReckoningInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertWasteBookCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertWastebookForB2CResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.InsertWastebookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.IsAbeyancedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.IsAllowPurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.IsEnterFaxAuditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.IsExistByOrderNoAndPaystateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.IsExistNoAuditMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.IsSuccessCreateCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.PayNoticeInsertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.RefuseInGoodsBillResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.RefuseOutGoodsBillResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.RenewalWasteBookByIsOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SelectActivityNoticeInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SelectNoticeListByPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SelectOneMonthReturnedApplyListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SelectShopActivityImageInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsIsScarcityStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderExpressNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderInvoiceStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderStateToWaitOutboundResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderToCancellationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderToConsignmentedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderToPurchaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsOrderToRedeployResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetGoodsStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetInvoiceNameAndInvoiceContentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetInvoiceStateToCancelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.SetInvoiceStateToWasteRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.ShopConfirmPurchaseOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.ThirdPartyOrderCompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateApplyStockStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateBankAccountsIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateBarterApplyGoodsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateBllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateCheckRefundListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateCheckStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateCompanyFundReceiptStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateDescriptionForAuditingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateExchangeApplyStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateGoodsDaySalesStatisticsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateGoodsISScarcityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateInvoiceRollStateInvocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateInvoiceStateWithInvoiceNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateNonceWarehouseGoodsStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdatePayNoticeInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdatePoundageForReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdatePoundageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateRealGoodsISScarcityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateReckoningDescriptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateReckoningResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateRefundApplyGoodsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateShopApplyStockStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateWasteBookCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateWasteBookDateTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateWasteBookDescriptionForAuditingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateWasteBookDescriptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateWasteBookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.UpdateWasteBookWithBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ErpService\WcfTestApp.ErpService.VirementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TestForJMeter\ITestForJMeter.wsdl" />
+    <None Include="Service References\TestForJMeter\ITestForJMeter.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TestForJMeter\ITestForJMeter1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TestForJMeter\ITestForJMeter2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TestForJMeter\ITestForJMeter3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TestForJMeter\ITestForJMeter4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TestForJMeter\TestForJMeter.wsdl" />
+    <None Include="Service References\TestForJMeter\WcfTestApp.TestForJMeter.InsertStorageRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ErpService\" />
+    <WCFMetadataStorage Include="Service References\TestForJMeter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ErpService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ErpService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ErpService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ErpService\IService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TestForJMeter\ITestForJMeter.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TestForJMeter\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TestForJMeter\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TestForJMeter\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

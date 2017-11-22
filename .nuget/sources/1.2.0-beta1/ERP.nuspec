@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ERP</id>
+        <version>1.2.0-beta1</version>
+        <title>仓储二期</title>
+        <authors>kede</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+1.提供给WMS 计算来自拆分组合的即时结算价接口，增加原始拆分或组合商品的数量属性(2017-05-11)
+        </description>
+    </metadata>
+</package>

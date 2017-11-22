@@ -1,0 +1,51 @@
+﻿.tab_2
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 23px;
+    border-bottom: solid 1px #aaa;
+}
+.tab_2 a
+{
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding: 0px 6px;
+    background-color: #fff;
+    border: solid 1px #aaa;
+    margin-right: 5px;
+    z-index: 10;    
+    margin-bottom:-1px;
+}
+.tab_2 a:hover
+{
+    background-image: url(../Images/tab_a.gif);
+}
+#mynow
+{
+    border-bottom-color: #fff;
+    background-image: url(../Images/tab_a.gif);
+}
+.tab
+{
+    margin-top: 5px;
+    background-image: url(../Images/tab_bg.gif);
+    border: solid 1px #a8c29f;
+    height: 29px;
+}
+.tab a
+{
+    display: block;
+    float: left;
+    padding: 0px 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.tab a:hover
+{
+}
+.now
+{
+    background-image: url(../Images/tab_a.gif);
+}

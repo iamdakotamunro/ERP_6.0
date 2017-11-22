@@ -1,0 +1,4 @@
+﻿<rad:RadTreeView SkinID="Common" Skin="WebBlue" runat="server" Height="500px" Width="200px" CausesValidation="false">
+</rad:RadTreeView>
+<rad:RadTreeView  Skin="WebBlue" runat="server" Height="500px" Width="200px" CausesValidation="false">
+</rad:RadTreeView>
